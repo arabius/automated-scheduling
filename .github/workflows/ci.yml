@@ -30,3 +30,20 @@ jobs:
           # For pull requests, export results to the build cache.
           # Otherwise, push to a registry.
           outputs: ${{ github.event_name == 'pull_request' && 'type=cacheonly' || 'type=registry' }}
+
+  deploy:
+    needs: docker # This ensures deploy runs after build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            docker login registry-1.docker.io -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PAT_READ_ONLY }}
+            docker stop scheduling || true
+            docker rm scheduling || true
+            docker pull timarabius/automated-scheduling:latest
+            docker run -p 80:8080 -d --name scheduling timarabius/automated-scheduling:latest
