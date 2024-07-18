@@ -43,7 +43,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             docker login registry-1.docker.io -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PAT_READ_ONLY }}
+            docker pull timarabius/automated-scheduling:latest
             docker stop scheduling || true
             docker rm scheduling || true
-            docker pull timarabius/automated-scheduling:latest
             docker run -p 80:8080 -p 443:8443 -d --name scheduling timarabius/automated-scheduling:latest
