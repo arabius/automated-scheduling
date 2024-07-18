@@ -46,4 +46,4 @@ jobs:
             docker stop scheduling || true
             docker rm scheduling || true
             docker pull timarabius/automated-scheduling:latest
-            docker run -p 80:8080 -d --name scheduling timarabius/automated-scheduling:latest
+            docker run -p 80:8080 -p 443:8443 -d --name scheduling timarabius/automated-scheduling:latest
