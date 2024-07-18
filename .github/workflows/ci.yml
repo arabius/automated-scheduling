@@ -25,7 +25,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./src/main/docker/Dockerfile.multistage
+          file: src/main/docker/Dockerfile.multistage
           tags: "timarabius/automated-schduling:latest"
           platforms: linux/amd64
           # For pull requests, export results to the build cache.
