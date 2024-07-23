@@ -12,21 +12,24 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 public class Room {
 
     @PlanningId
-    private String id;
+    private int id;
 
     private String name;
 
     private int capacity;
+
+    private int branch;
 
     private List<RoomPriority> roomPriorityList;
 
     public Room() {
     }
 
-    public Room(String id, String name, int capacity) {
+    public Room(int id, String name, int capacity, int branch) {
         this.id = id;
         this.name = name;
         this.capacity = capacity;
+        this.branch = branch;
         this.roomPriorityList = new ArrayList<>();
     }
 
@@ -39,7 +42,7 @@ public class Room {
     // Getters and setters
     // ************************************************************************
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -49,6 +52,10 @@ public class Room {
 
     public int getCapacity() {
         return capacity;
+    }
+
+    public int getBranch() {
+        return branch;
     }
 
     public void addRoomPriority(RoomPriority roomPriority) {

@@ -1,7 +1,7 @@
 package org.arabius.platform.domain;
 
 public class RoomPriority {
-    private String roomId;
+    private int roomId;
     private int priority;
     private String lessonType;
 
@@ -9,13 +9,13 @@ public class RoomPriority {
     public RoomPriority() {
     }
 
-    public RoomPriority(String roomId, int priority, String lessonType) {
+    public RoomPriority(int roomId, int priority, String lessonType) {
         this.roomId = roomId;
         this.priority = priority;
         this.lessonType = lessonType;
     }
 
-    public String getRoomId() {
+    public int getRoomId() {
         return roomId;
     }
 

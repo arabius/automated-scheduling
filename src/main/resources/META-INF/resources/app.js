@@ -122,7 +122,7 @@ function renderSchedule(timetable) {
   $.each(timetable.rooms, (index, room) => {
     headerRowByRoom
       .append($("<th/>")
-        .append($("<span/>").text(room.name))
+        .append($("<span/>").text(room.name + " - " + room.branch))
         .append($(`<button type="button" class="ms-2 mb-1 btn btn-light btn-sm p-1"/>`)));
   });
   const theadByTeacher = $("<thead>").appendTo(timetableByTeacher);
@@ -197,7 +197,7 @@ function renderSchedule(timetable) {
       .append($(`<div class="card-body p-2"/>`)
         .append($(`<h5 class="card-title mb-1"/>`).text(lesson.level + ' - ' + lesson.lessonType))
         .append($(`<p class="card-text ms-2 mb-1"/>`)
-          .append($(`<em/>`).text(`room: ${lesson.room?.name}`)))
+          .append($(`<em/>`).text(`branch: ${lesson.branch}`)))
         .append($(`<small class="ms-2 mt-1 card-text text-muted align-bottom float-end"/>`).text(lesson.id))
         .append($(`<p class="card-text ms-2"/>`).text(lesson.studentGroupHash)));
     if (lesson.room == null) {

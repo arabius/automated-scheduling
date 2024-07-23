@@ -24,6 +24,7 @@ public class Lesson {
     private String guideName;
     private Timeslot timeslot;
     private int timeslotId;
+    private int branch;
 
     // @JsonIdentityReference
     // @PlanningVariable (allowsUnassigned = true)
@@ -36,7 +37,7 @@ public class Lesson {
     public Lesson() {
     }
 
-    public Lesson(String id, String level, LocalDate date, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId) {
+    public Lesson(String id, String level, LocalDate date, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch) {
         this.id = id;
         this.date = date;
         this.level = level;
@@ -46,10 +47,11 @@ public class Lesson {
         this.guideName = guideName;
         this.studentGroupHash = studentGroupHash;
         this.timeslotId = timeslotId;
+        this.branch = branch;
     }
 
-    public Lesson(String id, LocalDate date, String level, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, Room room, Guide guide) {
-        this(id, level, date, start, end, lessonType, guideName, studentGroupHash, timeslotId);
+    public Lesson(String id, LocalDate date, String level, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch, Room room, Guide guide) {
+        this(id, level, date, start, end, lessonType, guideName, studentGroupHash, timeslotId, branch);
         this.room = room;
         this.guide = guide;
     }
@@ -85,6 +87,10 @@ public class Lesson {
 
     public int getTimeslotId() {
         return timeslotId;
+    }
+
+    public int getBranch() {
+        return branch;
     }
 
     public String getStudentGroupHash() {
