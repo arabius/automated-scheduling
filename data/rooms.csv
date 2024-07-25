@@ -1,0 +1,24 @@
+id,name,capacity,branch_id
+1,105-Janadriyah,8,1
+2,103-Diriyah,5,1
+3,101-Thumamah,3,1
+4,102-AlMajlis,5,1
+5,104-Masmak,4,1
+6,106-Wadi Hanifa,6,1
+7,204-Misbah,2,1
+8,201-Alkhema,2,1
+9,202-Mishkat,2,1
+10,203-Dakka,2,1
+11,213-Liwan,8,1
+12,214-Magalat,4,1
+13,206-AlMajlis,2,1
+14,205-Diwaniyya,2,1
+16,207-Alheala,2,1
+17,211-AlRoshan,1,1
+18,208-Aldeerah,2,1
+19,200-AlSaddah,1,1
+20,211-AlRoshan - B,1,1
+23,215-AlMatal,1,1
+24,214-AlMishab,1,1
+25,213-AlMerkaz,1,1
+26,212-AlMulhag,1,1

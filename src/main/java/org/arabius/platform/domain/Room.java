@@ -23,6 +23,7 @@ public class Room {
     private List<RoomPriority> roomPriorityList;
 
     public Room() {
+        this.roomPriorityList = new ArrayList<>();
     }
 
     public Room(int id, String name, int capacity, int branch) {
@@ -35,7 +36,12 @@ public class Room {
 
     @Override
     public String toString() {
-        return name;
+        return "Room{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", capacity=" + capacity +
+                ", floor=" + branch +
+                '}';
     }
 
     // ************************************************************************
@@ -73,5 +79,21 @@ public class Room {
             }
         }
         return 100;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }   
+
+    public void setBranch(int branch) {
+        this.branch = branch;
     }
 }

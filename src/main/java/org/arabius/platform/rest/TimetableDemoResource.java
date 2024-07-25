@@ -1,5 +1,6 @@
 package org.arabius.platform.rest;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import org.arabius.platform.domain.Room;
 import org.arabius.platform.domain.RoomPriority;
 import org.arabius.platform.domain.Timeslot;
 import org.arabius.platform.domain.Timetable;
+import org.arabius.platform.util.CsvRoomLoader;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
@@ -45,6 +47,8 @@ public class TimetableDemoResource {
         return DemoData.values();
     }
 
+    
+    
     @APIResponses(value = {
             @APIResponse(responseCode = "200", description = "Unsolved demo timetable.",
                     content = @Content(mediaType = MediaType.APPLICATION_JSON,
@@ -56,28 +60,14 @@ public class TimetableDemoResource {
             required = true) @PathParam("demoDataId") DemoData demoData) {
 
         List<Room> rooms = new ArrayList<>();
-        rooms.add( new Room(1, "105-Janadriyah", 8, 1));
-        rooms.add( new Room(2, "103-Diriyah", 5, 1));
-        rooms.add( new Room(3, "101-Thumamah", 3, 1));
-        rooms.add( new Room(4, "102-AlMajlis", 5, 1));
-        rooms.add( new Room(5, "104-Masmak", 4, 1));
-        rooms.add( new Room(6, "106-Wadi Hanifa", 6, 1));
-        rooms.add( new Room(7, "204-Misbah", 2, 1));
-        rooms.add( new Room(8, "201-Alkhema", 2, 1));
-        rooms.add( new Room(9, "202-Mishkat", 2, 1));
-        rooms.add( new Room(10, "203-Dakka", 2, 1));
-        rooms.add( new Room(11, "213-Liwan", 8, 1));
-        rooms.add( new Room(12, "214-Magalat", 4, 1));
-        rooms.add( new Room(13, "206-AlMajlis", 2, 1));
-        rooms.add( new Room(14, "205-Diwaniyya", 2, 1));
-        rooms.add( new Room(16, "207-Alheala", 2, 1));
-        rooms.add( new Room(17, "211-AlRoshan", 1, 2));
-        rooms.add( new Room(18, "208-Aldeerah", 2, 2));
-        rooms.add( new Room(19, "200-AlSaddah", 1, 2));
-        rooms.add( new Room(23, "215-AlMatal", 1, 2));
-        rooms.add( new Room(24, "214-AlMishab", 1, 2));
-        rooms.add( new Room(25, "213-AlMerkaz", 1,2));
-        rooms.add( new Room(26, "212-AlMulhag", 1, 2));
+
+        try {
+            rooms = CsvRoomLoader.loadRooms("data/rooms.csv");
+        } catch (IOException e) {
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+                    .entity("Error loading rooms from CSV file: " + e.getMessage())
+                    .build();
+        }
         
         List<Guide> guides = new ArrayList<>();
         guides.add(new Guide(9, "Mubarak Al Hussein ", "1|1 Business|1A Hotels|2A|2B|2C|3A|3B|3C|4A|4B|5A|5B|Admin Meeting|Free Trial|Level 2 Bridge|Mini-Session", "52|68|69|116|230|255|256|257|260|261|268|269|270"));
