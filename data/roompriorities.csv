@@ -1,0 +1,67 @@
+room_id,priority,name_en
+2,1,In-person
+5,2,In-person
+6,3,In-person
+3,4,In-person
+7,8,In-person
+8,5,In-person
+9,6,In-person
+10,7,In-person
+12,13,In-person
+14,9,In-person
+16,10,In-person
+1,21,In-person
+7,5,Online
+8,2,Online
+9,3,Online
+10,4,Online
+13,17,Online
+14,6,Online
+16,7,Online
+2,10,Online
+5,11,Online
+6,12,Online
+3,9,Online
+1,14,Online
+4,13,Online
+17,8,Online
+18,15,Online
+4,12,In-person
+19,11,In-person
+19,1,Online
+12,16,Online
+1,1,All rooms
+2,2,All rooms
+3,3,All rooms
+4,4,All rooms
+5,5,All rooms
+6,6,All rooms
+7,7,All rooms
+8,8,All rooms
+9,9,All rooms
+10,10,All rooms
+12,11,All rooms
+13,16,All rooms
+14,12,All rooms
+16,13,All rooms
+18,14,All rooms
+19,15,All rooms
+18,14,In-person
+17,15,In-person
+11,17,All rooms
+17,18,All rooms
+23,19,All rooms
+24,20,All rooms
+25,21,All rooms
+26,22,All rooms
+13,16,In-person
+23,17,In-person
+24,18,In-person
+25,19,In-person
+26,20,In-person
+11,22,In-person
+23,18,Online
+24,19,Online
+25,20,Online
+26,21,Online
+11,22,Online

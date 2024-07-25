@@ -56,4 +56,21 @@ public class Timeslot {
     public LocalTime getEndTime() {
         return endTime;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDayOfWeek(LocalDate dayOfWeek) {
+        this.dayOfWeek = dayOfWeek;
+    }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
+    }
+    
 }

@@ -27,6 +27,18 @@ public class RoomPriority {
         return lessonType;
     }
 
+    public void setRoomId(int roomId) {
+        this.roomId = roomId;
+    }
+
+    public void setPriority(int priority) {
+        this.priority = priority;
+    }
+
+    public void setLessonType(String lessonType) {
+        this.lessonType = lessonType;
+    }
+
     @Override
     public String toString() {
         return roomId + " @ " + priority;

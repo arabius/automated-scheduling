@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityReference;
 public class Lesson {
 
     @PlanningId
-    private String id;
+    private int id;
 
     private String level;
     private LocalDate date;
@@ -37,7 +37,7 @@ public class Lesson {
     public Lesson() {
     }
 
-    public Lesson(String id, String level, LocalDate date, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch) {
+    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch) {
         this.id = id;
         this.date = date;
         this.level = level;
@@ -50,7 +50,7 @@ public class Lesson {
         this.branch = branch;
     }
 
-    public Lesson(String id, LocalDate date, String level, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch, Room room, Guide guide) {
+    public Lesson(int id, LocalDate date, String level, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch, Room room, Guide guide) {
         this(id, level, date, start, end, lessonType, guideName, studentGroupHash, timeslotId, branch);
         this.room = room;
         this.guide = guide;
@@ -65,7 +65,7 @@ public class Lesson {
     // Getters and setters
     // ************************************************************************
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -136,5 +136,43 @@ public class Lesson {
     public String getGuideName() {
         return this.guideName;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public void setStart(LocalTime start) {
+        this.start = start;
+    }
+
+    public void setEnd(LocalTime end) {
+        this.end = end;
+    }
+
+    public void setStudentGroupHash(String studentGroupHash) {
+        this.studentGroupHash = studentGroupHash;
+    }
+
+    public void setLessonType(String lessonType) {
+        this.lessonType = lessonType;
+    }
+
+    public void setBranch(int branch) {
+        this.branch = branch;
+    }
+
+    public void setGuideName(String guideName) {
+        this.guideName = guideName;
+    }
+
+
 
 }

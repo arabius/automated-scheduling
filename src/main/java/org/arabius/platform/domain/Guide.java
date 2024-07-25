@@ -33,12 +33,20 @@ public class Guide {
     }
 
     private List<Integer> parseStringToIntList(String stringToParse) {
+        //check for null and empty string
+        if (stringToParse == null || stringToParse.isEmpty()) {
+            return null;
+        }
         return Arrays.stream(stringToParse.split("\\|"))
                                      .map(Integer::parseInt)
                                      .collect(Collectors.toList());
     }
 
     private List<String> parseStringToStringList(String stringToParse) {
+        //check for null and empty string
+        if (stringToParse == null || stringToParse.isEmpty()) {
+            return null;
+        }
         return Arrays.asList(stringToParse.split("\\|"));
     }
 
@@ -77,5 +85,23 @@ public class Guide {
             }
         }
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTimeSlotIds(String timeSlotIds) {
+        this.timeSlotIds =  this.parseStringToIntList(timeSlotIds);
+    }
+
+    public void setLevels(String levels) {
+        this.levels = this.parseStringToStringList(levels);
+    }
+
+
 
 }
