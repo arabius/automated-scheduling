@@ -1,6 +1,5 @@
 package org.arabius.platform.domain;
 
-import java.time.LocalTime;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
@@ -17,8 +16,8 @@ public class Lesson {
 
     private String level;
     private LocalDate date;
-    private LocalTime start;
-    private LocalTime end;
+    private LocalDateTime bufferStart;
+    private LocalDateTime bufferEnd;
     private String studentGroupHash;
     private String lessonType;
     private String guideName;
@@ -26,23 +25,24 @@ public class Lesson {
     private int timeslotId;
     private int branch;
 
-    // @JsonIdentityReference
-    // @PlanningVariable (allowsUnassigned = true)
+    @JsonIdentityReference
+    @PlanningVariable (allowsUnassigned = true)
     private Guide guide;
 
     @JsonIdentityReference
     @PlanningVariable (allowsUnassigned = true)
     private Room room;
 
+    
     public Lesson() {
     }
 
-    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch) {
+    public Lesson(int id, String level, LocalDate date, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch) {
         this.id = id;
         this.date = date;
         this.level = level;
-        this.start = start;
-        this.end = end;
+        this.bufferStart = bufferStart;
+        this.bufferEnd = bufferEnd;
         this.lessonType = lessonType;
         this.guideName = guideName;
         this.studentGroupHash = studentGroupHash;
@@ -50,8 +50,8 @@ public class Lesson {
         this.branch = branch;
     }
 
-    public Lesson(int id, LocalDate date, String level, LocalTime start, LocalTime end, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch, Room room, Guide guide) {
-        this(id, level, date, start, end, lessonType, guideName, studentGroupHash, timeslotId, branch);
+    public Lesson(int id, LocalDate date, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String guideName, String studentGroupHash, int timeslotId, int branch, Room room, Guide guide) {
+        this(id, level, date, bufferStart, bufferEnd, lessonType, guideName, studentGroupHash, timeslotId, branch);
         this.room = room;
         this.guide = guide;
     }
@@ -77,12 +77,12 @@ public class Lesson {
         return date;
     }
 
-    public LocalTime getStart() {
-        return start;
+    public LocalDateTime getBufferStart() {
+        return bufferStart;
     }
 
-    public LocalTime getEnd() {
-        return end;
+    public LocalDateTime getBufferEnd() {
+        return bufferEnd;
     }
 
     public int getTimeslotId() {
@@ -125,10 +125,6 @@ public class Lesson {
         return this.studentGroupHash.split(",").length;
     }
 
-    public LocalDateTime getStartDateTime() {
-        return LocalDateTime.of(this.date, this.start);
-    }
-
     public String getLessonType() {
         return this.lessonType;
     }
@@ -149,12 +145,12 @@ public class Lesson {
         this.date = date;
     }
 
-    public void setStart(LocalTime start) {
-        this.start = start;
+    public void setBufferStart(LocalDateTime bufferStart) {
+        this.bufferStart = bufferStart;
     }
 
-    public void setEnd(LocalTime end) {
-        this.end = end;
+    public void setBufferEnd(LocalDateTime bufferEnd) {
+        this.bufferEnd = bufferEnd;
     }
 
     public void setStudentGroupHash(String studentGroupHash) {

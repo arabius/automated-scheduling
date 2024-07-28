@@ -11,6 +11,6 @@ public record BigRoomJustification(Lesson lesson1, String description)
     public BigRoomJustification(Lesson lesson1) {
         this(lesson1,
                 "Lesson on '%s' at '%s' for student group '%s' with '%s' students is to a room with a capacity of '%s'"
-                        .formatted(lesson1.getDate(), lesson1.getStart(), lesson1.getStudentGroupHash(), lesson1.getStudentCount(), lesson1.getRoom().getCapacity()));
+                        .formatted(lesson1.getDate(), lesson1.getBufferStart(), lesson1.getStudentGroupHash(), lesson1.getStudentCount(), lesson1.getRoom().getCapacity()));
     }
 }

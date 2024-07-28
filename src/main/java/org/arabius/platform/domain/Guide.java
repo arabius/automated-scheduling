@@ -3,9 +3,14 @@ package org.arabius.platform.domain;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import ai.timefold.solver.core.api.domain.lookup.PlanningId;
 
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+
+@JsonIdentityInfo(scope = Guide.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Guide {
     
     @PlanningId
@@ -33,20 +38,20 @@ public class Guide {
     }
 
     private List<Integer> parseStringToIntList(String stringToParse) {
-        //check for null and empty string
-        if (stringToParse == null || stringToParse.isEmpty()) {
-            return null;
-        }
+        // //check for null and empty string
+        // if (stringToParse == null || stringToParse.isEmpty()) {
+        //     return null;
+        // }
         return Arrays.stream(stringToParse.split("\\|"))
                                      .map(Integer::parseInt)
                                      .collect(Collectors.toList());
     }
 
     private List<String> parseStringToStringList(String stringToParse) {
-        //check for null and empty string
-        if (stringToParse == null || stringToParse.isEmpty()) {
-            return null;
-        }
+        // //check for null and empty string
+        // if (stringToParse == null || stringToParse.isEmpty()) {
+        //     return null;
+        // }
         return Arrays.asList(stringToParse.split("\\|"));
     }
 
@@ -64,6 +69,16 @@ public class Guide {
 
     public List<Integer> getTimeSlotIds() {
         return timeSlotIds;
+    }
+
+    @JsonProperty("timeSlotIds")
+    public String getTimeSlotIdsAsString() {
+        return timeSlotIds.stream().map(Object::toString).collect(Collectors.joining("|"));
+    }
+
+    @JsonProperty("levels")
+    public String getLevelsAsString() {
+        return levels.stream().collect(Collectors.joining("|"));
     }
 
     public List<String> getLevels() {
@@ -94,6 +109,7 @@ public class Guide {
         this.name = name;
     }
 
+    @JsonProperty("timeSlotIds")
     public void setTimeSlotIds(String timeSlotIds) {
         this.timeSlotIds =  this.parseStringToIntList(timeSlotIds);
     }

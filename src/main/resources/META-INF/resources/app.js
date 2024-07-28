@@ -197,7 +197,7 @@ function renderSchedule(timetable) {
       .append($(`<div class="card-body p-2"/>`)
         .append($(`<h5 class="card-title mb-1"/>`).text(lesson.level + ' - ' + lesson.lessonType))
         .append($(`<p class="card-text ms-2 mb-1"/>`)
-          .append($(`<em/>`).text(`branch: ${lesson.branch}`)))
+          .append($(`<em/>`).text(`Guide: ${lesson.guide}`)))
         .append($(`<small class="ms-2 mt-1 card-text text-muted align-bottom float-end"/>`).text(lesson.id))
         .append($(`<p class="card-text ms-2"/>`).text(lesson.studentGroupHash)));
     if (lesson.room == null) {

@@ -120,8 +120,9 @@ public class TimetableDemoResource {
         for (Lesson lesson : lessons) {
             for (Timeslot timeslot : timeslots) {
                 if (lesson.getDate().equals(timeslot.getDayOfWeek()) &&
-                    lesson.getStart().equals(timeslot.getStartTime()) &&
-                    lesson.getEnd().equals(timeslot.getEndTime())) {
+                    lesson.getBufferStart().toLocalTime().equals(timeslot.getStartTime()) &&
+                    lesson.getBufferEnd().toLocalTime().equals(timeslot.getEndTime())) 
+                {
                     lesson.setTimeslot(timeslot);
                     break; // No need to check the remaining timeslots for this lesson
                 }

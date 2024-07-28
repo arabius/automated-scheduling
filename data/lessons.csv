@@ -1,1615 +1,335 @@
-id,level,date,start,end,student_group_hash,lesson_type,branch_id,guide_name
-41899,2A,2024-07-01,14:00:00,15:30:00,Ambassador Liselotte Plesner,On-site,1,Ameera Alqahtani 
-41901,1,2024-07-01,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-41902,1,2024-07-03,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-41904,1,2024-07-01,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-41905,1,2024-07-03,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-41906,1,2024-07-01,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Noura AlMoqbil 
-41907,1,2024-07-03,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Noura AlMoqbil 
-41908,1,2024-07-02,19:20:00,21:20:00,"Riyadh Air Billing, Peter Edridge, Adnan Chughtai, Lluis Portella, Hanri, Louise Leaupepe, David Joyeux, Michael Felix, Emily van den Akker, Daniel Tuitt",Online,1,Noura AlMoqbil 
-41909,1,2024-07-03,19:20:00,21:20:00,"Riyadh Air Billing, Sam Carter, Awel  Dico, Abby Wanjiru, Edward Taplin, Reshma Vora, Lynelle Adkins, Krishnasing Dahoo, Katherine Chick",Online,1,Fawaz bin Saeed 
-41911,1,2024-07-02,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Vaibhav Sharma, Kirby Lucas Montemayor, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-41918,4A,2024-07-01,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-41919,4A,2024-07-02,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-41920,4A,2024-07-03,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-41921,4A,2024-07-04,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-41923,1,2024-07-01,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-41924,1,2024-07-02,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-41925,1,2024-07-03,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-41926,1,2024-07-04,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-41928,1,2024-07-02,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-41930,1,2024-07-02,19:20:00,21:20:00,"Maksim, Benedict, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-41931,1,2024-07-01,19:20:00,21:20:00,"Hanna Al-Ghamdi, Hana Xhemajli, Steve Webb",In-person,1,Noura AlMoqbil 
-41932,1,2024-07-03,19:20:00,21:20:00,"Hanna Al-Ghamdi, Hana Xhemajli, Steve Webb",In-person,1,Noura AlMoqbil 
-41941,1,2024-07-02,08:30:00,10:30:00,"Vicky, Jenn Keung",Online,1,Layla AlMazmoumi 
-41942,1,2024-07-01,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-41943,Level 2 Bridge,2024-07-03,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-41947,1,2024-07-02,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-41948,1,2024-07-03,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-41950,Level 2 Bridge,2024-07-01,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-41951,Level 2 Bridge,2024-07-02,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-41952,Level 2 Bridge,2024-07-03,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Abdullatif AlAsmari 
-41953,Level 2 Bridge,2024-07-04,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-41956,1,2024-07-01,19:20:00,21:20:00,Fayaaz Patel,Online,1,Khalid AlAteeq 
-41957,1,2024-07-06,12:15:00,14:15:00,Fayaaz Patel,Online,1,Noura AlMoqbil 
-41960,1,2024-07-01,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41961,1,2024-07-02,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41962,1,2024-07-03,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41963,1,2024-07-04,10:40:00,12:40:00,Denys Tan,In-person,1,Sarah Bin Hudhud 
-41965,1,2024-07-02,17:10:00,19:10:00,Amin Abdullah,In-person,1,Noura AlMoqbil 
-41967,Level 2 Bridge,2024-07-01,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Noura AlMoqbil 
-41968,Level 2 Bridge,2024-07-02,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Renad Mohammed 
-41969,Level 2 Bridge,2024-07-03,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Renad Mohammed 
-41970,Level 2 Bridge,2024-07-04,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ashwag AlMahboob 
-41974,1,2024-07-01,18:15:00,19:15:00,Fayaaz Patel,Online,1,Sultan bin Suliman 
-41975,1,2024-07-02,18:15:00,19:15:00,Fayaaz Patel,Online,1,Khalid AlAteeq 
-41977,1,2024-07-01,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41978,1,2024-07-02,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41979,1,2024-07-03,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41980,1,2024-07-04,09:30:00,10:30:00,Denys Tan,In-person,1,Ashwag AlMahboob 
-41982,1,2024-07-01,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41983,1,2024-07-02,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41984,1,2024-07-03,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-41985,1,2024-07-04,13:20:00,14:20:00,Denys Tan,In-person,1,Khalid AlRashidi 
-41986,1,2024-07-01,18:15:00,19:15:00,"Ingela Ahmad, Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, abdullah mansoor, Truddy Liao, Nawel Zouaoui",Online,1,Saleh AlSanat 
-41987,1,2024-07-03,18:15:00,19:15:00,"Ingela Ahmad, Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, abdullah mansoor, Truddy Liao, Nawel Zouaoui, Riyadh Air Billing",Online,1,Nesreen Ali 
-41989,1,2024-07-01,19:20:00,21:20:00,"Zelka Vorih, Rowena Miaco, Romeo",In-person,1,Sultan bin Suliman 
-41990,1,2024-07-02,19:20:00,21:20:00,"Zelka Vorih, Rowena Miaco, Romeo",In-person,1,Sultan bin Suliman 
-41991,1,2024-07-03,19:20:00,21:20:00,"Zelka Vorih, Rowena Miaco, Romeo",In-person,1,Sultan bin Suliman 
-41993,1,2024-07-02,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Fawaz bin Saeed 
-41995,1,2024-07-01,08:30:00,10:30:00,Bella Angel,Online,1,Fatimah_Nasser 
-41996,1,2024-07-03,08:30:00,10:30:00,Bella Angel,Online,1,Fatimah_Nasser 
-41999,2B,2024-07-01,08:30:00,10:30:00,"Mia Acworth, Sara Glennon, Radhia Sumar",Online,1,Reem AlTamimi 
-42002,2B,2024-07-01,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Ashwag AlMahboob 
-42003,2B,2024-07-02,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42004,2B,2024-07-03,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42006,2B,2024-07-01,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Eman AlGhamdi 
-42007,2B,2024-07-02,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42008,2B,2024-07-03,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42009,2A,2024-07-01,19:20:00,21:20:00,"Sameera seedat, Jamila",Online,1,Faisal AlQahtani 
-42010,2A,2024-07-03,19:20:00,21:20:00,"Sameera seedat, Jamila",Online,1,Faisal AlQahtani 
-42016,2B,2024-07-01,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42017,2B,2024-07-02,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42018,2B,2024-07-03,13:20:00,15:20:00,Kevin Smith,In-person,1,Faisal AlDhafeeri 
-42019,2B,2024-07-04,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42022,2A,2024-07-01,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42023,2A,2024-07-02,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42024,2A,2024-07-03,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42031,2B,2024-07-03,10:40:00,12:40:00,Windy Liu,In-person,1,Reem AlTamimi 
-42032,2B,2024-07-04,10:40:00,12:40:00,Windy Liu,In-person,1,Reem AlTamimi 
-42037,2A,2024-07-01,19:20:00,21:20:00,Tim Schneider,Online,1,RawanD Aldawsari 
-42038,2A,2024-07-02,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42039,2A,2024-07-03,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42040,2A,2024-07-04,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42042,2A,2024-07-01,17:10:00,19:10:00,Lonnie Camacho,In-person,1,RawanD Aldawsari 
-42044,2B,2024-07-02,17:10:00,18:10:00,Matthew Wyatt,On-site,1,Abdulrahman AlJohani 
-42045,2A,2024-07-02,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Noura AlMoqbil 
-42046,2A,2024-07-03,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Noura AlMoqbil 
-42047,2A,2024-07-04,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Abdulelah AlNasser 
-42049,2B,2024-07-01,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42050,2B,2024-07-02,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42051,2B,2024-07-03,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42054,2B,2024-07-01,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-42055,2B,2024-07-02,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-42058,2A,2024-07-01,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42059,2A,2024-07-02,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42060,2A,2024-07-03,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42063,2A,2024-07-01,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-42065,2B,2024-07-02,19:20:00,21:20:00,"Faiza Jannat, Dries Goosen, Hesper Gao, Olena Rudnyk",In-person,1,Ali AlMadhi 
-42067,2B,2024-07-02,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Faisal AlQahtani 
-42070,2B,2024-07-06,14:25:00,16:25:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Nesreen Ali 
-42072,2B,2024-07-01,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Amal AlHazzani 
-42073,2B,2024-07-02,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Reem AlTamimi 
-42074,2B,2024-07-03,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Amal AlHazzani 
-42075,2B,2024-07-04,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Amal AlHazzani 
-42082,2B,2024-07-01,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42084,2B,2024-07-03,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42085,2B,2024-07-04,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42086,3A,2024-07-06,12:15:00,14:15:00,Owais Azmi,In-person,1,Sultan bin Suliman 
-42088,2B,2024-07-06,12:15:00,14:15:00,Robbie Corey-Boulet,Online,1,Faisal AlQahtani 
-42090,2C,2024-07-01,10:40:00,12:40:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42091,2C,2024-07-02,10:40:00,12:40:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42092,2C,2024-07-03,10:40:00,12:40:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42093,2C,2024-07-04,10:40:00,12:40:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42095,2C,2024-07-01,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42096,2C,2024-07-02,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42097,2C,2024-07-03,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42098,2C,2024-07-04,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42100,2B,2024-07-01,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Layla AlMazmoumi 
-42101,2B,2024-07-03,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Layla AlMazmoumi 
-42103,2B,2024-07-01,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Layla AlMazmoumi 
-42104,2B,2024-07-03,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Layla AlMazmoumi 
-42105,3A,2024-07-06,14:25:00,15:25:00,Owais Azmi,In-person,1,Sultan bin Suliman 
-42107,2B,2024-07-01,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42108,2B,2024-07-02,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42109,2B,2024-07-03,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42110,2B,2024-07-04,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42112,2B,2024-07-01,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42113,2B,2024-07-02,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42114,2B,2024-07-03,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42115,2B,2024-07-04,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42117,2B,2024-07-02,09:00:00,10:00:00,Stephen Groff,On-site,1,Abdulrahman AlJohani 
-42118,2B,2024-07-04,09:00:00,10:00:00,Stephen Groff,On-site,1,Abdulrahman AlJohani 
-42120,2C,2024-07-01,09:35:00,10:35:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42121,2C,2024-07-02,09:35:00,10:35:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42122,2C,2024-07-03,09:35:00,10:35:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42123,2C,2024-07-04,09:35:00,10:35:00,Navin Kumar,In-person,1,Naif AlGhwairi 
-42125,2C,2024-07-01,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42126,2C,2024-07-02,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42127,2C,2024-07-03,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42128,2C,2024-07-04,15:30:00,16:30:00,Navin Kumar,In-person,1,Amal AlHazzani 
-42130,2B,2024-07-01,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42131,2B,2024-07-02,13:20:00,15:20:00,فادي - Fadi,In-person,1,Muteb AlDossary 
-42132,2B,2024-07-03,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42133,2B,2024-07-04,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42135,2B,2024-07-01,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42136,2B,2024-07-02,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42137,2B,2024-07-03,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42138,2B,2024-07-04,15:30:00,16:30:00,فادي - Fadi,In-person,1,Muteb AlDossary 
-42147,2C,2024-07-01,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,Faisal AlQahtani 
-42148,2C,2024-07-03,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,Faisal AlQahtani 
-42149,3A,2024-07-06,12:15:00,14:15:00,Dildar Hussain,Online,1,Saleh AlSanat 
-42151,3A,2024-07-01,10:40:00,12:40:00,Joel Baker,Online,1,Omar AlDkhelallh 
-42152,3C,2024-07-02,10:40:00,12:40:00,Joel Baker,In-person,1,Omar AlDkhelallh 
-42153,4A,2024-07-03,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-42161,3A,2024-07-01,08:30:00,10:30:00,Joel Baker,Online,1,Omar AlDkhelallh 
-42162,3A,2024-07-02,08:30:00,10:30:00,Joel Baker,In-person,1,Omar AlDkhelallh 
-42163,4A,2024-07-03,08:30:00,10:30:00,Joel Baker,In-person,1,Muteb AlDossary 
-42167,3A,2024-07-01,13:20:00,15:20:00,Jonny Ascott,In-person,1,Omar AlDkhelallh 
-42168,3A,2024-07-02,13:20:00,15:20:00,Jonny Ascott,In-person,1,Omar AlDkhelallh 
-42169,3A,2024-07-03,13:20:00,15:20:00,Jonny Ascott,In-person,1,Omar AlDkhelallh 
-42170,3A,2024-07-04,13:20:00,15:20:00,Jonny Ascott,In-person,1,Omar AlDkhelallh 
-42174,3A,2024-07-02,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42175,3A,2024-07-03,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42178,3A,2024-07-02,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42179,3A,2024-07-03,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42181,3A,2024-07-01,15:30:00,16:30:00,Jonny Ascott,In-person,1,RawanD Aldawsari 
-42182,3A,2024-07-02,15:30:00,16:30:00,Jonny Ascott,In-person,1,RawanD Aldawsari 
-42183,3A,2024-07-03,15:30:00,16:30:00,Jonny Ascott,In-person,1,RawanD Aldawsari 
-42184,3A,2024-07-04,15:30:00,16:30:00,Jonny Ascott,In-person,1,Ghadeer AlSaedi 
-42187,3B,2024-07-03,19:20:00,21:20:00,Rowan Cory,In-person,1,RawanD Aldawsari 
-42207,3B,2024-07-04,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-42208,3B,2024-07-01,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-42209,3B,2024-07-03,13:20:00,15:20:00,Kim Meade,Online,1,Reem AlTamimi 
-42211,3C,2024-07-01,10:40:00,12:40:00,Carol Keener,In-person,1,Muteb AlDossary 
-42212,3C,2024-07-02,10:40:00,12:40:00,Carol Keener,In-person,1,Muteb AlDossary 
-42215,3C,2024-07-01,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-42216,3C,2024-07-02,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-42219,3C,2024-07-01,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42220,3C,2024-07-02,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42221,3C,2024-07-03,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42222,3C,2024-07-04,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42223,3C,2024-07-01,13:20:00,14:20:00,Garrett Meade,In-person,1,Atheer AlQarni 
-42224,3C,2024-07-03,13:20:00,14:20:00,Garrett Meade,In-person,1,RawanM AlMoqbil 
-42226,"Kid's Level 1",2024-07-01,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Naif AlGhwairi 
-42227,"Kid's Level 1",2024-07-02,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Khalid AlRashidi 
-42228,"Kid's Level 1",2024-07-03,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Younis AlSulami 
-42240,4A,2024-07-01,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdulelah AlNasser 
-42241,4A,2024-07-02,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdulelah AlNasser 
-42242,4A,2024-07-03,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdulelah AlNasser 
-42243,4A,2024-07-04,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdulelah AlNasser 
-42244,1,2024-07-03,20:25:00,21:25:00,Julie Barbier Leblan,Online,1,Renad Mohammed 
-42267,2A,2024-07-01,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42268,2A,2024-07-02,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42269,2A,2024-07-03,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42270,2A,2024-07-04,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42272,2A,2024-07-01,10:40:00,11:40:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42273,2A,2024-07-02,10:40:00,11:40:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42274,2A,2024-07-03,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42275,2A,2024-07-04,10:40:00,11:40:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42294,Admin Meeting,2024-07-01,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-42295,Admin Meeting,2024-07-01,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Ali AlMadhi 
-42296,Admin Meeting,2024-07-01,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Eman AlGhamdi 
-42297,Admin Meeting,2024-07-01,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Fawaz bin Saeed 
-42298,Admin Meeting,2024-07-01,13:20:00,16:30:00,Admin Hold,Admin Hold,1,RawanM AlMoqbil 
-42300,Admin Meeting,2024-07-02,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-42301,Admin Meeting,2024-07-02,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Eman AlGhamdi 
-42302,Admin Meeting,2024-07-02,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Ali AlMadhi 
-42303,Admin Meeting,2024-07-02,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-42304,Admin Meeting,2024-07-02,13:20:00,16:30:00,Admin Hold,Admin Hold,1,RawanM AlMoqbil 
-42305,Admin Meeting,2024-07-02,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Faisal AlDhafeeri 
-42310,Admin Meeting,2024-07-04,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-42312,Admin Meeting,2024-07-04,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-42313,Admin Meeting,2024-07-04,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Faisal AlDhafeeri 
-42314,Admin Meeting,2024-07-04,13:20:00,16:30:00,Admin Hold,Admin Hold,1,RawanM AlMoqbil 
-42325,1,2024-07-01,17:10:00,19:10:00,"Pooluna Chung, Innah, Mazy, Aziza Sadikova",In-person,1,Khalid AlAteeq 
-42326,1,2024-07-03,17:10:00,19:10:00,"Pooluna Chung, Innah, Mazy, Aziza Sadikova",In-person,1,Khalid AlAteeq 
-42327,1,2024-07-01,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Renad Mohammed 
-42328,1,2024-07-03,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Renad Mohammed 
-42331,1,2024-07-08,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-42332,1,2024-07-10,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-42333,1,2024-07-08,18:15:00,19:15:00,"Ingela Ahmad, Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, abdullah mansoor, Truddy Liao, Nawel Zouaoui, Riyadh Air Billing",Online,1,Shomokh AlZahrani 
-42334,1,2024-07-10,18:15:00,19:15:00,"Ingela Ahmad, Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, abdullah mansoor, Truddy Liao, Nawel Zouaoui, Riyadh Air Billing",Online,1,Shomokh AlZahrani 
-42335,1,2024-07-07,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing, Truddy Liao",Online,1,RawanD Aldawsari 
-42336,1,2024-07-09,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing, Truddy Liao",Online,1,RawanD Aldawsari 
-42337,1,2024-07-07,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Fawaz bin Saeed 
-42338,1,2024-07-09,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Shomokh AlZahrani 
-42339,1,2024-07-08,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-42340,1,2024-07-10,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-42341,1,2024-07-08,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Noura AlMoqbil 
-42342,1,2024-07-10,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Noura AlMoqbil 
-42343,1,2024-07-09,19:20:00,21:20:00,"Riyadh Air Billing, Peter Edridge, Adnan Chughtai, Lluis Portella, Hanri, Louise Leaupepe, Michael Felix, Emily van den Akker, Daniel Tuitt",Online,1,Noura AlMoqbil 
-42344,1,2024-07-10,19:20:00,21:20:00,"Riyadh Air Billing, Sam Carter, Awel  Dico, Abby Wanjiru, Edward Taplin, Reshma Vora, Lynelle Adkins, Krishnasing Dahoo, Katherine Chick",Online,1,Fawaz bin Saeed 
-42346,4A,2024-07-08,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42347,4A,2024-07-09,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42348,4A,2024-07-10,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42350,1,2024-07-07,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42351,1,2024-07-08,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42352,1,2024-07-09,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42353,1,2024-07-10,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42354,1,2024-07-11,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42355,1,2024-07-07,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-42356,1,2024-07-09,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-42357,1,2024-07-07,19:20:00,21:20:00,"Maksim, Benedict, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-42358,1,2024-07-09,19:20:00,21:20:00,"Maksim, Benedict, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-42359,1,2024-07-08,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Noura AlMoqbil 
-42360,1,2024-07-10,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Noura AlMoqbil 
-42361,1,2024-07-07,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Noura AlMoqbil 
-42362,1,2024-07-08,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Noura AlMoqbil 
-42372,1,2024-07-07,08:30:00,10:30:00,"Vicky, Jenn Keung",Online,1,Fatimah_Nasser 
-42373,1,2024-07-09,08:30:00,10:30:00,"Vicky, Jenn Keung",Online,1,Fatimah_Nasser 
-42374,Level 2 Bridge,2024-07-08,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-42375,Level 2 Bridge,2024-07-10,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-42378,1,2024-07-07,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-42379,1,2024-07-09,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-42380,1,2024-07-10,08:30:00,10:30:00,Hieu Tran,In-person,1,Abdulelah AlNasser 
-42391,1,2024-07-07,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42392,1,2024-07-08,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42393,1,2024-07-09,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42394,1,2024-07-10,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42395,1,2024-07-11,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42398,1,2024-07-07,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42399,1,2024-07-08,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42400,1,2024-07-09,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42401,1,2024-07-10,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42402,1,2024-07-11,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42403,1,2024-07-07,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42404,1,2024-07-08,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42405,1,2024-07-09,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42406,1,2024-07-10,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42407,1,2024-07-11,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42408,1,2024-07-07,17:10:00,19:10:00,Julie Barbier Leblan,Online,1,Shomokh AlZahrani 
-42413,1,2024-07-08,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-42414,1,2024-07-10,17:10:00,19:10:00,"Pooluna Chung, Innah, Mazy, Aziza Sadikova",In-person,1,Khalid AlAteeq 
-42415,1,2024-07-08,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-42416,1,2024-07-10,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-42417,2A,2024-07-07,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42418,2A,2024-07-08,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42419,2A,2024-07-09,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42420,2A,2024-07-10,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42421,2A,2024-07-11,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42422,2A,2024-07-07,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42423,2A,2024-07-08,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42424,2A,2024-07-09,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42425,2A,2024-07-10,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42426,2A,2024-07-11,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Muteb AlDossary 
-42429,2A,2024-07-08,19:20:00,21:20:00,"Sameera seedat, Jamila",Online,1,Faisal AlQahtani 
-42432,2A,2024-07-08,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-42433,2A,2024-07-09,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-42434,2A,2024-07-13,14:25:00,16:25:00,Haneen Ozair Rashid,Online,1,Noura AlMoqbil 
-42435,2B,2024-07-07,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42436,2B,2024-07-08,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42437,2B,2024-07-09,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42438,2B,2024-07-10,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42439,2B,2024-07-11,13:20:00,15:20:00,Dylan Sexton,In-person,1,Abdulelah AlNasser 
-42441,2A,2024-07-08,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Sultan bin Suliman 
-42443,2A,2024-07-08,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-42444,2A,2024-07-09,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42445,2A,2024-07-10,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42446,2A,2024-07-11,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42449,2A,2024-07-09,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Noura AlMoqbil 
-42450,2A,2024-07-10,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Noura AlMoqbil 
-42451,2A,2024-07-11,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Abdullatif AlAsmari 
-42452,2A,2024-07-07,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42453,2A,2024-07-08,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42454,2A,2024-07-09,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42456,2A,2024-07-11,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42457,2B,2024-07-07,15:30:00,16:30:00,Dylan Sexton,In-person,1,Nesreen Ali 
-42458,2B,2024-07-08,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42459,2B,2024-07-09,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42460,2B,2024-07-10,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42461,2B,2024-07-11,15:30:00,16:30:00,Dylan Sexton,In-person,1,Naif AlGhwairi 
-42463,2A,2024-07-07,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42464,2A,2024-07-08,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42465,2A,2024-07-09,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42467,2A,2024-07-11,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42468,2A,2024-07-07,19:20:00,21:20:00,"Faiza Jannat, Dries Goosen, Hesper Gao, Olena Rudnyk",In-person,1,Ali AlMadhi 
-42469,2A,2024-07-09,19:20:00,21:20:00,"Faiza Jannat, Dries Goosen, Hesper Gao, Olena Rudnyk",In-person,1,Ali AlMadhi 
-42471,2B,2024-07-10,08:30:00,10:30:00,"Mia Acworth, Sara Glennon, Radhia Sumar",Online,1,Reem AlTamimi 
-42472,2B,2024-07-07,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Sarah Bin Hudhud 
-42473,2B,2024-07-08,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-42474,2B,2024-07-09,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Abdullatif AlAsmari 
-42475,2B,2024-07-10,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42476,2B,2024-07-07,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-42477,2B,2024-07-08,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Abdullatif AlAsmari 
-42478,2B,2024-07-09,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42479,2B,2024-07-10,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42480,2B,2024-07-07,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Faisal AlQahtani 
-42481,2B,2024-07-09,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Faisal AlQahtani 
-42482,2B,2024-07-09,17:10:00,19:10:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Faisal AlQahtani 
-42483,2B,2024-07-10,17:10:00,19:10:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,RawanD Aldawsari 
-42484,2B,2024-07-13,14:25:00,16:25:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Faisal AlQahtani 
-42485,2B,2024-07-07,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Amal AlHazzani 
-42486,2B,2024-07-08,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Amal AlHazzani 
-42487,2B,2024-07-09,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Amal AlHazzani 
-42488,2B,2024-07-10,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Muteb AlDossary 
-42495,2B,2024-07-07,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42496,2B,2024-07-08,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42497,2B,2024-07-09,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42498,2B,2024-07-10,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42499,2B,2024-07-11,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42501,2B,2024-07-09,19:20:00,21:20:00,Robbie Corey-Boulet,Online,1,Khalid AlAteeq 
-42503,2B,2024-07-07,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42504,2B,2024-07-08,13:20:00,15:20:00,Kevin Smith,In-person,1,Amal AlHazzani 
-42505,2B,2024-07-09,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42506,2B,2024-07-10,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42507,2B,2024-07-11,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42508,2B,2024-07-07,17:10:00,19:10:00,Kevin Smith,In-person,1,Nesreen Ali 
-42509,2C,2024-07-07,10:40:00,12:40:00,Navin Kumar,In-person,1,Abdulelah AlNasser 
-42510,2C,2024-07-08,10:40:00,12:40:00,Navin Kumar,In-person,1,Abdulelah AlNasser 
-42511,2C,2024-07-09,10:40:00,12:40:00,Navin Kumar,In-person,1,Abdulelah AlNasser 
-42512,2C,2024-07-10,10:40:00,12:40:00,Navin Kumar,In-person,1,Abdulelah AlNasser 
-42513,2C,2024-07-11,10:40:00,12:40:00,Navin Kumar,In-person,1,Abdulelah AlNasser 
-42514,2C,2024-07-07,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42515,2C,2024-07-08,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42516,2C,2024-07-09,13:20:00,15:20:00,Navin Kumar,In-person,1,Faisal AlDhafeeri 
-42517,2C,2024-07-10,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42518,2C,2024-07-11,13:20:00,15:20:00,Navin Kumar,In-person,1,Abdullatif AlAsmari 
-42524,2B,2024-07-10,10:40:00,12:40:00,Windy Liu,In-person,1,Reem AlTamimi 
-42525,2B,2024-07-11,10:40:00,12:40:00,Windy Liu,In-person,1,Reem AlTamimi 
-42526,2B,2024-07-07,17:10:00,19:10:00,Windy Liu,In-person,1,Faisal AlQahtani 
-42527,2B,2024-07-08,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-42528,2B,2024-07-09,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-42529,2B,2024-07-07,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42530,2B,2024-07-08,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42531,2B,2024-07-10,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42532,2B,2024-07-07,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42533,2B,2024-07-08,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42534,2B,2024-07-10,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42535,2B,2024-07-07,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42536,2B,2024-07-08,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42537,2B,2024-07-09,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42538,2B,2024-07-10,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42539,2B,2024-07-11,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42541,2B,2024-07-07,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42542,2B,2024-07-08,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42543,2B,2024-07-09,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42544,2B,2024-07-10,15:30:00,16:30:00,Kevin Smith,In-person,1,Sultan bin Suliman 
-42545,2B,2024-07-11,15:30:00,16:30:00,Kevin Smith,In-person,1,Sulaiman AlAnazi 
-42546,2B,2024-07-07,09:00:00,10:00:00,Stephen Groff,On-site,1,Abdulrahman AlJohani 
-42547,2B,2024-07-09,09:00:00,10:00:00,Stephen Groff,On-site,1,Abdulrahman AlJohani 
-42549,2B,2024-07-07,17:10:00,18:10:00,Matthew Wyatt,On-site,1,Abdulrahman AlJohani 
-42550,2B,2024-07-09,17:10:00,18:10:00,Matthew Wyatt,On-site,1,Abdulrahman AlJohani 
-42555,2B,2024-07-07,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42556,2B,2024-07-08,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42557,2B,2024-07-09,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42558,2B,2024-07-10,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42559,2B,2024-07-11,10:40:00,11:40:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42560,2C,2024-07-07,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42561,2C,2024-07-08,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42562,2C,2024-07-09,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42563,2C,2024-07-10,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42564,2C,2024-07-11,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42566,2C,2024-07-07,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42567,2C,2024-07-08,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42568,2C,2024-07-09,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42569,2C,2024-07-10,15:30:00,16:30:00,Navin Kumar,In-person,1,Faisal AlQahtani 
-42570,2C,2024-07-11,15:30:00,16:30:00,Navin Kumar,In-person,1,Amal AlHazzani 
-42571,2C,2024-07-07,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-42572,2C,2024-07-08,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42573,2C,2024-07-10,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42574,2C,2024-07-11,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-42575,2C,2024-07-07,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42576,2C,2024-07-08,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42577,2C,2024-07-10,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42578,2C,2024-07-11,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Faisal AlDhafeeri 
-42579,2C,2024-07-08,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,Faisal AlQahtani 
-42580,2C,2024-07-10,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,Faisal AlQahtani 
-42581,3A,2024-07-13,12:15:00,14:15:00,Dildar Hussain,Online,1,RawanD Aldawsari 
-42583,4A,2024-07-08,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-42584,4A,2024-07-09,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-42586,4A,2024-07-11,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-42592,4A,2024-07-07,08:30:00,10:30:00,Joel Baker,Online,1,Layla AlMazmoumi 
-42593,4A,2024-07-08,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-42594,4A,2024-07-09,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-42596,4A,2024-07-11,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-42599,3A,2024-07-07,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42600,3A,2024-07-08,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42601,3A,2024-07-09,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42602,3A,2024-07-10,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42603,3A,2024-07-07,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42604,3A,2024-07-08,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42605,3A,2024-07-09,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42606,3A,2024-07-10,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42607,3B,2024-07-07,19:20:00,21:20:00,Rowan Cory,In-person,1,RawanD Aldawsari 
-42608,3B,2024-07-09,19:20:00,21:20:00,Rowan Cory,In-person,1,RawanD Aldawsari 
-42627,3B,2024-07-07,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-42628,3B,2024-07-09,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-42629,3B,2024-07-11,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-42630,3B,2024-07-08,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-42631,3B,2024-07-10,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-42633,3C,2024-07-08,10:40:00,12:40:00,Carol Keener,In-person,1,Muteb AlDossary 
-42635,3C,2024-07-10,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-42637,3C,2024-07-08,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-42639,3C,2024-07-10,13:20:00,15:20:00,Carol Keener,In-person,1,Omar AlDkhelallh 
-42640,3C,2024-07-07,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42641,3C,2024-07-08,10:40:00,12:40:00,Garrett Meade,Online,1,Ghadeer AlSaedi 
-42642,3C,2024-07-09,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42643,3C,2024-07-10,10:40:00,12:40:00,Garrett Meade,Online,1,Ghadeer AlSaedi 
-42644,3C,2024-07-11,10:40:00,12:40:00,Garrett Meade,Online,1,Khalid AlRashidi 
-42645,3C,2024-07-08,13:20:00,14:20:00,Garrett Meade,In-person,1,RawanM AlMoqbil 
-42646,3C,2024-07-10,13:20:00,14:20:00,Garrett Meade,In-person,1,RawanM AlMoqbil 
-42648,4A,2024-07-08,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-42649,4A,2024-07-09,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-42650,4A,2024-07-10,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-42652,"Kid's Level 1",2024-07-07,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Eman AlGhamdi 
-42653,"Kid's Level 1",2024-07-08,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Eman AlGhamdi 
-42654,"Kid's Level 1",2024-07-09,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Ashwag AlMahboob 
-42655,"Kid's Level 1",2024-07-10,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Ashwag AlMahboob 
-42657,4B,2024-07-01,11:45:00,12:45:00,Tariq Alhashim,Online,1,Abdullatif AlAsmari 
-42659,5B,2024-07-02,19:20:00,20:20:00,Jawad Abdulsamad,Online,1,Nesreen Ali 
-42661,1,2024-07-02,19:20:00,21:20:00,Oliver Kennedy,Online,1,RawanD Aldawsari 
-42662,3A,2024-07-02,08:30:00,10:30:00,Katja Schneider,Online,1,Abdullatif AlAsmari 
-42664,1,2024-07-03,19:20:00,21:20:00,Oliver Kennedy,Online,1,Nesreen Ali 
-42665,1,2024-07-01,19:20:00,21:20:00,Louise Leaupepe,Online,1,Fawaz bin Saeed 
-42666,Admin Meeting,2024-07-01,13:20:00,14:20:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-42669,1,2024-07-02,19:20:00,21:20:00,Harry OCallaghan,In-person,1,Khalid AlAteeq 
-42673,Admin Meeting,2024-07-01,17:05:00,18:05:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-42674,Admin Meeting,2024-07-02,13:30:00,14:15:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-42675,1,2024-07-01,17:10:00,19:10:00,Clara Corominas,In-person,1,Fawaz bin Saeed 
-42676,2A,2024-07-03,10:40:00,12:40:00,Delia,Online,1,Abdullatif AlAsmari 
-42678,1,2024-07-01,19:20:00,21:20:00,"Ariana Agapiou, Abraham",In-person,1,Renad Mohammed 
-42679,1,2024-07-03,17:10:00,19:10:00,"Ariana Agapiou, Eduardo Mansur",In-person,1,Fawaz bin Saeed 
-42682,2B,2024-07-04,08:30:00,10:30:00,Windy Liu,In-person,1,Abdullatif AlAsmari 
-42684,2B,2024-07-11,08:30:00,10:30:00,Windy Liu,In-person,1,Ashwag AlMahboob 
-42686,1,2024-07-01,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Sarah Bin Hudhud 
-42687,Admin Meeting,2024-07-01,11:45:00,12:30:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-42688,Admin Meeting,2024-07-02,17:05:00,17:55:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-42689,1,2024-07-02,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Eman AlGhamdi 
-42690,1,2024-07-03,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Eman AlGhamdi 
-42691,2A,2024-07-02,08:30:00,09:30:00,Vaughn Weatherdon,Online,1,Khalid AlRashidi 
-42692,Admin Meeting,2024-07-01,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-42693,4B,2024-07-03,17:10:00,18:10:00,Tariq Alhashim,Online,1,Nesreen Ali 
-42694,4B,2024-07-04,11:45:00,12:45:00,Tariq Alhashim,Online,1,Abdullatif AlAsmari 
-42695,2B,2024-07-02,13:20:00,15:20:00,Tobias Schumann,Online,1,Abdullatif AlAsmari 
-42696,5A,2024-07-03,10:40:00,11:40:00,Miriam Kim,Online,1,Ashwag AlMahboob 
-42697,5A,2024-07-04,10:40:00,11:40:00,Miriam Kim,Online,1,Ashwag AlMahboob 
-42698,5A,2024-07-06,12:15:00,13:15:00,Miriam Kim,Online,1,Nesreen Ali 
-42699,1,2024-07-03,17:10:00,19:10:00,Muhammad Haroon Hayat,In-person,1,RawanD Aldawsari 
-42701,1,2024-07-06,12:15:00,14:15:00,Ariana Agapiou,In-person,1,Shomokh AlZahrani 
-42703,Level 2 Bridge,2024-07-08,19:20:00,21:20:00,Bella Angel,Online,1,Abdulaziz bin Majid 
-42706,Admin Meeting,2024-07-03,14:20:00,16:30:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-42707,Admin Meeting,2024-07-03,14:10:00,16:30:00,Admin Hold,Admin Hold,1,Ali AlMadhi 
-42708,Admin Meeting,2024-07-03,14:20:00,16:30:00,Admin Hold,Admin Hold,1,Eman AlGhamdi 
-42709,Admin Meeting,2024-07-07,13:20:00,16:30:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-42710,Admin Meeting,2024-07-07,13:20:00,15:20:00,Admin Hold,Admin Hold,1,RawanM AlMoqbil 
-42712,4A,2024-07-03,10:40:00,12:40:00,Scott J,In-person,1,Sarah Bin Hudhud 
-42713,4A,2024-07-03,14:25:00,15:25:00,Scott J,In-person,1,Muteb AlDossary 
-42714,4A,2024-07-04,08:30:00,10:30:00,Scott J,In-person,1,Layla AlMazmoumi 
-42715,4A,2024-07-04,14:25:00,15:25:00,Scott J,In-person,1,Abdullatif AlAsmari 
-42718,1,2024-07-06,12:15:00,14:15:00,Oliver Kennedy,Online,1,Fawaz bin Saeed 
-42722,1,2024-07-03,19:20:00,21:20:00,Abraham,In-person,1,Khalid AlAteeq 
-42723,1,2024-07-07,19:20:00,21:20:00,Oliver Kennedy,Online,1,Shomokh AlZahrani 
-42725,2B,2024-07-03,17:10:00,18:10:00,Robbie Corey-Boulet,Online,1,Ali AlMadhi 
-42726,1,2024-07-06,14:25:00,16:25:00,"Harry OCallaghan, Muhammad Haroon Hayat",In-person,1,Shomokh AlZahrani 
-42728,1,2024-07-03,11:30:00,12:00:00,Client Care User,Online,1,Yousif Ibrahim 
-42729,2A,2024-07-03,17:10:00,18:10:00,Mohammed Zayyan Zainudeen,Online,1,Noura AlMoqbil 
-42730,1,2024-07-06,12:15:00,14:15:00,Santhiya Gunasekaran,Online,1,RawanD Aldawsari 
-42731,1,2024-07-07,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Ashwag AlMahboob 
-42734,Admin Meeting,2024-07-03,15:35:00,16:10:00,Admin Hold,In-person,1,Ameera Alqahtani 
-42738,Admin Meeting,2024-07-06,14:30:00,15:00:00,Admin Hold,Admin Hold,1,RawanD Aldawsari 
-42741,Admin Meeting,2024-07-08,17:10:00,17:40:00,Admin Hold,Admin Hold,1,Ali AlMadhi 
-42742,Admin Meeting,2024-07-04,10:40:00,12:40:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-42744,1,2024-07-15,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-42745,1,2024-07-17,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-42746,1,2024-07-15,18:15:00,19:15:00,"Ingela Ahmad, Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, abdullah mansoor, Nawel Zouaoui, Riyadh Air Billing",Online,1,Shomokh AlZahrani 
-42747,1,2024-07-17,18:15:00,19:15:00,"Ingela Ahmad, Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, abdullah mansoor, Nawel Zouaoui, Riyadh Air Billing",Online,1,Shomokh AlZahrani 
-42748,1,2024-07-14,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-42749,1,2024-07-16,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-42750,1,2024-07-14,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Fawaz bin Saeed 
-42751,1,2024-07-16,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Shomokh AlZahrani 
-42752,1,2024-07-15,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-42753,1,2024-07-17,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-42754,1,2024-07-17,19:20:00,21:20:00,"Riyadh Air Billing, Sam Carter, Abby Wanjiru, Edward Taplin, Reshma Vora, Lynelle Adkins, Katherine Chick",Online,1,Fawaz bin Saeed 
-42755,4A,2024-07-14,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42756,4A,2024-07-15,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42757,4A,2024-07-16,13:20:00,15:20:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-42758,4A,2024-07-17,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42759,4A,2024-07-18,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-42760,2A,2024-07-07,13:20:00,14:20:00,Training Session 1,Online,1,Ali AlMadhi 
-42761,1,2024-07-14,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42762,1,2024-07-15,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42763,1,2024-07-16,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42764,1,2024-07-17,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42765,1,2024-07-18,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG, Kerim Alper Kabo",In-person,1,Younis AlSulami 
-42766,1,2024-07-14,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-42767,1,2024-07-16,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-42768,1,2024-07-15,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-42769,1,2024-07-17,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-42770,1,2024-07-14,19:20:00,21:20:00,"Maksim, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-42771,1,2024-07-16,19:20:00,21:20:00,"Maksim, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-42772,1,2024-07-14,08:30:00,10:30:00,"Vicky, Jenn Keung",Online,1,Fatimah_Nasser 
-42773,1,2024-07-16,08:30:00,10:30:00,"Vicky, Jenn Keung",Online,1,Fatimah_Nasser 
-42774,1,2024-07-15,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-42775,1,2024-07-17,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-42776,1,2024-07-15,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-42777,1,2024-07-17,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-42779,1,2024-07-14,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-42780,1,2024-07-16,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-42781,1,2024-07-17,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-42787,1,2024-07-15,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42788,1,2024-07-16,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42789,1,2024-07-17,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42790,1,2024-07-18,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42799,1,2024-07-15,08:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42800,1,2024-07-16,08:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42801,1,2024-07-17,08:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42802,1,2024-07-18,08:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42804,1,2024-07-15,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42805,1,2024-07-16,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42806,1,2024-07-17,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42807,1,2024-07-18,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-42808,1,2024-07-15,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Fawaz bin Saeed 
-42809,1,2024-07-17,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Fawaz bin Saeed 
-42810,1,2024-07-16,19:20:00,21:20:00,"Riyadh Air Billing, Adnan Chughtai, Louise Leaupepe",Online,1,Shomokh AlZahrani 
-42811,1,2024-07-15,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Khalid AlAteeq 
-42812,1,2024-07-17,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Khalid AlAteeq 
-42813,1,2024-07-14,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Fawaz bin Saeed 
-42814,1,2024-07-15,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Shomokh AlZahrani 
-42815,1,2024-07-07,19:20:00,21:20:00,Rowena Miaco,Online,1,Abdulaziz bin Majid 
-42817,Level 2 Bridge,2024-07-14,19:20:00,21:20:00,Fayaaz Patel,Online,1,Abdulaziz bin Majid 
-42818,Level 2 Bridge,2024-07-15,19:20:00,21:20:00,Fayaaz Patel,Online,1,Abdulaziz bin Majid 
-42823,2A,2024-07-14,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42824,2A,2024-07-15,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42825,2A,2024-07-16,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42826,2A,2024-07-17,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42827,2A,2024-07-18,13:20:00,15:20:00,Maggie Flotemersch,In-person,1,Younis AlSulami 
-42828,2A,2024-07-14,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42829,2A,2024-07-15,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42830,2A,2024-07-16,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42831,2A,2024-07-17,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ali AlMadhi 
-42832,2A,2024-07-18,15:30:00,16:30:00,Maggie Flotemersch,In-person,1,Ashwag AlMahboob 
-42833,2A,2024-07-14,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-42834,2A,2024-07-15,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-42835,2A,2024-07-16,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-42836,2A,2024-07-20,14:25:00,16:25:00,Haneen Ozair Rashid,Online,1,Noura AlMoqbil 
-42837,2A,2024-07-15,19:20:00,21:20:00,Jamila,Online,1,Faisal AlQahtani 
-42839,2A,2024-07-14,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Faisal AlQahtani 
-42840,2B,2024-07-15,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Faisal AlQahtani 
-42841,2A,2024-07-14,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-42842,2B,2024-07-15,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-42843,2B,2024-07-16,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Khalid AlRashidi 
-42844,2B,2024-07-17,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-42845,2B,2024-07-18,13:20:00,15:20:00,Lonnie Camacho,In-person,1,RawanM AlMoqbil 
-42848,2A,2024-07-14,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42849,2A,2024-07-15,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42850,2B,2024-07-16,08:30:00,10:30:00,Anna Sexton,Online,1,Sarah Bin Hudhud 
-42851,2B,2024-07-17,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42852,2B,2024-07-18,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-42854,2A,2024-07-14,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42855,2A,2024-07-15,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42856,2B,2024-07-16,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42857,2B,2024-07-17,10:40:00,11:40:00,Anna Sexton,Online,1,Amal AlHazzani 
-42858,2B,2024-07-18,10:40:00,11:40:00,Anna Sexton,Online,1,Eman AlGhamdi 
-42859,2B,2024-07-14,13:20:00,15:20:00,Dylan Sexton,In-person,1,Naif AlGhwairi 
-42860,2B,2024-07-15,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-42861,2B,2024-07-16,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-42862,2B,2024-07-17,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-42863,2B,2024-07-18,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-42864,2B,2024-07-14,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42865,2B,2024-07-15,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42866,2B,2024-07-16,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42867,2B,2024-07-17,15:30:00,16:30:00,Dylan Sexton,In-person,1,Khalid AlAteeq 
-42868,2B,2024-07-18,15:30:00,16:30:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-42869,2B,2024-07-16,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Sultan bin Suliman 
-42870,2B,2024-07-17,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Sultan bin Suliman 
-42871,2B,2024-07-18,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Abdullatif AlAsmari 
-42872,2B,2024-07-14,19:20:00,21:20:00,"Faiza Jannat, Dries Goosen, Hesper Gao",In-person,1,Ali AlMadhi 
-42873,2B,2024-07-16,19:20:00,21:20:00,"Faiza Jannat, Dries Goosen, Hesper Gao",In-person,1,Ali AlMadhi 
-42874,2B,2024-07-15,08:30:00,10:30:00,"Mia Acworth, Sara Glennon, Radhia Sumar",Online,1,Reem AlTamimi 
-42875,2B,2024-07-17,08:30:00,10:30:00,"Mia Acworth, Sara Glennon, Radhia Sumar",Online,1,Reem AlTamimi 
-42876,2B,2024-07-14,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Amal AlHazzani 
-42878,2B,2024-07-16,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42879,2B,2024-07-17,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42880,2B,2024-07-14,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Reem AlTamimi 
-42882,2B,2024-07-16,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42883,2B,2024-07-17,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-42884,2B,2024-07-14,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Faisal AlQahtani 
-42885,2B,2024-07-16,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Faisal AlQahtani 
-42886,2B,2024-07-16,17:10:00,19:10:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Faisal AlQahtani 
-42887,2B,2024-07-17,17:10:00,19:10:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Faisal AlQahtani 
-42889,2B,2024-07-14,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-42890,2B,2024-07-15,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-42891,2B,2024-07-16,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-42892,2B,2024-07-17,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Ashwag AlMahboob 
-42893,2B,2024-07-18,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-42894,2B,2024-07-14,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Abdullatif AlAsmari 
-42895,2B,2024-07-15,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Abdullatif AlAsmari 
-42896,2B,2024-07-16,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Abdullatif AlAsmari 
-42897,2B,2024-07-17,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Abdullatif AlAsmari 
-42898,2B,2024-07-18,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Abdullatif AlAsmari 
-42899,2B,2024-07-14,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42900,2B,2024-07-15,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42901,2B,2024-07-16,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42902,2B,2024-07-17,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-42903,2B,2024-07-18,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Ashwag AlMahboob 
-42906,2B,2024-07-14,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42907,2B,2024-07-15,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42908,2B,2024-07-16,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42909,2B,2024-07-17,13:20:00,15:20:00,Kevin Smith,In-person,1,Reem AlTamimi 
-42910,2B,2024-07-18,13:20:00,15:20:00,Kevin Smith,In-person,1,Sarah Bin Hudhud 
-42911,2B,2024-07-14,17:10:00,19:10:00,Kevin Smith,In-person,1,Nesreen Ali 
-42912,2B,2024-07-14,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42913,2C,2024-07-15,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42914,2C,2024-07-16,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42915,2C,2024-07-17,13:20:00,15:20:00,فادي - Fadi,In-person,1,Amal AlHazzani 
-42916,2C,2024-07-18,13:20:00,15:20:00,فادي - Fadi,In-person,1,Khalid AlRashidi 
-42917,2B,2024-07-17,10:40:00,12:40:00,Windy Liu,In-person,1,Reem AlTamimi 
-42918,2B,2024-07-18,10:40:00,12:40:00,Windy Liu,In-person,1,Muteb AlDossary 
-42920,2B,2024-07-15,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-42921,2B,2024-07-16,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-42922,2B,2024-07-14,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Muteb AlDossary 
-42923,2B,2024-07-15,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Muteb AlDossary 
-42924,2B,2024-07-17,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Muteb AlDossary 
-42925,2B,2024-07-14,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42926,2B,2024-07-15,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42927,2B,2024-07-17,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-42928,2B,2024-07-14,08:30:00,10:30:00,Brittany Smith,In-person,1,Reem AlTamimi 
-42930,2B,2024-07-16,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42931,2B,2024-07-17,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42932,2B,2024-07-18,08:30:00,10:30:00,Brittany Smith,In-person,1,RawanM AlMoqbil 
-42933,2B,2024-07-18,08:30:00,10:30:00,Windy Liu,In-person,1,Ashwag AlMahboob 
-42934,2B,2024-07-14,15:30:00,16:30:00,Kevin Smith,In-person,1,Faisal AlQahtani 
-42935,2B,2024-07-15,15:30:00,16:30:00,Kevin Smith,In-person,1,Faisal AlQahtani 
-42936,2B,2024-07-16,15:30:00,16:30:00,Kevin Smith,In-person,1,Faisal AlQahtani 
-42937,2B,2024-07-17,15:30:00,16:30:00,Kevin Smith,In-person,1,Faisal AlQahtani 
-42938,2B,2024-07-18,15:30:00,16:30:00,Kevin Smith,In-person,1,Eman AlGhamdi 
-42939,2B,2024-07-14,10:40:00,11:40:00,Brittany Smith,In-person,1,Eman AlGhamdi 
-42941,2B,2024-07-16,10:40:00,11:40:00,Brittany Smith,In-person,1,Eman AlGhamdi 
-42942,2B,2024-07-17,10:40:00,11:40:00,Brittany Smith,In-person,1,Eman AlGhamdi 
-42949,2B,2024-07-14,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42950,2C,2024-07-15,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42951,2C,2024-07-16,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42952,2C,2024-07-17,15:30:00,16:30:00,فادي - Fadi,In-person,1,Nesreen Ali 
-42953,2C,2024-07-18,15:30:00,16:30:00,فادي - Fadi,In-person,1,Sarah Bin Hudhud 
-42954,2C,2024-07-14,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-42955,2C,2024-07-15,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-42956,2C,2024-07-17,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-42957,2C,2024-07-18,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-42958,2C,2024-07-14,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42959,2C,2024-07-15,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42960,2C,2024-07-17,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42961,2C,2024-07-18,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-42962,3A,2024-07-15,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,RawanD Aldawsari 
-42963,3A,2024-07-17,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,Nesreen Ali 
-42964,2C,2024-07-14,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-42965,3A,2024-07-15,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-42966,3A,2024-07-16,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-42967,3A,2024-07-17,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-42968,3A,2024-07-18,10:40:00,12:40:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-42969,3A,2024-07-14,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42970,3A,2024-07-15,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42971,3A,2024-07-16,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42972,3A,2024-07-17,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-42973,3A,2024-07-18,13:20:00,15:20:00,Navin Kumar,In-person,1,Atheer AlQarni 
-42974,2C,2024-07-14,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42975,3A,2024-07-15,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42976,3A,2024-07-16,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42977,3A,2024-07-17,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42978,3A,2024-07-18,09:35:00,10:35:00,Navin Kumar,In-person,1,Muteb AlDossary 
-42979,3A,2024-07-14,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-42980,3A,2024-07-15,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-42981,3A,2024-07-16,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-42982,3A,2024-07-17,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-42983,3A,2024-07-18,15:30:00,16:30:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-42985,3A,2024-07-20,12:15:00,14:15:00,Owais Azmi,In-person,1,Sultan bin Suliman 
-42986,3A,2024-07-14,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-42987,3A,2024-07-15,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-42988,3A,2024-07-16,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-42989,3A,2024-07-17,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-42990,3A,2024-07-18,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-42993,3A,2024-07-14,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42994,3A,2024-07-15,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42995,3A,2024-07-16,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42996,3A,2024-07-17,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-42997,3A,2024-07-14,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42998,3A,2024-07-15,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-42999,3A,2024-07-16,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43000,3A,2024-07-17,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43001,3A,2024-07-20,14:25:00,15:25:00,Owais Azmi,In-person,1,Abdulaziz bin Majid 
-43002,3B,2024-07-14,19:20:00,21:20:00,Rowan Cory,In-person,1,RawanD Aldawsari 
-43003,3B,2024-07-16,19:20:00,21:20:00,Rowan Cory,In-person,1,RawanD Aldawsari 
-43014,3B,2024-07-14,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43015,3B,2024-07-15,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43016,3B,2024-07-16,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43017,3B,2024-07-17,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43018,3B,2024-07-14,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43019,3B,2024-07-15,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43020,3B,2024-07-16,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43021,3B,2024-07-17,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43022,3B,2024-07-14,13:20:00,15:20:00,Kim Meade,In-person,1,Abdullatif AlAsmari 
-43023,3B,2024-07-16,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-43024,3B,2024-07-18,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-43025,3B,2024-07-15,13:20:00,15:20:00,Kim Meade,Online,1,Ghadeer AlSaedi 
-43026,3B,2024-07-17,13:20:00,15:20:00,Kim Meade,Online,1,Ghadeer AlSaedi 
-43027,3C,2024-07-14,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43028,3C,2024-07-15,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43029,3C,2024-07-16,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43031,3C,2024-07-14,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43032,3C,2024-07-15,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43033,3C,2024-07-16,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43035,3C,2024-07-15,13:20:00,14:20:00,Garrett Meade,In-person,1,Khalid AlRashidi 
-43036,3C,2024-07-17,13:20:00,14:20:00,Garrett Meade,In-person,1,Layla AlMazmoumi 
-43037,3C,2024-07-14,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43038,3C,2024-07-15,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43040,3C,2024-07-17,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43041,3C,2024-07-18,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43043,4A,2024-07-15,10:40:00,12:40:00,Joel Baker,Online,1,Aydah AlJuhani 
-43044,4A,2024-07-16,10:40:00,12:40:00,Joel Baker,Online,1,Fatimah_Nasser 
-43046,4A,2024-07-18,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-43048,4A,2024-07-15,08:30:00,10:30:00,Joel Baker,Online,1,Layla AlMazmoumi 
-43049,4A,2024-07-16,08:30:00,10:30:00,Joel Baker,Online,1,Layla AlMazmoumi 
-43051,4A,2024-07-18,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-43052,4A,2024-07-14,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43053,4A,2024-07-15,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43054,4A,2024-07-16,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43055,4A,2024-07-17,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43056,4A,2024-07-18,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43057,"Kid's Level 1",2024-07-14,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Eman AlGhamdi 
-43058,"Kid's Level 1",2024-07-15,13:20:00,14:20:00,Sidra Ramadani,In-person,1,Eman AlGhamdi 
-43061,5A,2024-07-08,10:40:00,11:40:00,Miriam Kim,Online,1,Ashwag AlMahboob 
-43062,1,2024-07-08,19:20:00,21:20:00,Oliver Kennedy,Online,1,Shomokh AlZahrani 
-43063,5A,2024-07-07,09:35:00,10:35:00,Miriam Kim,Online,1,Abdulelah AlNasser 
-43065,2A,2024-07-04,15:10:00,16:10:00,Training Session 1,Online,1,Eman AlGhamdi 
-43066,2A,2024-07-06,13:20:00,14:20:00,Dana Woodhall,Online,1,Nesreen Ali 
-43067,3C,2024-07-06,17:10:00,19:10:00,Hanna Riehle,In-person,1,RawanD Aldawsari 
-43068,3C,2024-07-06,19:20:00,20:20:00,Hanna Riehle,In-person,1,Noura AlMoqbil 
-43069,4A,2024-07-06,15:30:00,16:30:00,Syed Mohammad Ali,In-person,1,RawanD Aldawsari 
-43070,1,2024-07-08,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Eman AlGhamdi 
-43071,1,2024-07-08,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Fawaz bin Saeed 
-43072,1,2024-07-10,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Sultan bin Suliman 
-43075,2B,2024-07-08,19:20:00,21:20:00,Robbie Corey-Boulet,Online,1,RawanD Aldawsari 
-43076,1,2024-07-10,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Fatimah_Nasser 
-43077,Admin Meeting,2024-07-07,17:10:00,18:10:00,Admin Hold,Admin Hold,1,Noura AlMoqbil 
-43078,Admin Meeting,2024-07-08,14:50:00,15:25:00,Admin Hold,Admin Hold,1,Sultan bin Suliman 
-43079,1,2024-07-08,19:20:00,21:20:00,Tasnia,Online,1,Sultan bin Suliman 
-43080,Admin Meeting,2024-07-09,14:20:00,14:55:00,Admin Hold,Admin Hold,1,Khalid AlAteeq 
-43082,2A,2024-07-07,09:35:00,10:35:00,Dana Woodhall,Online,1,Muteb AlDossary 
-43083,4B,2024-07-07,11:45:00,12:45:00,Tariq Alhashim,Online,1,Abdullatif AlAsmari 
-43084,4B,2024-07-07,17:10:00,18:10:00,Tariq Alhashim,Online,1,RawanD Aldawsari 
-43086,Admin Meeting,2024-07-07,14:25:00,15:25:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43087,Admin Meeting,2024-07-07,13:20:00,14:20:00,Admin Hold,Admin Hold,1,Ashwag AlMahboob 
-43088,4A,2024-07-08,13:20:00,15:20:00,Emily Wilson,In-person,1,Abdullatif AlAsmari 
-43089,4A,2024-07-07,13:20:00,15:20:00,Scott J,In-person,1,Aydah AlJuhani 
-43090,"Kid's Level 1",2024-07-07,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Eman AlGhamdi 
-43091,3C,2024-07-11,08:30:00,09:30:00,Hanna Riehle,Online,1,Sulaiman AlAnazi 
-43092,2A,2024-07-07,15:30:00,16:30:00,Training Session 1,Online,1,RawanM AlMoqbil 
-43094,Admin Meeting,2024-07-07,17:10:00,18:10:00,Admin Hold,Admin Hold,1,Abdulaziz bin Majid 
-43095,Admin Meeting,2024-07-08,09:35:00,10:35:00,Admin Hold,Admin Hold,1,Abdullatif AlAsmari 
-43096,Admin Meeting,2024-07-08,14:25:00,15:25:00,Admin Hold,Admin Hold,1,RawanM AlMoqbil 
-43098,Admin Meeting,2024-07-09,09:35:00,10:05:00,Admin Hold,Admin Hold,1,Abdulelah AlNasser 
-43099,Admin Meeting,2024-07-08,15:55:00,16:25:00,Admin Hold,Admin Hold,1,Aydah AlJuhani 
-43100,1,2024-07-08,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Fawaz bin Saeed 
-43104,"Kid's Level 1",2024-07-08,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43105,"Kid's Level 1",2024-07-09,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Reem AlTamimi 
-43107,"Kid's Level 1",2024-07-10,10:40:00,12:40:00,"Reem Faisal Zaheer, Abdullah Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43109,4B,2024-07-08,11:45:00,12:45:00,Tariq Alhashim,Online,1,Ashwag AlMahboob 
-43110,4B,2024-07-09,11:45:00,12:45:00,Tariq Alhashim,Online,1,Ashwag AlMahboob 
-43111,4B,2024-07-09,17:10:00,18:10:00,Tariq Alhashim,Online,1,RawanD Aldawsari 
-43112,4B,2024-07-10,17:10:00,19:10:00,Tariq Alhashim,Online,1,Nesreen Ali 
-43113,4B,2024-07-11,11:45:00,12:45:00,Tariq Alhashim,Online,1,Muteb AlDossary 
-43114,5A,2024-07-09,10:40:00,11:40:00,Miriam Kim,Online,1,Ashwag AlMahboob 
-43115,Admin Meeting,2024-07-08,09:35:00,10:25:00,Admin Hold,In-person,1,Ameera Alqahtani 
-43116,1,2024-07-10,17:10:00,19:10:00,Kelly McGrath,In-person,1,Fawaz bin Saeed 
-43117,1,2024-07-10,11:45:00,12:45:00,Seán McKiernan,In-person,1,RawanM AlMoqbil 
-43118,1,2024-07-09,09:35:00,10:35:00,Seán McKiernan,In-person,1,Ashwag AlMahboob 
-43119,1,2024-07-10,08:30:00,10:30:00,Romeo,Online,1,Ashwag AlMahboob 
-43120,1,2024-07-11,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Fatimah_Nasser 
-43121,1,2024-07-09,13:20:00,15:20:00,Rowena Miaco,Online,1,Khalid AlRashidi 
-43122,1,2024-07-10,20:25:00,21:25:00,Louise Leaupepe,Online,1,Shomokh AlZahrani 
-43123,2A,2024-07-08,15:30:00,16:30:00,Olena Rudnyk,In-person,1,Abdulaziz bin Majid 
-43124,2A,2024-07-08,17:10:00,18:10:00,Olena Rudnyk,In-person,1,Noura AlMoqbil 
-43127,4A,2024-07-10,13:20:00,15:20:00,Emily Wilson,In-person,1,Abdullatif AlAsmari 
-43129,Eval,2024-07-09,14:20:00,15:20:00,Coaching and Eval,Online,1,Yousif Ibrahim 
-43133,Admin Meeting,2024-07-09,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Sulaiman AlAnazi 
-43134,1,2024-07-09,19:20:00,21:20:00,Tasnia,Online,1,Sultan bin Suliman 
-43136,1,2024-07-09,08:30:00,09:30:00,Training Manager,In-person,1,Fatima_Shehri 
-43138,1,2024-07-09,19:20:00,21:20:00,Tyler Harding,Online,1,Shomokh AlZahrani 
-43141,Admin Meeting,2024-07-09,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43142,Admin Meeting,2024-07-09,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-43144,4A,2024-07-13,15:30:00,16:30:00,Syed Mohammad Ali,In-person,1,Nesreen Ali 
-43145,Admin Meeting,2024-07-09,11:45:00,12:45:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43146,1,2024-07-13,14:25:00,16:25:00,Clara Corominas,In-person,1,Ali AlMadhi 
-43148,Admin Meeting,2024-07-09,13:30:00,15:30:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43149,1,2024-07-09,17:10:00,19:10:00,Muhammad Haroon Hayat,In-person,1,Noura AlMoqbil 
-43150,1,2024-07-09,15:40:00,16:40:00,Training Session 1,Online,1,Faisal AlDhafeeri 
-43151,1,2024-07-09,17:10:00,19:10:00,Abraham,In-person,1,Fawaz bin Saeed 
-43153,"Kid's Level 1",2024-07-07,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Reem AlTamimi 
-43154,"Kid's Level 1",2024-07-08,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Fatima_Shehri 
-43155,"Kid's Level 1",2024-07-09,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Naif AlGhwairi 
-43157,"Kid's Level 1",2024-07-11,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Naif AlGhwairi 
-43159,1,2024-07-10,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Khalid AlAteeq 
-43160,"Kid's Level 1",2024-07-14,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Sulaiman AlAnazi 
-43161,"Kid's Level 1",2024-07-15,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Reem AlTamimi 
-43162,"Kid's Level 1",2024-07-16,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Reem AlTamimi 
-43163,"Kid's Level 1",2024-07-17,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43164,"Kid's Level 1",2024-07-18,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43165,1,2024-07-15,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Shomokh AlZahrani 
-43166,1,2024-07-17,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Shomokh AlZahrani 
-43167,Level 2 Bridge,2024-07-14,13:20:00,15:20:00,Christian Pratt,Online,1,Sulaiman AlAnazi 
-43168,Level 2 Bridge,2024-07-14,13:20:00,15:20:00,Juli Pratt,Online,1,Fatimah_Nasser 
-43169,Level 2 Bridge,2024-07-18,13:20:00,15:20:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43170,Level 2 Bridge,2024-07-14,15:30:00,16:30:00,Juli Pratt,Online,1,Renad Mohammed 
-43171,Level 2 Bridge,2024-07-15,15:30:00,16:30:00,Juli Pratt,Online,1,Renad Mohammed 
-43172,Level 2 Bridge,2024-07-16,15:30:00,16:30:00,Juli Pratt,Online,1,Renad Mohammed 
-43173,Level 2 Bridge,2024-07-17,15:30:00,16:30:00,Juli Pratt,Online,1,Renad Mohammed 
-43174,Level 2 Bridge,2024-07-15,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43175,Level 2 Bridge,2024-07-16,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43176,Level 2 Bridge,2024-07-17,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43177,Level 2 Bridge,2024-07-15,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43178,Level 2 Bridge,2024-07-16,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43179,Level 2 Bridge,2024-07-17,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43180,Level 2 Bridge,2024-07-14,15:30:00,16:30:00,Christian Pratt,Online,1,Nawaf AlShehri 
-43181,Level 2 Bridge,2024-07-15,15:30:00,16:30:00,Christian Pratt,Online,1,Nawaf AlShehri 
-43182,Level 2 Bridge,2024-07-16,15:30:00,16:30:00,Christian Pratt,Online,1,Nawaf AlShehri 
-43183,Level 2 Bridge,2024-07-17,15:30:00,16:30:00,Christian Pratt,Online,1,Nawaf AlShehri 
-43184,Level 2 Bridge,2024-07-18,11:45:00,12:45:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43186,2A,2024-07-10,09:35:00,10:35:00,Dana Woodhall,Online,1,Abdullatif AlAsmari 
-43187,1,2024-07-13,12:15:00,14:15:00,Santhiya Gunasekaran,Online,1,Shomokh AlZahrani 
-43188,1,2024-07-13,14:25:00,16:25:00,Santhiya Gunasekaran,Online,1,Shomokh AlZahrani 
-43189,1,2024-07-10,19:20:00,21:20:00,Tasnia,Online,1,Nesreen Ali 
-43190,Admin Meeting,2024-07-11,13:20:00,16:20:00,Admin Hold,Admin Hold,1,Faisal AlDhafeeri 
-43191,Admin Meeting,2024-07-11,13:20:00,16:20:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-43192,Admin Meeting,2024-07-10,13:20:00,14:00:00,Admin Hold,Admin Hold,1,Layla AlMazmoumi 
-43193,1,2024-07-13,14:25:00,16:25:00,"Victoria Smith, Oliver Harris",In-person,1,Fawaz bin Saeed 
-43194,5A,2024-07-13,12:15:00,13:15:00,Miriam Kim,Online,1,Nesreen Ali 
-43195,1,2024-07-13,14:25:00,16:25:00,"Bex Walker, Zaul Ridley",In-person,1,Sultan bin Suliman 
-43196,3C,2024-07-13,17:10:00,19:10:00,Hanna Riehle,In-person,1,Ali AlMadhi 
-43197,3C,2024-07-13,19:20:00,20:20:00,Hanna Riehle,In-person,1,Khalid AlAteeq 
-43198,1,2024-07-13,17:10:00,19:10:00,Luke Elliott-Bateman,In-person,1,Fawaz bin Saeed 
-43199,1,2024-07-10,19:20:00,21:20:00,Tim Samms,In-person,1,Abdulaziz bin Majid 
-43200,1,2024-07-13,12:15:00,14:15:00,Tim Samms,In-person,1,Abdulaziz bin Majid 
-43206,1,2024-07-13,17:10:00,19:10:00,Tasnia,Online,1,Shomokh AlZahrani 
-43207,1,2024-07-14,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Khalid AlRashidi 
-43208,1,2024-07-14,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Khalid AlRashidi 
-43209,2A,2024-07-13,12:15:00,14:15:00,Dana Woodhall,Online,1,Sultan bin Suliman 
-43210,1,2024-07-13,13:20:00,14:20:00,Patricia McWalter,Online,1,Fawaz bin Saeed 
-43211,1,2024-07-13,12:15:00,14:15:00,Romeo,Online,1,Ali AlMadhi 
-43213,Admin Meeting,2024-07-11,13:20:00,15:20:00,Admin Hold,Admin Hold,1,RawanM AlMoqbil 
-43214,1,2024-07-15,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-43215,1,2024-07-15,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Naif AlGhwairi 
-43218,1,2024-07-22,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-43219,1,2024-07-24,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-43220,1,2024-07-22,18:15:00,19:15:00,"Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, Nawel Zouaoui, Riyadh Air Billing",Online,1,Shomokh AlZahrani 
-43221,1,2024-07-24,18:15:00,19:15:00,"Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, Nawel Zouaoui, Riyadh Air Billing",Online,1,Shomokh AlZahrani 
-43222,1,2024-07-21,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-43223,1,2024-07-23,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-43224,1,2024-07-21,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Shomokh AlZahrani 
-43225,1,2024-07-23,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Shomokh AlZahrani 
-43226,1,2024-07-22,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-43227,1,2024-07-24,18:15:00,19:15:00,"Riyadh Air Billing, Muhammad Idrees, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Ali AlMadhi 
-43228,1,2024-07-22,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Fawaz bin Saeed 
-43229,1,2024-07-24,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Fawaz bin Saeed 
-43230,1,2024-07-23,19:20:00,21:20:00,"Riyadh Air Billing, Adnan Chughtai, Louise Leaupepe",Online,1,Shomokh AlZahrani 
-43231,1,2024-07-24,19:20:00,21:20:00,"Riyadh Air Billing, Sam Carter, Abby Wanjiru, Edward Taplin, Reshma Vora, Lynelle Adkins, Katherine Chick",Online,1,Fawaz bin Saeed 
-43232,4A,2024-07-21,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43233,4A,2024-07-22,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43234,4A,2024-07-23,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43235,4A,2024-07-24,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43236,4A,2024-07-25,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43237,1,2024-07-21,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG",In-person,1,Younis AlSulami 
-43238,1,2024-07-22,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG",In-person,1,Younis AlSulami 
-43239,1,2024-07-23,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG",In-person,1,Younis AlSulami 
-43240,1,2024-07-24,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG",In-person,1,Younis AlSulami 
-43241,1,2024-07-25,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker, Yaqi ZHANG",In-person,1,Younis AlSulami 
-43242,1,2024-07-21,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-43243,1,2024-07-23,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-43244,1,2024-07-22,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-43245,1,2024-07-24,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-43246,1,2024-07-21,19:20:00,21:20:00,"Maksim, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-43247,1,2024-07-23,19:20:00,21:20:00,"Maksim, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-43248,1,2024-07-22,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Khalid AlAteeq 
-43249,1,2024-07-24,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Khalid AlAteeq 
-43250,1,2024-07-21,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Shomokh AlZahrani 
-43251,1,2024-07-22,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Shomokh AlZahrani 
-43252,1,2024-07-22,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-43253,1,2024-07-24,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-43254,1,2024-07-22,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-43255,1,2024-07-24,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-43256,1,2024-07-22,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Shomokh AlZahrani 
-43257,1,2024-07-24,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Shomokh AlZahrani 
-43258,1,2024-07-21,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-43259,1,2024-07-23,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-43260,1,2024-07-24,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-43261,1,2024-07-27,12:15:00,14:15:00,HANAE HAYASHIDA,In-person,1,Fawaz bin Saeed 
-43265,1,2024-07-24,19:20:00,21:20:00,Tim Samms,In-person,1,Abdulaziz bin Majid 
-43266,1,2024-07-21,17:10:00,19:10:00,Tim Samms,In-person,1,Abdulaziz bin Majid 
-43267,1,2024-07-22,17:10:00,19:10:00,Tim Samms,In-person,1,Sultan bin Suliman 
-43268,1,2024-07-23,17:10:00,19:10:00,Tim Samms,In-person,1,Abdulaziz bin Majid 
-43269,1,2024-07-21,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43270,1,2024-07-22,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43271,1,2024-07-23,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43272,1,2024-07-24,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43273,1,2024-07-25,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43280,1,2024-07-21,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43281,1,2024-07-22,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43282,1,2024-07-23,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43283,1,2024-07-24,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43284,1,2024-07-25,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43285,1,2024-07-21,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43286,1,2024-07-22,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43287,1,2024-07-23,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43288,1,2024-07-24,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43289,1,2024-07-25,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43293,Level 2 Bridge,2024-07-21,19:20:00,21:20:00,Fayaaz Patel,Online,1,Abdulaziz bin Majid 
-43294,Level 2 Bridge,2024-07-22,19:20:00,21:20:00,Fayaaz Patel,Online,1,Abdulaziz bin Majid 
-43295,Level 2 Bridge,2024-07-25,13:20:00,15:20:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43296,Level 2 Bridge,2024-07-21,13:20:00,15:20:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43297,Level 2 Bridge,2024-07-21,13:20:00,15:20:00,Juli Pratt,Online,1,Naif AlGhwairi 
-43298,Level 2 Bridge,2024-07-22,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43299,Level 2 Bridge,2024-07-23,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43300,Level 2 Bridge,2024-07-24,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43301,Level 2 Bridge,2024-07-21,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43302,Level 2 Bridge,2024-07-22,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43303,Level 2 Bridge,2024-07-23,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43304,Level 2 Bridge,2024-07-24,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-43305,Level 2 Bridge,2024-07-22,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43306,Level 2 Bridge,2024-07-23,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43307,Level 2 Bridge,2024-07-24,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43308,Level 2 Bridge,2024-07-25,11:45:00,12:45:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43310,Level 2 Bridge,2024-07-24,19:20:00,21:20:00,Bella Angel,Online,1,Noura AlMoqbil 
-43311,Level 2 Bridge,2024-07-21,15:30:00,16:30:00,Christian Pratt,Online,1,Khalid AlAteeq 
-43312,Level 2 Bridge,2024-07-22,15:30:00,16:30:00,Christian Pratt,Online,1,Khalid AlAteeq 
-43313,Level 2 Bridge,2024-07-23,15:30:00,16:30:00,Christian Pratt,Online,1,Khalid AlAteeq 
-43314,Level 2 Bridge,2024-07-24,15:30:00,16:30:00,Christian Pratt,Online,1,Khalid AlAteeq 
-43315,2A,2024-07-22,08:30:00,10:30:00,"Gaylon Shinault, Mary Ann Shinault",In-person,1,Amal AlHazzani 
-43316,2A,2024-07-23,08:30:00,10:30:00,"Gaylon Shinault, Mary Ann Shinault",In-person,1,Amal AlHazzani 
-43317,2A,2024-07-24,08:30:00,10:30:00,"Gaylon Shinault, Mary Ann Shinault",In-person,1,Amal AlHazzani 
-43318,2A,2024-07-21,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-43319,2A,2024-07-22,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-43320,2A,2024-07-23,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-43321,2A,2024-07-27,14:25:00,16:25:00,Haneen Ozair Rashid,Online,1,Noura AlMoqbil 
-43329,2B,2024-07-21,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43330,2B,2024-07-22,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43331,2B,2024-07-21,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43333,2B,2024-07-23,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-43334,2B,2024-07-24,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-43335,2B,2024-07-25,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-43348,2B,2024-07-23,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43349,2B,2024-07-24,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43350,2B,2024-07-25,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Amal AlHazzani 
-43359,2B,2024-07-21,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43360,2B,2024-07-22,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43361,2B,2024-07-23,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43362,2B,2024-07-24,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43363,2B,2024-07-21,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43364,2B,2024-07-22,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43365,2B,2024-07-23,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43366,2B,2024-07-24,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Faisal AlDhafeeri 
-43367,2B,2024-07-21,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Sultan bin Suliman 
-43368,2B,2024-07-23,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Sultan bin Suliman 
-43369,2B,2024-07-23,17:10:00,19:10:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Noura AlMoqbil 
-43370,2B,2024-07-24,17:10:00,19:10:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,Noura AlMoqbil 
-43381,2B,2024-07-21,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Abdullatif AlAsmari 
-43382,2B,2024-07-22,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43383,2B,2024-07-23,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43384,2B,2024-07-24,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43385,2B,2024-07-25,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43394,2B,2024-07-27,14:25:00,16:25:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,RawanD Aldawsari 
-43400,2B,2024-07-21,19:20:00,21:20:00,Faiza Jannat,In-person,1,Ali AlMadhi 
-43401,2B,2024-07-23,19:20:00,21:20:00,Faiza Jannat,In-person,1,Ali AlMadhi 
-43402,2C,2024-07-21,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43403,2C,2024-07-22,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43404,2C,2024-07-23,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43405,2C,2024-07-24,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43406,2C,2024-07-25,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43412,2B,2024-07-21,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Amal AlHazzani 
-43413,2B,2024-07-22,08:30:00,10:30:00,Tomomi Nakamura,In-person,1,Muteb AlDossary 
-43414,2B,2024-07-24,08:30:00,10:30:00,"Tomomi Nakamura, William Alvarez",In-person,1,Muteb AlDossary 
-43415,2B,2024-07-21,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-43416,2B,2024-07-22,10:40:00,12:40:00,Tomomi Nakamura,In-person,1,Naif AlGhwairi 
-43417,2B,2024-07-24,10:40:00,12:40:00,"Tomomi Nakamura, William Alvarez",In-person,1,Naif AlGhwairi 
-43428,2B,2024-07-23,17:10:00,18:10:00,Matthew Wyatt,On-site,1,Abdulrahman AlJohani 
-43444,2C,2024-07-21,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43445,2C,2024-07-22,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43446,2C,2024-07-23,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43447,2C,2024-07-24,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43448,2C,2024-07-25,15:30:00,16:30:00,فادي - Fadi,In-person,1,Muteb AlDossary 
-43449,2C,2024-07-21,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43450,2C,2024-07-22,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43451,2C,2024-07-24,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43452,2C,2024-07-25,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43453,2C,2024-07-21,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43454,2C,2024-07-22,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43455,2C,2024-07-24,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43456,2C,2024-07-25,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43457,3A,2024-07-21,10:40:00,12:40:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43458,3A,2024-07-22,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-43459,3A,2024-07-23,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-43460,3A,2024-07-24,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-43461,3A,2024-07-25,10:40:00,12:40:00,Navin Kumar,In-person,1,Muteb AlDossary 
-43462,3A,2024-07-21,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43463,3A,2024-07-22,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43464,3A,2024-07-23,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43465,3A,2024-07-24,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43466,3A,2024-07-25,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43467,3A,2024-07-21,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-43468,3A,2024-07-22,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-43469,3A,2024-07-23,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-43470,3A,2024-07-24,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-43471,3A,2024-07-25,09:35:00,10:35:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-43472,3A,2024-07-21,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43473,3A,2024-07-22,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43474,3A,2024-07-23,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43475,3A,2024-07-24,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43476,3A,2024-07-25,15:30:00,16:30:00,Navin Kumar,In-person,1,Khalid AlRashidi 
-43477,3A,2024-07-22,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,RawanD Aldawsari 
-43478,3A,2024-07-24,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,RawanD Aldawsari 
-43479,3A,2024-07-27,12:15:00,14:15:00,Dildar Hussain,Online,1,RawanD Aldawsari 
-43480,3A,2024-07-27,12:15:00,14:15:00,Owais Azmi,In-person,1,Sultan bin Suliman 
-43481,3A,2024-07-21,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43482,3A,2024-07-22,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43483,3A,2024-07-23,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43486,3A,2024-07-21,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-43487,3A,2024-07-22,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-43488,3A,2024-07-23,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-43489,3A,2024-07-24,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-43490,3A,2024-07-21,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43491,3A,2024-07-22,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43492,3A,2024-07-23,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43493,3A,2024-07-24,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43494,3A,2024-07-27,14:25:00,15:25:00,Owais Azmi,In-person,1,Abdulaziz bin Majid 
-43496,3B,2024-07-23,19:20:00,21:20:00,Rowan Cory,In-person,1,RawanD Aldawsari 
-43497,3B,2024-07-24,19:20:00,21:20:00,Rowan Cory,In-person,1,Nesreen Ali 
-43504,3B,2024-07-21,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43505,3B,2024-07-22,08:30:00,10:30:00,Callum Johnstone,In-person,1,Ghadeer AlSaedi 
-43506,3B,2024-07-23,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43507,3B,2024-07-24,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43508,3B,2024-07-21,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43509,3B,2024-07-22,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43510,3B,2024-07-23,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43511,3B,2024-07-24,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-43512,3B,2024-07-21,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-43513,3B,2024-07-23,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-43514,3B,2024-07-25,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-43515,3B,2024-07-22,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-43516,3B,2024-07-24,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-43521,3C,2024-07-22,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43523,3C,2024-07-24,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43525,3C,2024-07-22,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43527,3C,2024-07-24,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-43528,3C,2024-07-21,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43529,3C,2024-07-22,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43530,3C,2024-07-23,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43531,3C,2024-07-24,10:40:00,12:40:00,Garrett Meade,Online,1,Atheer AlQarni 
-43533,3C,2024-07-22,13:20:00,14:20:00,Garrett Meade,In-person,1,Layla AlMazmoumi 
-43534,3C,2024-07-24,13:20:00,14:20:00,Garrett Meade,In-person,1,Eman AlGhamdi 
-43535,4A,2024-07-21,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43536,4A,2024-07-22,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43537,4A,2024-07-23,10:40:00,12:40:00,Cris Dilworth,In-person,1,Layla AlMazmoumi 
-43538,4A,2024-07-24,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-43539,4A,2024-07-25,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-43540,4A,2024-07-21,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-43541,4A,2024-07-22,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-43542,4A,2024-07-23,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-43543,4A,2024-07-24,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-43544,4A,2024-07-25,10:40:00,12:40:00,Joel Baker,In-person,1,Aydah AlJuhani 
-43545,4A,2024-07-21,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-43546,4A,2024-07-22,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-43547,4A,2024-07-23,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-43548,4A,2024-07-24,08:30:00,10:30:00,Joel Baker,In-person,1,Abdulelah AlNasser 
-43549,4A,2024-07-25,08:30:00,10:30:00,Joel Baker,In-person,1,Abdulelah AlNasser 
-43550,"Kid's Level 1",2024-07-21,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43551,"Kid's Level 1",2024-07-22,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43552,"Kid's Level 1",2024-07-23,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43553,"Kid's Level 1",2024-07-24,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43554,"Kid's Level 1",2024-07-25,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Khalid AlRashidi 
-43560,1,2024-07-13,17:10:00,19:10:00,Abraham,In-person,1,Sultan bin Suliman 
-43561,Kids 2B,2024-07-23,17:10:00,19:10:00,Yousef Alshenkiti,In-person,1,Sultan bin Suliman 
-43562,Kids 2B,2024-07-27,17:10:00,19:10:00,Yousef Alshenkiti,In-person,1,Sultan bin Suliman 
-43563,1,2024-07-14,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Abdulaziz bin Majid 
-43564,1,2024-07-16,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Fawaz bin Saeed 
-43565,2A,2024-07-13,17:10:00,19:10:00,Olena Rudnyk,In-person,1,Abdulaziz bin Majid 
-43566,1,2024-07-13,12:15:00,14:15:00,Mike King,In-person,1,Noura AlMoqbil 
-43567,1,2024-07-16,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-43568,1,2024-07-16,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-43569,2A,2024-07-13,17:10:00,18:10:00,Muhammad Shuhood,Online,1,Nesreen Ali 
-43570,1,2024-07-15,19:20:00,21:20:00,Oliver Kennedy,Online,1,RawanD Aldawsari 
-43571,1,2024-07-16,19:20:00,21:20:00,Oliver Kennedy,Online,1,Sultan bin Suliman 
-43574,1,2024-07-13,14:25:00,16:25:00,Mike King,In-person,1,Khalid AlAteeq 
-43576,Admin Meeting,2024-07-14,13:30:00,14:00:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43577,Admin Meeting,2024-07-15,14:30:00,15:15:00,Admin Hold,Admin Hold,1,Sulaiman AlAnazi 
-43578,Admin Meeting,2024-07-15,14:30:00,15:15:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43579,Admin Meeting,2024-07-13,14:15:00,15:00:00,Admin Hold,Admin Hold,1,Nasrallah AlKhabi 
-43580,2A,2024-07-14,08:30:00,09:30:00,Dana Woodhall,Online,1,Sulaiman AlAnazi 
-43581,1,2024-07-14,19:20:00,21:20:00,"Fatema, Cherifa Chen, Abdul Rasikh",Online,1,Abeer Abdullah 
-43585,1,2024-07-17,17:10:00,19:10:00,"Victoria Smith, Oliver Harris",In-person,1,Sultan bin Suliman 
-43586,2C,2024-07-15,20:25:00,21:25:00,Tania,Online,1,Sultan bin Suliman 
-43587,5A,2024-07-15,09:35:00,10:35:00,Miriam Kim,Online,1,Sarah Bin Hudhud 
-43588,2B,2024-07-15,13:20:00,15:20:00,Robbie Corey-Boulet,Online,1,RawanM AlMoqbil 
-43589,1,2024-07-14,17:10:00,19:10:00,Tim Samms,In-person,1,Sultan bin Suliman 
-43590,1,2024-07-15,17:10:00,19:10:00,Tim Samms,In-person,1,Sultan bin Suliman 
-43591,1,2024-07-16,17:10:00,19:10:00,Tim Samms,In-person,1,Sultan bin Suliman 
-43592,1,2024-07-20,12:15:00,14:15:00,Tim Samms,In-person,1,Abdulaziz bin Majid 
-43593,1,2024-07-17,19:20:00,21:20:00,Tim Samms,In-person,1,Nesreen Ali 
-43595,Kids 2B,2024-07-16,17:10:00,19:10:00,Yousef Alshenkiti,In-person,1,Saleh AlSanat 
-43596,Kids 2B,2024-07-20,17:10:00,19:10:00,Yousef Alshenkiti,In-person,1,Sultan bin Suliman 
-43597,1,2024-07-15,19:20:00,21:20:00,Luke Elliott-Bateman,In-person,1,Fawaz bin Saeed 
-43598,1,2024-07-17,19:20:00,21:20:00,Luke Elliott-Bateman,In-person,1,Abdulaziz bin Majid 
-43599,Admin Meeting,2024-07-14,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43601,2B,2024-07-14,15:30:00,16:30:00,Kamal K,Online,1,Sultan bin Suliman 
-43602,1,2024-07-14,13:50:00,14:50:00,Training Session 1,Online,1,Abdulrahman AlJohani 
-43604,Admin Meeting,2024-07-14,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43605,1,2024-07-15,11:45:00,12:45:00,Seán McKiernan,In-person,1,Khalid AlRashidi 
-43606,1,2024-07-16,11:45:00,12:45:00,Seán McKiernan,In-person,1,Khalid AlRashidi 
-43609,2B,2024-07-15,17:10:00,18:10:00,Ahmad,Online,1,Ali AlMadhi 
-43611,1,2024-07-16,17:10:00,19:10:00,Muhammad Haroon Hayat,In-person,1,Khalid AlAteeq 
-43615,Admin Meeting,2024-07-15,15:30:00,16:30:00,Admin Hold,In-person,1,Ameera Alqahtani 
-43616,Admin Meeting,2024-07-16,13:20:00,14:20:00,Admin Hold,Admin Hold,1,Faisal AlQahtani 
-43617,4A,2024-07-17,13:20:00,15:20:00,Emily Wilson,In-person,1,Ashwag AlMahboob 
-43618,Admin Meeting,2024-07-16,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43619,Admin Meeting,2024-07-17,17:10:00,19:10:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43620,1,2024-07-16,19:20:00,21:20:00,"Harry OCallaghan, Mike King",In-person,1,Abdulaziz bin Majid 
-43621,4A,2024-07-16,09:35:00,10:35:00,Danielle Khampuis,Online,1,Muteb AlDossary 
-43622,Admin Meeting,2024-07-17,13:45:00,15:15:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43624,2A,2024-07-16,08:30:00,09:30:00,Dana Woodhall,Online,1,Khalid AlRashidi 
-43627,2A,2024-07-16,19:20:00,21:20:00,Olena Rudnyk,In-person,1,Khalid AlAteeq 
-43628,Admin Meeting,2024-07-16,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-43630,Admin Meeting,2024-07-16,15:35:00,16:15:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43631,4A,2024-07-20,12:15:00,13:15:00,Jacob Zuboy,Online,1,Nesreen Ali 
-43634,1,2024-07-20,17:10:00,19:10:00,Luke Elliott-Bateman,In-person,1,Shomokh AlZahrani 
-43636,Admin Meeting,2024-07-16,13:05:00,14:05:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43637,1,2024-07-21,19:20:00,21:20:00,Louise Leaupepe,Online,1,Khalid AlAteeq 
-43638,Admin Meeting,2024-07-16,13:20:00,15:20:00,Admin Hold,In-person,1,Yousif Ibrahim 
-43641,Admin Meeting,2024-07-21,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43642,Admin Meeting,2024-07-22,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43643,Admin Meeting,2024-07-21,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43644,Admin Meeting,2024-07-21,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43645,Admin Meeting,2024-07-23,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43646,Admin Meeting,2024-07-22,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43647,Admin Meeting,2024-07-21,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-43648,Admin Meeting,2024-07-22,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43649,Admin Meeting,2024-07-23,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43650,Admin Meeting,2024-07-23,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Ameera Alqahtani 
-43651,Admin Meeting,2024-07-22,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-43652,Admin Meeting,2024-07-23,13:20:00,15:20:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-43653,1,2024-07-17,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-43654,1,2024-07-17,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Khalid AlRashidi 
-43655,1,2024-07-18,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Fatimah_Nasser 
-43656,1,2024-07-18,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Fatimah_Nasser 
-43657,1,2024-07-21,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Ashwag AlMahboob 
-43658,1,2024-07-22,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-43659,1,2024-07-22,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Reem AlTamimi 
-43660,Admin Meeting,2024-07-16,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43661,1,2024-07-21,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Reem AlTamimi 
-43662,4A,2024-07-18,13:20:00,14:20:00,Danielle Khampuis,Online,1,Abdullatif AlAsmari 
-43663,1,2024-07-22,19:20:00,21:20:00,"Leela, Diego Urbina",In-person,1,Sultan bin Suliman 
-43664,1,2024-07-24,19:20:00,21:20:00,"Leela, Diego Urbina",In-person,1,Sultan bin Suliman 
-43665,Admin Meeting,2024-07-20,15:30:00,16:25:00,Admin Hold,Admin Hold,1,Sultan bin Suliman 
-43668,4A,2024-07-20,15:30:00,16:30:00,Syed Mohammad Ali,In-person,1,Nesreen Ali 
-43669,Admin Meeting,2024-07-17,13:10:00,13:40:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-43670,Admin Meeting,2024-07-17,13:10:00,13:50:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43671,Admin Meeting,2024-07-17,13:10:00,13:45:00,Admin Hold,Admin Hold,1,Nawaf AlShehri 
-43672,1,2024-07-20,14:25:00,16:25:00,Oliver Kennedy,Online,1,Fawaz bin Saeed 
-43673,1,2024-07-21,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Noura AlMoqbil 
-43674,1,2024-07-21,19:20:00,21:20:00,Oliver Kennedy,Online,1,Shomokh AlZahrani 
-43675,1,2024-07-23,19:20:00,21:20:00,Oliver Kennedy,Online,1,Khalid AlAteeq 
-43676,Admin Meeting,2024-07-18,13:20:00,14:20:00,Admin Hold,Admin Hold,1,Layla AlMazmoumi 
-43677,3C,2024-07-20,17:10:00,19:10:00,Hanna Riehle,In-person,1,Abdulaziz bin Majid 
-43678,3C,2024-07-20,19:20:00,20:20:00,Hanna Riehle,In-person,1,Ali AlMadhi 
-43679,Admin Meeting,2024-07-17,10:40:00,11:40:00,Admin Hold,Admin Hold,1,Nasrallah AlKhabi 
-43681,Admin Meeting,2024-07-17,13:20:00,14:20:00,Admin Hold,In-person,1,Yousif Ibrahim 
-43683,Admin Meeting,2024-07-17,15:40:00,16:40:00,Admin Hold,Admin Hold,1,Nasrallah AlKhabi 
-43684,Admin Meeting,2024-07-20,17:00:00,19:00:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43685,Admin Meeting,2024-07-20,17:00:00,19:00:00,Admin Hold,Admin Hold,1,Nawaf AlShehri 
-43686,Admin Meeting,2024-07-20,17:00:00,19:00:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43687,Admin Meeting,2024-07-20,17:00:00,19:00:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-43688,Admin Meeting,2024-07-21,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43689,Admin Meeting,2024-07-21,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43690,Admin Meeting,2024-07-21,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Nawaf AlShehri 
-43691,Admin Meeting,2024-07-22,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Nawaf AlShehri 
-43692,Admin Meeting,2024-07-22,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-43693,Admin Meeting,2024-07-22,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-43694,Admin Meeting,2024-07-22,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-43695,Admin Meeting,2024-07-21,19:20:00,21:20:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-43696,1,2024-07-22,19:20:00,21:20:00,Luke Elliott-Bateman,In-person,1,Fawaz bin Saeed 
-43697,2A,2024-07-18,08:30:00,09:30:00,Dana Woodhall,Online,1,Khalid AlRashidi 
-43698,1,2024-07-18,10:40:00,12:40:00,Duncan Hare,In-person,1,RawanM AlMoqbil 
-43699,5A,2024-07-18,10:40:00,11:40:00,Miriam Kim,Online,1,Ashwag AlMahboob 
-43700,5A,2024-07-20,13:20:00,14:20:00,Miriam Kim,Online,1,Nesreen Ali 
-43701,5A,2024-07-21,10:40:00,11:40:00,Miriam Kim,Online,1,Abdulelah AlNasser 
-43702,5A,2024-07-22,10:40:00,11:40:00,Miriam Kim,Online,1,Abdulelah AlNasser 
-43703,5A,2024-07-23,10:40:00,11:40:00,Miriam Kim,Online,1,Abdulelah AlNasser 
-43704,5A,2024-07-24,10:40:00,11:40:00,Miriam Kim,Online,1,Abdulelah AlNasser 
-43705,2B,2024-07-22,17:10:00,19:10:00,Robbie Corey-Boulet,Online,1,Nawaf AlShehri 
-43706,Eval,2024-07-21,11:45:00,12:40:00,Coaching and Eval,In-person,1,Yousif Ibrahim 
-43707,Admin Meeting,2024-07-18,09:35:00,10:15:00,Admin Hold,Admin Hold,1,Sarah Bin Hudhud 
-43708,2A,2024-07-18,14:25:00,15:25:00,Muhammad Shuhood,Online,1,Sulaiman AlAnazi 
-43709,Eval,2024-07-18,10:30:00,10:50:00,Coaching and Eval,Online,1,Yousif Ibrahim 
-43710,1,2024-07-21,11:45:00,12:45:00,Seán McKiernan,In-person,1,Eman AlGhamdi 
-43713,1,2024-07-29,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-43714,1,2024-07-31,13:20:00,14:50:00,"Matt B, Diana F, Emily F, Andrew C., Gillian C., Ginger, David Fullop, Ginger P, David F, Matt Blythe, Blythe Billing",Online,1,Fatimah_Nasser 
-43715,1,2024-07-29,18:15:00,19:15:00,"Riyadh Air Billing, Jeremi, Henry Moses, Vaibhav Sharma, Kirby Lucas Montemayor",Online,1,Ali AlMadhi 
-43716,1,2024-07-31,18:15:00,19:15:00,"Riyadh Air Billing, Jeremi, Henry Moses, Vaibhav Sharma, Kirby Lucas Montemayor",Online,1,Ali AlMadhi 
-43717,1,2024-07-28,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-43718,1,2024-07-30,18:15:00,19:15:00,"Gudret Aliyev, Shyamsundar Veda, Zoheb Khan, Maria Gheorghe, Hyojin, Maria Calinovici, Hyeonyeong Lee, Riyadh Air Billing",Online,1,RawanD Aldawsari 
-43720,1,2024-07-20,12:15:00,14:15:00,"Harry OCallaghan, Mike King",In-person,1,Ali AlMadhi 
-43721,4A,2024-07-21,09:35:00,10:35:00,Danielle Khampuis,Online,1,Aydah AlJuhani 
-43722,Admin Meeting,2024-07-21,08:30:00,09:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43723,Admin Meeting,2024-07-25,08:30:00,09:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43725,1,2024-07-29,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Fawaz bin Saeed 
-43726,1,2024-07-31,18:15:00,19:15:00,"Riyadh Air Billing, Adriano Corso, Luke Johnston, Vicky Cherian, Betina, Martin Vaupel, Rajesh Joshi, Paul Beazer, SUNDAR LAL PATIDAR",Online,1,Fawaz bin Saeed 
-43727,1,2024-07-31,19:20:00,21:20:00,"Riyadh Air Billing, Sam Carter, Abby Wanjiru, Edward Taplin, Reshma Vora, Lynelle Adkins, Katherine Chick",Online,1,Fawaz bin Saeed 
-43728,Admin Meeting,2024-07-25,10:15:00,11:15:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43729,4A,2024-07-28,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43730,4A,2024-07-29,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43731,4A,2024-07-30,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43732,4A,2024-07-31,13:20:00,15:20:00,Cris Dilworth,In-person,1,Aydah AlJuhani 
-43734,Admin Meeting,2024-07-22,11:00:00,12:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43735,Admin Meeting,2024-07-23,08:30:00,09:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-43736,1,2024-07-29,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-43737,1,2024-07-31,17:10:00,19:10:00,"Pooluna Chung, Innah, Aziza Sadikova, Mazy",In-person,1,Khalid AlAteeq 
-43738,1,2024-07-28,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-43739,1,2024-07-30,17:10:00,19:10:00,"Pony, Amna, Jenny Skorotetski, Syed Haleemuddin",Online,1,Ali AlMadhi 
-43740,1,2024-07-28,19:20:00,21:20:00,"Maksim, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-43741,1,2024-07-30,19:20:00,21:20:00,"Maksim, Kiko, Azmat Fatema",Online,1,Fawaz bin Saeed 
-43742,1,2024-07-29,19:20:00,21:20:00,"Leela, Diego Urbina",In-person,1,Sultan bin Suliman 
-43743,1,2024-07-31,19:20:00,21:20:00,"Leela, Diego Urbina",In-person,1,Sultan bin Suliman 
-43744,1,2024-07-29,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-43745,1,2024-07-31,17:10:00,19:10:00,"Saleem Amanulla, Hanna",Online,1,Abdulaziz bin Majid 
-43746,1,2024-07-29,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-43747,1,2024-07-31,19:20:00,21:20:00,"Russ Hannington, Geomina Richardson",In-person,1,Ali AlMadhi 
-43748,1,2024-07-29,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Khalid AlAteeq 
-43749,1,2024-07-31,19:20:00,21:20:00,"Hanna Al-Ghamdi, Steve Webb",In-person,1,Khalid AlAteeq 
-43750,1,2024-07-28,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker",In-person,1,Younis AlSulami 
-43751,1,2024-07-29,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker",In-person,1,Younis AlSulami 
-43752,1,2024-07-30,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker",In-person,1,Younis AlSulami 
-43753,1,2024-07-31,08:30:00,12:30:00,"Estelito Nunal, Helen Ricker",In-person,1,Younis AlSulami 
-43755,1,2024-07-28,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43756,1,2024-07-29,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43757,1,2024-07-30,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43758,1,2024-07-31,10:40:00,12:40:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43760,1,2024-07-28,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43761,1,2024-07-29,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43762,1,2024-07-30,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43763,1,2024-07-31,09:30:00,10:30:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43765,Level 2 Bridge,2024-07-23,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-43766,1,2024-07-28,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43767,1,2024-07-29,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43768,1,2024-07-30,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43769,1,2024-07-31,13:20:00,14:20:00,Denys Tan,In-person,1,Sulaiman AlAnazi 
-43774,1,2024-07-29,08:30:00,12:30:00,Yaqi ZHANG,In-person,1,Faisal AlDhafeeri 
-43775,1,2024-07-30,08:30:00,12:30:00,Yaqi ZHANG,In-person,1,Faisal AlDhafeeri 
-43776,1,2024-07-31,08:30:00,12:30:00,Yaqi ZHANG,In-person,1,Faisal AlDhafeeri 
-43778,1,2024-07-28,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-43779,1,2024-07-30,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-43780,1,2024-07-31,08:30:00,10:30:00,Hieu Tran,In-person,1,Eman AlGhamdi 
-43781,1,2024-07-29,19:20:00,20:20:00,"Riyadh Air Billing, Viktoriia, Kanchan Yadav, Norazura Binti Zaimi, Hera Saqib, Daniele, Julia JORDI, Chinghan Shen, abdullah mansoor",Online,1,Abdulaziz bin Majid 
-43782,1,2024-07-31,19:20:00,20:20:00,"Riyadh Air Billing, Viktoriia, Kanchan Yadav, Norazura Binti Zaimi, Hera Saqib, Daniele, Julia JORDI, Chinghan Shen, abdullah mansoor",Online,1,Abdulaziz bin Majid 
-43783,1,2024-07-29,18:15:00,19:15:00,"Riyadh Air Billing, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Noura AlMoqbil 
-43784,1,2024-07-31,18:15:00,19:15:00,"Riyadh Air Billing, Raj Kumar, Jaswin, Younsse L, Wesley, Isabela Machado, Kelly Yong, Antonio Fernandez Ascariz, Tadi Mano",Online,1,Noura AlMoqbil 
-43785,1,2024-07-28,19:20:00,20:20:00,"Riyadh Air Billing, Felicity Collodi, Agung Piniji, Nick Soverall, Imran GM, Eun, Rahul Gupta, Shikha Swarup, Ingela Ahmad",Online,1,Noura AlMoqbil 
-43786,1,2024-07-30,19:20:00,20:20:00,"Riyadh Air Billing, Felicity Collodi, Agung Piniji, Nick Soverall, Imran GM, Eun, Rahul Gupta, Shikha Swarup, Ingela Ahmad",Online,1,Noura AlMoqbil 
-43787,1,2024-07-28,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Noura AlMoqbil 
-43788,1,2024-07-30,18:15:00,19:15:00,"Riyadh Air Billing, Edward Keating, Basanth Balakrishnan, Tawqeer, Jooyoung Moon, Jaikumar, Saeed Mohamed",Online,1,Noura AlMoqbil 
-43789,1,2024-07-29,18:15:00,19:15:00,"Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, Nawel Zouaoui, Riyadh Air Billing",Online,1,Sultan bin Suliman 
-43790,1,2024-07-31,18:15:00,19:15:00,"Alexandra Selaru, Thayna  Ranny, Faaiz Ambalath Veettil, Nawel Zouaoui, Riyadh Air Billing",Online,1,Sultan bin Suliman 
-43791,1,2024-07-30,19:20:00,21:20:00,"Riyadh Air Billing, Adnan Chughtai, Louise Leaupepe",Online,1,Abdulaziz bin Majid 
-43792,1,2024-07-29,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Noura AlMoqbil 
-43793,1,2024-07-31,19:20:00,21:20:00,"Manisha Samal, Roselle Tan",In-person,1,Noura AlMoqbil 
-43795,1,2024-07-20,14:25:00,16:25:00,Christor MaCay Pancho,Online,1,Ali AlMadhi 
-43796,1,2024-07-28,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Fawaz bin Saeed 
-43797,1,2024-07-29,14:30:00,16:30:00,"Brielle Cooper, Davin Cooper",In-person,1,Fawaz bin Saeed 
-43798,1,2024-07-31,20:25:00,21:25:00,Julie Barbier Leblan,Online,1,Abdulaziz bin Majid 
-43799,1,2024-07-28,18:15:00,19:15:00,HANAE HAYASHIDA,In-person,1,Fawaz bin Saeed 
-43800,1,2024-07-30,18:15:00,19:15:00,HANAE HAYASHIDA,In-person,1,Fawaz bin Saeed 
-43802,1,2024-07-21,17:10:00,19:10:00,Christor MaCay Pancho,Online,1,Fawaz bin Saeed 
-43803,1,2024-07-28,17:10:00,19:10:00,Julie Barbier Leblan,Online,1,Abdulaziz bin Majid 
-43805,Level 2 Bridge,2024-07-28,13:20:00,15:20:00,Juli Pratt,Online,1,Naif AlGhwairi 
-43806,Level 2 Bridge,2024-07-28,13:20:00,15:20:00,Christian Pratt,Online,1,Eman AlGhamdi 
-43807,Level 2 Bridge,2024-07-29,19:20:00,21:20:00,Bella Angel,Online,1,Faisal AlQahtani 
-43808,Level 2 Bridge,2024-07-31,19:20:00,21:20:00,Bella Angel,Online,1,Faisal AlQahtani 
-43809,Level 2 Bridge,2024-07-28,19:20:00,21:20:00,Fayaaz Patel,Online,1,RawanD Aldawsari 
-43810,Level 2 Bridge,2024-07-29,19:20:00,21:20:00,Fayaaz Patel,Online,1,RawanD Aldawsari 
-43813,2A,2024-07-29,08:30:00,10:30:00,"Gaylon Shinault, Mary Ann Shinault",In-person,1,Amal AlHazzani 
-43814,2A,2024-07-30,08:30:00,10:30:00,"Gaylon Shinault, Mary Ann Shinault",In-person,1,Amal AlHazzani 
-43815,2A,2024-07-31,08:30:00,10:30:00,"Gaylon Shinault, Mary Ann Shinault",In-person,1,Amal AlHazzani 
-43822,2A,2024-07-28,17:10:00,19:10:00,Reid Wayman,Online,1,Faisal AlQahtani 
-43823,2A,2024-07-30,17:10:00,19:10:00,Reid Wayman,Online,1,Faisal AlQahtani 
-43830,4A,2024-07-28,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-43831,4A,2024-07-29,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-43832,4A,2024-07-30,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-43833,4A,2024-07-31,10:40:00,12:40:00,Cris Dilworth,In-person,1,Abdullatif AlAsmari 
-43836,2A,2024-07-28,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-43837,2A,2024-07-29,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-43838,2A,2024-07-30,14:30:00,16:30:00,Haneen Ozair Rashid,Online,1,RawanD Aldawsari 
-43841,2B,2024-07-31,19:20:00,21:20:00,"Lamia Mohsin, Ishmam Mohsin",Online,1,RawanD Aldawsari 
-43843,2B,2024-07-29,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Eman AlGhamdi 
-43844,2B,2024-07-30,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Eman AlGhamdi 
-43845,2B,2024-07-31,10:40:00,12:40:00,"Ruth Sun, Boaz He",In-person,1,Eman AlGhamdi 
-43848,2B,2024-07-29,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-43849,2B,2024-07-30,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-43850,2B,2024-07-31,08:30:00,10:30:00,"Ruth Sun, Boaz He",In-person,1,Naif AlGhwairi 
-43853,2B,2024-07-28,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Sultan bin Suliman 
-43854,2B,2024-07-30,19:20:00,21:20:00,"Benoît Claude, Welf Weiger",Online,1,Sultan bin Suliman 
-43855,2B,2024-07-28,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43856,2B,2024-07-29,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43857,2B,2024-07-30,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43858,2B,2024-07-31,10:40:00,12:40:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43859,2B,2024-07-28,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43860,2B,2024-07-29,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43861,2B,2024-07-30,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43862,2B,2024-07-31,08:30:00,10:30:00,"Courtney Hepokoski, Timothy Hepokoski",In-person,1,Muteb AlDossary 
-43868,2B,2024-07-30,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-43869,2B,2024-07-31,13:20:00,15:20:00,Lonnie Camacho,In-person,1,Naif AlGhwairi 
-43871,2B,2024-07-30,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Khalid AlAteeq 
-43872,2B,2024-07-31,15:30:00,16:30:00,Lonnie Camacho,In-person,1,Khalid AlAteeq 
-43874,2B,2024-07-28,17:10:00,18:10:00,Matthew Wyatt,On-site,1,Abdulrahman AlJohani 
-43875,2B,2024-07-30,17:10:00,18:10:00,Matthew Wyatt,On-site,1,Abdulrahman AlJohani 
-43879,2B,2024-07-28,08:30:00,10:30:00,"Tomomi Nakamura, William Alvarez",In-person,1,Khalid AlRashidi 
-43880,2B,2024-07-29,08:30:00,10:30:00,"Tomomi Nakamura, William Alvarez",In-person,1,Khalid AlRashidi 
-43881,2B,2024-07-31,08:30:00,10:30:00,"Tomomi Nakamura, William Alvarez",In-person,1,Khalid AlRashidi 
-43882,2B,2024-07-28,10:40:00,12:40:00,"Tomomi Nakamura, William Alvarez",In-person,1,Khalid AlRashidi 
-43883,2B,2024-07-29,10:40:00,12:40:00,"Tomomi Nakamura, William Alvarez",In-person,1,Khalid AlRashidi 
-43884,2B,2024-07-31,10:40:00,12:40:00,"Tomomi Nakamura, William Alvarez",In-person,1,Khalid AlRashidi 
-43891,2B,2024-07-28,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43892,2B,2024-07-29,19:20:00,21:20:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43893,2B,2024-07-28,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43894,2B,2024-07-29,17:10:00,19:10:00,Lonnie Camacho,In-person,1,Nesreen Ali 
-43900,2B,2024-07-31,10:40:00,12:40:00,Windy Liu,In-person,1,Reem AlTamimi 
-43908,2A,2024-07-18,16:56:00,17:00:00,Cris Dilworth,Online,1,Nasrallah AlKhabi 
-43909,2B,2024-07-28,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-43910,2B,2024-07-29,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-43911,2B,2024-07-30,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-43912,2B,2024-07-31,13:20:00,15:20:00,Dylan Sexton,In-person,1,Faisal AlDhafeeri 
-43914,2B,2024-07-28,15:30:00,16:30:00,Dylan Sexton,In-person,1,Faisal AlQahtani 
-43915,2B,2024-07-29,15:30:00,16:30:00,Dylan Sexton,In-person,1,Faisal AlQahtani 
-43916,2B,2024-07-30,15:30:00,16:30:00,Dylan Sexton,In-person,1,Faisal AlQahtani 
-43917,2B,2024-07-31,15:30:00,16:30:00,Dylan Sexton,In-person,1,Faisal AlQahtani 
-43919,Level 2 Bridge,2024-07-18,17:00:00,17:05:00,Cris Dilworth,Online,1,Nasrallah AlKhabi 
-43926,3B,2024-07-18,17:06:00,17:10:00,Cris Dilworth,Online,1,Nasrallah AlKhabi 
-43927,2B,2024-07-28,17:10:00,19:10:00,Windy Liu,In-person,1,Khalid AlAteeq 
-43928,2B,2024-07-29,17:10:00,19:10:00,Windy Liu,In-person,1,Faisal AlQahtani 
-43929,2B,2024-07-30,17:10:00,19:10:00,Windy Liu,In-person,1,Nesreen Ali 
-43930,2B,2024-07-28,19:20:00,21:20:00,Faiza Jannat,In-person,1,Ali AlMadhi 
-43931,2B,2024-07-30,19:20:00,21:20:00,Faiza Jannat,In-person,1,Ali AlMadhi 
-43932,2B,2024-07-29,19:20:00,21:20:00,Jamila,Online,1,Saleh AlSanat 
-43933,2B,2024-07-31,19:20:00,21:20:00,Jamila,Online,1,Nesreen Ali 
-43935,3C,2024-07-18,17:10:00,17:15:00,Cris Dilworth,Online,1,Nasrallah AlKhabi 
-43937,2B,2024-07-29,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-43938,2B,2024-07-30,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-43939,2B,2024-07-31,08:30:00,10:30:00,Anna Sexton,Online,1,Aydah AlJuhani 
-43942,2B,2024-07-28,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43943,2B,2024-07-29,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43945,2B,2024-07-31,13:20:00,14:20:00,"Norah Meade, Peter Meade, Eliza Meade",In-person,1,Muteb AlDossary 
-43947,2C,2024-07-28,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43948,2C,2024-07-29,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43949,2C,2024-07-31,10:40:00,12:40:00,"Roshell Cooper, Landon Cooper",In-person,1,Sarah Bin Hudhud 
-43951,2C,2024-07-28,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43952,2C,2024-07-29,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43953,2C,2024-07-31,08:30:00,10:30:00,"Roshell Cooper, Landon Cooper",In-person,1,Abdullatif AlAsmari 
-43955,2C,2024-07-28,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43956,2C,2024-07-29,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43957,2C,2024-07-30,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43958,2C,2024-07-31,13:20:00,15:20:00,فادي - Fadi,In-person,1,RawanM AlMoqbil 
-43960,2C,2024-07-28,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43961,2C,2024-07-29,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43962,2C,2024-07-30,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43963,2C,2024-07-31,15:30:00,16:30:00,فادي - Fadi,In-person,1,Noura AlMoqbil 
-43965,3A,2024-07-29,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,RawanD Aldawsari 
-43966,3A,2024-07-31,17:10:00,19:10:00,"Mohsin Riaz, Sumaiya Jannat",Online,1,RawanD Aldawsari 
-43967,3A,2024-07-28,09:35:00,10:35:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43968,3A,2024-07-29,09:35:00,10:35:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43969,3A,2024-07-30,09:35:00,10:35:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43970,3A,2024-07-31,09:35:00,10:35:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43972,3A,2024-07-28,10:40:00,12:40:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43973,3A,2024-07-29,10:40:00,12:40:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43974,3A,2024-07-30,10:40:00,12:40:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43975,3A,2024-07-31,10:40:00,12:40:00,Navin Kumar,In-person,1,Ghadeer AlSaedi 
-43977,3A,2024-07-28,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43978,3A,2024-07-29,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43979,3A,2024-07-30,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43980,3A,2024-07-31,13:20:00,15:20:00,Lucy Johnstone,Online,1,Omar AlDkhelallh 
-43982,3A,2024-07-28,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43983,3A,2024-07-29,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43984,3A,2024-07-30,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43985,3A,2024-07-31,13:20:00,15:20:00,Navin Kumar,In-person,1,Sarah Bin Hudhud 
-43987,3A,2024-07-28,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43988,3A,2024-07-29,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43989,3A,2024-07-30,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43990,3A,2024-07-31,15:30:00,16:30:00,Navin Kumar,In-person,1,Abdulaziz bin Majid 
-43994,3A,2024-07-28,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43995,3A,2024-07-29,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43996,3A,2024-07-30,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43997,3A,2024-07-31,14:25:00,15:25:00,Nora Swearingen,Online,1,Atheer AlQarni 
-43998,3A,2024-07-28,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-43999,3A,2024-07-29,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-44000,3A,2024-07-30,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-44001,3A,2024-07-31,13:20:00,14:20:00,Layla Swearingen,Online,1,Atheer AlQarni 
-44003,3B,2024-07-28,08:30:00,10:30:00,Alicia Talley,In-person,1,Atheer AlQarni 
-44004,3B,2024-07-30,08:30:00,10:30:00,Alicia Talley,In-person,1,Atheer AlQarni 
-44006,3B,2024-07-28,10:40:00,12:40:00,Alicia Talley,In-person,1,Atheer AlQarni 
-44007,3B,2024-07-30,10:40:00,12:40:00,Alicia Talley,In-person,1,Atheer AlQarni 
-44009,3B,2024-07-29,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-44010,3B,2024-07-31,13:20:00,15:20:00,Kim Meade,Online,1,Khalid AlRashidi 
-44011,3B,2024-07-28,13:20:00,15:20:00,Kim Meade,In-person,1,Ghadeer AlSaedi 
-44014,3B,2024-07-28,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44015,3B,2024-07-29,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44016,3B,2024-07-30,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44017,3B,2024-07-31,08:30:00,10:30:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44018,3B,2024-07-28,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44019,3B,2024-07-29,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44020,3B,2024-07-30,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44021,3B,2024-07-31,10:40:00,12:40:00,Callum Johnstone,In-person,1,Omar AlDkhelallh 
-44025,3B,2024-07-28,19:20:00,21:20:00,Rowan Cory,In-person,1,Khalid AlAteeq 
-44026,3B,2024-07-30,19:20:00,21:20:00,Rowan Cory,In-person,1,Khalid AlAteeq 
-44027,3B,2024-07-31,19:20:00,21:20:00,Rowan Cory,In-person,1,Nawaf AlShehri 
-44028,3C,2024-07-28,10:40:00,12:40:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-44029,3C,2024-07-29,10:40:00,12:40:00,Carol Keener,In-person,1,Fatima_Shehri 
-44030,3C,2024-07-30,10:40:00,12:40:00,Carol Keener,In-person,1,Fatima_Shehri 
-44032,3C,2024-07-28,13:20:00,15:20:00,Carol Keener,In-person,1,Ashwag AlMahboob 
-44033,3C,2024-07-29,13:20:00,15:20:00,Carol Keener,In-person,1,Fatima_Shehri 
-44034,3C,2024-07-30,13:20:00,15:20:00,Carol Keener,In-person,1,Fatima_Shehri 
-44036,3C,2024-07-29,13:20:00,14:20:00,Garrett Meade,In-person,1,Eman AlGhamdi 
-44037,3C,2024-07-31,13:20:00,14:20:00,Garrett Meade,In-person,1,Eman AlGhamdi 
-44038,3C,2024-07-28,10:40:00,12:40:00,Garrett Meade,Online,1,Aydah AlJuhani 
-44039,3C,2024-07-29,10:40:00,12:40:00,Garrett Meade,Online,1,Aydah AlJuhani 
-44040,3C,2024-07-30,10:40:00,12:40:00,Garrett Meade,Online,1,Aydah AlJuhani 
-44041,3C,2024-07-31,10:40:00,12:40:00,Garrett Meade,Online,1,Aydah AlJuhani 
-44043,4A,2024-07-28,10:40:00,12:40:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44044,4A,2024-07-29,10:40:00,12:40:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44045,4A,2024-07-30,10:40:00,12:40:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44046,4A,2024-07-31,10:40:00,12:40:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44048,4A,2024-07-28,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44049,4A,2024-07-29,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44050,4A,2024-07-30,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44051,4A,2024-07-31,08:30:00,10:30:00,Joel Baker,In-person,1,Layla AlMazmoumi 
-44053,"Kid's Level 1",2024-07-28,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Naif AlGhwairi 
-44054,"Kid's Level 1",2024-07-29,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Naif AlGhwairi 
-44055,"Kid's Level 1",2024-07-30,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Naif AlGhwairi 
-44056,"Kid's Level 1",2024-07-31,10:40:00,12:40:00,"Abdullah Faisal Zaheer, Reem Faisal Zaheer",In-person,1,Naif AlGhwairi 
-44058,Kids 2B,2024-07-30,17:10:00,19:10:00,Yousef Alshenkiti,In-person,1,Sultan bin Suliman 
-44060,Level 2 Bridge,2024-07-28,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44061,Level 2 Bridge,2024-07-29,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44062,Level 2 Bridge,2024-07-30,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44063,Level 2 Bridge,2024-07-31,15:30:00,16:30:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44064,Level 2 Bridge,2024-07-29,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44065,Level 2 Bridge,2024-07-30,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44066,Level 2 Bridge,2024-07-31,14:25:00,15:25:00,Juli Pratt,Online,1,Sultan bin Suliman 
-44067,Level 2 Bridge,2024-07-28,15:30:00,16:30:00,Christian Pratt,Online,1,Ali AlMadhi 
-44068,Level 2 Bridge,2024-07-29,15:30:00,16:30:00,Christian Pratt,Online,1,Ali AlMadhi 
-44069,Level 2 Bridge,2024-07-30,15:30:00,16:30:00,Christian Pratt,Online,1,Ali AlMadhi 
-44070,Level 2 Bridge,2024-07-31,15:30:00,16:30:00,Christian Pratt,Online,1,Ali AlMadhi 
-44072,Level 2 Bridge,2024-07-29,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-44073,Level 2 Bridge,2024-07-30,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-44074,Level 2 Bridge,2024-07-31,14:25:00,15:25:00,Christian Pratt,Online,1,Eman AlGhamdi 
-44076,1,2024-07-20,14:25:00,16:25:00,Sean,Online,1,Shomokh AlZahrani 
-44077,1,2024-07-20,12:15:00,14:15:00,Fatima,Online,1,Shomokh AlZahrani 
-44078,1,2024-07-20,12:15:00,14:15:00,Abraham,In-person,1,Fawaz bin Saeed 
-44079,2A,2024-07-20,12:15:00,13:15:00,Muhammad Shuhood,Online,1,Khalid AlAteeq 
-44080,2A,2024-07-20,17:10:00,19:10:00,Olena Rudnyk,In-person,1,Noura AlMoqbil 
-44081,1,2024-07-20,14:25:00,16:25:00,Muhammad Haroon Hayat,In-person,1,Khalid AlAteeq 
-44082,Admin Meeting,2024-07-20,19:10:00,19:40:00,Admin Hold,Admin Hold,1,Fawaz bin Saeed 
-44083,Admin Meeting,2024-07-20,19:45:00,20:15:00,Admin Hold,Admin Hold,1,Shomokh AlZahrani 
-44084,Admin Meeting,2024-07-20,19:25:00,20:00:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-44086,Admin Meeting,2024-07-20,13:00:00,14:30:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-44087,Admin Meeting,2024-07-21,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Khalid AlRashidi 
-44088,Admin Meeting,2024-07-21,13:10:00,14:10:00,Admin Hold,Admin Hold,1,Saleh AlSanat 
-44090,4A,2024-07-22,13:20:00,15:20:00,Emily Wilson,In-person,1,Abdullatif AlAsmari 
-44091,Admin Meeting,2024-07-20,19:00:00,20:00:00,Admin Hold,Admin Hold,1,Mubarak Al Hussein 
-44092,2A,2024-07-21,08:30:00,09:30:00,Dana Woodhall,Online,1,Abdulelah AlNasser 
-44093,Admin Meeting,2024-07-21,13:20:00,14:20:00,Admin Hold,Admin Hold,1,Shomokh AlZahrani 
-44094,Admin Meeting,2024-07-21,14:30:00,15:30:00,Admin Hold,Admin Hold,1,Younis AlSulami 
-44095,4B,2024-07-21,15:30:00,16:30:00,Rali Gu,Online,1,Nesreen Ali 
-44096,4A,2024-07-22,08:30:00,09:30:00,Danielle Khampuis,Online,1,Abdulelah AlNasser 
-44097,1,2024-07-23,19:20:00,21:20:00,Josh Giacche,Online,1,Abdulaziz bin Majid 
-44098,1,2024-07-27,14:25:00,16:25:00,Josh Giacche,Online,1,Sultan bin Suliman 
-44101,1,2024-07-22,19:20:00,21:20:00,Tasnia,Online,1,RawanD Aldawsari 
-44103,1,2024-07-22,17:10:00,19:10:00,"Shota Mizutani, Clément Samson",Online,1,Noura AlMoqbil 
-44104,1,2024-07-24,17:10:00,19:10:00,"Shota Mizutani, Clément Samson",Online,1,Sultan bin Suliman 
-44105,1,2024-07-29,17:10:00,19:10:00,"Shota Mizutani, Clément Samson",Online,1,Renad Mohammed 
-44106,1,2024-07-31,17:10:00,19:10:00,"Shota Mizutani, Clément Samson",Online,1,Nesreen Ali 
-44107,Admin Meeting,2024-07-21,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Nasrallah AlKhabi 
-44108,Level 2 Bridge,2024-07-22,11:45:00,12:45:00,Bryony Walsh,Online,1,Abdullatif AlAsmari 
-44109,Level 2 Bridge,2024-07-23,13:20:00,14:20:00,Bryony Walsh,Online,1,Faisal AlDhafeeri 
-44110,Level 2 Bridge,2024-07-25,10:40:00,11:40:00,Bryony Walsh,Online,1,Eman AlGhamdi 
-44112,Level 2 Bridge,2024-07-22,19:20:00,21:20:00,Cedric Matykowski,Online,1,Nesreen Ali 
-44113,1,2024-07-27,12:15:00,14:15:00,Oliver Kennedy,Online,1,Khalid AlAteeq 
-44116,Admin Meeting,2024-07-22,15:45:00,16:45:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-44117,Admin Meeting,2024-07-22,11:45:00,12:45:00,Admin Hold,Admin Hold,1,Abdulelah AlNasser 
-44119,Admin Meeting,2024-07-22,13:20:00,15:20:00,Admin Hold,In-person,1,Yousif Ibrahim 
-44120,Admin Meeting,2024-07-23,13:10:00,14:10:00,Admin Hold,Admin Hold,1,Nawaf AlShehri 
-44122,Admin Meeting,2024-07-22,13:00:00,14:20:00,Admin Hold,Admin Hold,1,Renad Mohammed 
-44124,1,2024-07-27,17:10:00,19:10:00,Luke Elliott-Bateman,In-person,1,RawanD Aldawsari 
-44125,Admin Meeting,2024-07-22,15:30:00,16:40:00,Admin Hold,In-person,1,Yousif Ibrahim 
-44126,1,2024-07-25,08:30:00,10:30:00,Saira Ansari,Online,1,Sarah Bin Hudhud 
-44127,1,2024-07-27,14:25:00,16:25:00,Christor MaCay Pancho,Online,1,Fawaz bin Saeed 
-44128,1,2024-07-23,19:20:00,20:20:00,Patricia McWalter,Online,1,Noura AlMoqbil 
-44129,1,2024-07-25,13:20:00,15:20:00,MK,Online,1,Younis AlSulami 
-44130,1,2024-07-28,08:30:00,10:30:00,Saira Ansari,Online,1,Sarah Bin Hudhud 
-44132,1,2024-07-28,19:20:00,21:20:00,Oliver Kennedy,Online,1,Abdulaziz bin Majid 
-44133,Level 2 Bridge,2024-07-24,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Eman AlGhamdi 
-44134,Level 2 Bridge,2024-07-24,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Younis AlSulami 
-44135,Level 2 Bridge,2024-07-25,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,RawanM AlMoqbil 
-44136,Level 2 Bridge,2024-07-25,13:20:00,15:20:00,Santhiya Gunasekaran,Online,1,Khalid AlRashidi 
-44137,Level 2 Bridge,2024-07-28,10:40:00,12:40:00,Santhiya Gunasekaran,Online,1,Eman AlGhamdi 
-44138,1 English,2024-07-23,13:00:00,15:00:00,Joel S Test,Online,1,Joel S (Admin)
-44139,1 English,2024-07-23,09:00:00,11:00:00,Joel S Test,Online,1,Joel S (Admin)
-44140,Admin Meeting,2024-07-24,13:45:00,15:15:00,Admin Hold,Admin Hold,1,Nasrallah AlKhabi 
-44141,1,2024-07-24,17:10:00,19:10:00,Victoria Smith,In-person,1,Nesreen Ali 
-44142,1,2024-07-28,10:40:00,12:40:00,Yaqi ZHANG,In-person,1,Faisal AlDhafeeri 
-44143,1,2024-07-28,13:20:00,15:20:00,Yaqi ZHANG,In-person,1,Khalid AlRashidi 
-44144,4A,2024-07-24,13:20:00,15:20:00,Emily Wilson,In-person,1,Abdullatif AlAsmari 
-44146,1,2024-07-23,18:15:00,19:15:00,Wesley,Online,1,Khalid AlAteeq 
-44147,Admin Meeting,2024-07-23,15:30:00,16:30:00,Admin Hold,In-person,1,Ameera Alqahtani 
-44148,Admin Meeting,2024-07-23,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Mashael AlDossary 
-44149,Admin Meeting,2024-07-23,15:30:00,16:30:00,Admin Hold,Admin Hold,1,Fatima_Shehri 
-44151,3C,2024-07-27,17:10:00,19:10:00,Hanna Riehle,In-person,1,Noura AlMoqbil 
-44152,3C,2024-07-27,19:20:00,20:20:00,Hanna Riehle,In-person,1,Sultan bin Suliman 
-44153,3C,2024-07-25,08:30:00,09:30:00,Hanna Riehle,Online,1,Khalid AlRashidi 
-44154,1,2024-07-27,14:25:00,16:25:00,Ariana Agapiou,In-person,1,Khalid AlAteeq 
-44155,1,2024-07-27,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Khalid AlAteeq 
-44156,1,2024-07-28,17:10:00,19:10:00,Ariana Agapiou,In-person,1,Sultan bin Suliman 
-44159,Prof. Raymundo Olson,2024-07-25,09:54:07,10:54:07,Ethel Skiles,Ellis Hane,1,Alexa Boyer
-44173,Libby Nitzsche,2024-07-25,11:01:19,12:01:19,Wilhelmine Boehm,Prof. Clementine Miller,1,Eladio Donnelly V
-44174,Vito Langworth,2024-07-25,10:01:24,11:01:24,Esperanza Stokes,Nels Yundt V,1,Neva Dare II
-44175,Mr. Thurman Kutch,2024-07-19,10:01:24,11:01:24,Esperanza Stokes,Spencer Zemlak,1,Neva Dare II
-44176,Rowan Wiegand,2024-07-20,10:01:24,11:01:24,Esperanza Stokes,Candice Gibson,1,Neva Dare II
-44177,Yasmeen Jacobi,2024-07-27,10:01:24,11:01:24,Esperanza Stokes,Viviane Mosciski DVM,1,Neva Dare II
-44178,Prof. Bella Schultz II,2024-07-26,10:01:24,11:01:24,Esperanza Stokes,Hank Shields,1,Neva Dare II
-44179,Prof. Ansel Jaskolski,2024-07-27,10:01:24,11:01:24,Esperanza Stokes,Dale Romaguera,1,Neva Dare II
-44180,Judge Stroman,2024-07-25,10:01:24,11:01:24,Esperanza Stokes,Lisa Cronin,1,Neva Dare II
-44181,Karlie Weimann,2024-07-21,10:01:24,11:01:24,Esperanza Stokes,Kieran Kuhlman,1,Neva Dare II
-44182,Mr. Oral Corkery,2024-07-28,10:01:24,11:01:24,Esperanza Stokes,Jacinto Kozey,1,Neva Dare II
-44183,Cayla Thompson,2024-07-24,10:01:24,11:01:24,Esperanza Stokes,Marina Zboncak,1,Neva Dare II
-44184,Brandyn Flatley II,2024-07-18,10:01:24,11:01:24,Esperanza Stokes,Heidi Reichel,1,Neva Dare II
-44185,Dr. Delmer Mayer,2024-07-27,10:01:24,11:01:24,Esperanza Stokes,Yazmin Satterfield I,1,Neva Dare II
-44186,Raphael VonRueden,2024-07-25,10:01:24,11:01:24,Esperanza Stokes,Candida Witting,1,Neva Dare II
-44187,Kolby Nader DDS,2024-07-25,10:01:24,11:01:24,Esperanza Stokes,Ms. Mertie McLaughlin I,1,Neva Dare II
-44188,Mrs. Glenna Schuster,2024-07-31,10:01:24,11:01:24,Esperanza Stokes,Teagan Dickens,1,Neva Dare II
-44189,Maud Farrell,2024-07-24,11:01:26,12:01:26,Esperanza Stokes,Kylee Rice,1,Neva Dare II
-44251,Tomasa McLaughlin,2024-07-27,10:02:58,11:02:58,Mrs. Rae Kuvalis II,Maximillian Abbott PhD,1,Consuelo Hand
-44252,Muriel Volkman Sr.,2024-07-27,10:03:02,11:03:02,Mrs. Opal Zulauf MD,Osvaldo Lakin II,1,Ceasar Cremin II
-44253,Vincenza Mayer,2024-07-27,10:03:06,11:03:06,Tyrique Weissnat,Stan Rolfson PhD,1,Prof. Christelle Kris
-44254,Jonatan Metz Sr.,2024-07-27,10:03:10,11:03:10,Carolina Moen,"Edwardo O'Kon",1,Mr. Darrel Skiles
-44496,Cleta Kemmer,2024-07-25,11:42:24,12:42:24,Hilbert Leannon,Ethyl Dietrich,1,Maximo Ratke V
-44497,Dr. Burdette Thompson Jr.,2024-07-19,10:42:33,11:42:33,Bryon Farrell,Jayson Skiles V,1,Zoey Hartmann
-44498,Vernice Wiegand,2024-07-19,10:42:33,11:42:33,Bryon Farrell,Rudy Rempel,1,Zoey Hartmann
-44499,Mr. Roscoe Dickinson,2024-07-21,10:42:33,11:42:33,Bryon Farrell,Vicky Kessler,1,Zoey Hartmann
-44500,Karine Terry,2024-07-18,10:42:33,11:42:33,Bryon Farrell,Conrad Conn,1,Zoey Hartmann
-44501,Samantha Wisoky,2024-07-30,10:42:33,11:42:33,Bryon Farrell,Prof. Alexandria Greenfelder Jr.,1,Zoey Hartmann
-44502,Buddy Frami,2024-07-21,10:42:33,11:42:33,Bryon Farrell,Prof. Jimmie Balistreri Jr.,1,Zoey Hartmann
-44503,Dr. Douglas Barrows III,2024-07-31,10:42:33,11:42:33,Bryon Farrell,Annetta Parker III,1,Zoey Hartmann
-44504,Lempi Spinka,2024-07-20,10:42:33,11:42:33,Bryon Farrell,Kacey Cormier,1,Zoey Hartmann
-44505,Dr. Marco Durgan DVM,2024-07-23,10:42:33,11:42:33,Bryon Farrell,Nova Johnston,1,Zoey Hartmann
-44506,Samantha Gerlach,2024-07-24,10:42:33,11:42:33,Bryon Farrell,Megane Towne,1,Zoey Hartmann
-44509,Dr. Cortez Bogisich,2024-07-22,10:42:33,11:42:33,Bryon Farrell,Hortense Kohler,1,Zoey Hartmann
-44510,Autumn Kilback,2024-07-25,10:42:33,11:42:33,Bryon Farrell,Andre Greenholt,1,Zoey Hartmann
-44511,Icie Effertz I,2024-07-20,10:42:33,11:42:33,Bryon Farrell,Prof. Alvena Bogisich,1,Zoey Hartmann
-44512,Hassan Von,2024-07-24,11:42:35,12:42:35,Bryon Farrell,Golda Harber,1,Zoey Hartmann
-44513,Julian Cormier,2024-07-25,11:43:00,12:43:00,Justine Okuneva,Prof. Vicente Koch,1,Dr. Maud Harvey
-44514,Sid Jakubowski,2024-07-30,10:43:05,11:43:05,Ricky Vandervort DVM,Mr. Giovanny Reilly,1,May Zulauf III
-44515,Edd Erdman V,2024-07-23,10:43:05,11:43:05,Ricky Vandervort DVM,Helene Keeling,1,May Zulauf III
-44517,Belle VonRueden,2024-07-28,10:43:05,11:43:05,Ricky Vandervort DVM,Miss Sasha Marvin,1,May Zulauf III
-44518,Corene Buckridge,2024-07-31,10:43:05,11:43:05,Ricky Vandervort DVM,Aimee Keeling,1,May Zulauf III
-44519,Mrs. Rosalee Goodwin,2024-07-30,10:43:05,11:43:05,Ricky Vandervort DVM,Dr. Caden Vandervort,1,May Zulauf III
-44520,Dr. Peyton Sipes DVM,2024-07-22,10:43:05,11:43:05,Ricky Vandervort DVM,Mrs. Eileen Waelchi,1,May Zulauf III
-44521,Shannon Goyette,2024-07-21,10:43:05,11:43:05,Ricky Vandervort DVM,George Zulauf,1,May Zulauf III
-44522,Dr. Odell Bartoletti,2024-07-22,10:43:05,11:43:05,Ricky Vandervort DVM,Victor Fadel IV,1,May Zulauf III
-44523,Lilla Koepp,2024-07-18,10:43:05,11:43:05,Ricky Vandervort DVM,Mr. Sage Gleason DVM,1,May Zulauf III
-44524,Zion Schaefer,2024-07-19,10:43:05,11:43:05,Ricky Vandervort DVM,Reuben Little,1,May Zulauf III
-44525,Mertie Conroy Jr.,2024-07-31,10:43:05,11:43:05,Ricky Vandervort DVM,Una Conn,1,May Zulauf III
-44526,Prof. Seth Bechtelar,2024-07-22,10:43:05,11:43:05,Ricky Vandervort DVM,Zane Grant,1,May Zulauf III
-44527,Prof. Okey Willms II,2024-07-23,10:43:05,11:43:05,Ricky Vandervort DVM,Cheyanne Torphy,1,May Zulauf III
-44528,Dr. Nils Pfannerstill I,2024-07-20,10:43:05,11:43:05,Ricky Vandervort DVM,Daryl Hickle II,1,May Zulauf III
-44529,Joanny Simonis,2024-07-24,11:43:06,12:43:06,Ricky Vandervort DVM,Carmela Hills,1,May Zulauf III
-44602,Prof. Baron Olson,2024-07-27,10:44:09,11:44:09,Mrs. Ebba Smith Jr.,Mr. Lemuel Eichmann,1,Prof. Lorine Gerhold
-44613,Dr. Asa Ratke V,2024-07-27,10:44:20,11:44:20,Raymond Gibson,Gavin Bergnaum,1,Elenor Hudson
-44620,Parker Abbott,2024-07-27,10:44:24,11:44:24,Mr. Brayan Jenkins,Flavio Halvorson,1,Garry Price
-44625,Prof. Zackary Labadie,2024-07-27,10:44:29,11:44:29,Ken Schaden DVM,Herminio Stroman,1,Brain Dickens
-44635,Hank Hills,2024-07-27,10:44:33,11:44:33,Gabe Batz,Colt Zboncak,1,Burnice Legros
-44662,Liana Waters,2024-07-27,10:44:47,11:44:47,Marisa Kuhic,Clyde Hartmann,1,Aditya Welch
-44663,Zion Feest II,2024-07-27,10:44:52,11:44:52,Stacey Gerlach,Leonard Berge,1,Ray Kuhlman
-44664,Elyse Berge,2024-07-27,10:44:56,11:44:56,Bruce Kirlin,Columbus Cole,1,Kamille Bartoletti
-44665,Ms. Carissa Effertz,2024-07-27,10:45:01,11:45:01,Haskell Hudson,Karlie Konopelski IV,1,Dr. Ola Predovic II
-44666,Llewellyn Fahey,2024-07-27,10:45:11,11:45:11,Dr. Clement Thiel IV,Dr. Adriel Blick,1,Hailee Reinger
+id,level,date,buffer_start,buffer_end,student_group_hash,lesson_type,branch_id,guide_name
+41899,2A,2024-07-01,2024-07-01 13:00:00,2024-07-01 16:30:00,d6a9f1848255b679efba3c48254b1548,On-site,1,Ameera Alqahtani 
+41901,1,2024-07-01,2024-07-01 13:20:00,2024-07-01 14:50:00,0146bb1838626c0bff85b2fc6391a578,Online,1,Fatimah_Nasser 
+41902,1,2024-07-03,2024-07-03 13:20:00,2024-07-03 14:50:00,0146bb1838626c0bff85b2fc6391a578,Online,1,Fatimah_Nasser 
+41904,1,2024-07-01,2024-07-01 18:15:00,2024-07-01 19:15:00,f179bc75979c9a1b183517141f3cf88e,Online,1,Ali AlMadhi 
+41905,1,2024-07-03,2024-07-03 18:15:00,2024-07-03 19:15:00,f179bc75979c9a1b183517141f3cf88e,Online,1,Ali AlMadhi 
+41906,1,2024-07-01,2024-07-01 18:15:00,2024-07-01 19:15:00,0293bf5a14ed8aa7de594c4b89ea7ebb,Online,1,Noura AlMoqbil 
+41907,1,2024-07-03,2024-07-03 18:15:00,2024-07-03 19:15:00,0293bf5a14ed8aa7de594c4b89ea7ebb,Online,1,Noura AlMoqbil 
+41908,1,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,00b58cc7cf2ec7cef12c404da7a62076,Online,1,Noura AlMoqbil 
+41909,1,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,710f81c09400ab4925e9f523c406cb04,Online,1,Fawaz bin Saeed 
+41911,1,2024-07-02,2024-07-02 18:15:00,2024-07-02 19:15:00,a7a910bfd40f320cdda0a4cc5b54849c,Online,1,RawanD Aldawsari 
+41918,4A,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Aydah AlJuhani 
+41919,4A,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Aydah AlJuhani 
+41920,4A,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Aydah AlJuhani 
+41921,4A,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Aydah AlJuhani 
+41923,1,2024-07-01,2024-07-01 08:30:00,2024-07-01 12:30:00,c6b3aafe5c29286f043bad7687b20f73,In-person,1,Younis AlSulami 
+41924,1,2024-07-02,2024-07-02 08:30:00,2024-07-02 12:30:00,c6b3aafe5c29286f043bad7687b20f73,In-person,1,Younis AlSulami 
+41925,1,2024-07-03,2024-07-03 08:30:00,2024-07-03 12:30:00,c6b3aafe5c29286f043bad7687b20f73,In-person,1,Younis AlSulami 
+41926,1,2024-07-04,2024-07-04 08:30:00,2024-07-04 12:30:00,c6b3aafe5c29286f043bad7687b20f73,In-person,1,Younis AlSulami 
+41928,1,2024-07-02,2024-07-02 17:10:00,2024-07-02 19:10:00,9dd1631021f956625818dfa503e90d68,Online,1,Ali AlMadhi 
+41930,1,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,700b3c068192446341a2a24f79b5d40a,Online,1,Fawaz bin Saeed 
+41931,1,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,cf98db7583b6a8c72402c5707015a90e,In-person,1,Noura AlMoqbil 
+41932,1,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,cf98db7583b6a8c72402c5707015a90e,In-person,1,Noura AlMoqbil 
+41941,1,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,63e7d88e86c102960c8ac9b7863413c9,Online,1,Layla AlMazmoumi 
+41942,1,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,eb4cfae66db820d4d0c377107c6595ba,In-person,1,Ali AlMadhi 
+41943,Level 2 Bridge,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,eb4cfae66db820d4d0c377107c6595ba,In-person,1,Ali AlMadhi 
+41947,1,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,6d17a8ce42b488addb5c9c95fdc8e0f5,In-person,1,Eman AlGhamdi 
+41948,1,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,6d17a8ce42b488addb5c9c95fdc8e0f5,In-person,1,Eman AlGhamdi 
+41950,Level 2 Bridge,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Younis AlSulami 
+41951,Level 2 Bridge,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Younis AlSulami 
+41952,Level 2 Bridge,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Abdullatif AlAsmari 
+41953,Level 2 Bridge,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Younis AlSulami 
+41956,1,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,1790c1d035dd234a4e3120557fae93f9,Online,1,Khalid AlAteeq 
+41957,1,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,1790c1d035dd234a4e3120557fae93f9,Online,1,Noura AlMoqbil 
+41960,1,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41961,1,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41962,1,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41963,1,2024-07-04,2024-07-04 10:40:00,2024-07-04 12:40:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sarah Bin Hudhud 
+41965,1,2024-07-02,2024-07-02 17:10:00,2024-07-02 19:10:00,797a95e672455e16fb872e7270c3f221,In-person,1,Noura AlMoqbil 
+41967,Level 2 Bridge,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Noura AlMoqbil 
+41968,Level 2 Bridge,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Renad Mohammed 
+41969,Level 2 Bridge,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Renad Mohammed 
+41970,Level 2 Bridge,2024-07-04,2024-07-04 15:30:00,2024-07-04 16:30:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Ashwag AlMahboob 
+41974,1,2024-07-01,2024-07-01 18:15:00,2024-07-01 19:15:00,1790c1d035dd234a4e3120557fae93f9,Online,1,Sultan bin Suliman 
+41975,1,2024-07-02,2024-07-02 18:15:00,2024-07-02 19:15:00,1790c1d035dd234a4e3120557fae93f9,Online,1,Khalid AlAteeq 
+41977,1,2024-07-01,2024-07-01 09:30:00,2024-07-01 10:30:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41978,1,2024-07-02,2024-07-02 09:30:00,2024-07-02 10:30:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41979,1,2024-07-03,2024-07-03 09:30:00,2024-07-03 10:30:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41980,1,2024-07-04,2024-07-04 09:30:00,2024-07-04 10:30:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Ashwag AlMahboob 
+41982,1,2024-07-01,2024-07-01 13:20:00,2024-07-01 14:20:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41983,1,2024-07-02,2024-07-02 13:20:00,2024-07-02 14:20:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41984,1,2024-07-03,2024-07-03 13:20:00,2024-07-03 14:20:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+41985,1,2024-07-04,2024-07-04 13:20:00,2024-07-04 14:20:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Khalid AlRashidi 
+41986,1,2024-07-01,2024-07-01 18:15:00,2024-07-01 19:15:00,865623726f7580ad9a8b5c4a356a437a,Online,1,Saleh AlSanat 
+41987,1,2024-07-03,2024-07-03 18:15:00,2024-07-03 19:15:00,f9e4c42e702afa9560854314ad7ea4b9,Online,1,Nesreen Ali 
+41989,1,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,147fd277703bb40e122ac95952b02d52,In-person,1,Sultan bin Suliman 
+41990,1,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,147fd277703bb40e122ac95952b02d52,In-person,1,Sultan bin Suliman 
+41991,1,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,147fd277703bb40e122ac95952b02d52,In-person,1,Sultan bin Suliman 
+41993,1,2024-07-02,2024-07-02 18:15:00,2024-07-02 19:15:00,86ddf9d10d3078a3a832daf59600f044,Online,1,Fawaz bin Saeed 
+41995,1,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,2a8b858e7beb342aa9fedd568bfbc0f5,Online,1,Fatimah_Nasser 
+41996,1,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,2a8b858e7beb342aa9fedd568bfbc0f5,Online,1,Fatimah_Nasser 
+41999,2B,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,c88fb215249b7e41191a64c559f2be0c,Online,1,Reem AlTamimi 
+42002,2B,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Ashwag AlMahboob 
+42003,2B,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Faisal AlDhafeeri 
+42004,2B,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Faisal AlDhafeeri 
+42006,2B,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Eman AlGhamdi 
+42007,2B,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Faisal AlDhafeeri 
+42008,2B,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Faisal AlDhafeeri 
+42009,2A,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,2306895481bd8a4beb5dc9be382ee4ea,Online,1,Faisal AlQahtani 
+42010,2A,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,2306895481bd8a4beb5dc9be382ee4ea,Online,1,Faisal AlQahtani 
+42016,2B,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Reem AlTamimi 
+42017,2B,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Reem AlTamimi 
+42018,2B,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Faisal AlDhafeeri 
+42019,2B,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Reem AlTamimi 
+42022,2A,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Abdulelah AlNasser 
+42023,2A,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Abdulelah AlNasser 
+42024,2A,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Abdulelah AlNasser 
+42031,2B,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,9ae3c3f263ec8677d71729018878b090,In-person,1,Reem AlTamimi 
+42032,2B,2024-07-04,2024-07-04 10:40:00,2024-07-04 12:40:00,9ae3c3f263ec8677d71729018878b090,In-person,1,Reem AlTamimi 
+42037,2A,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,4a4b7a20ba3435a886d0ec3f86d23532,Online,1,RawanD Aldawsari 
+42038,2A,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Naif AlGhwairi 
+42039,2A,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Naif AlGhwairi 
+42040,2A,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Naif AlGhwairi 
+42042,2A,2024-07-01,2024-07-01 17:10:00,2024-07-01 19:10:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,RawanD Aldawsari 
+42044,2B,2024-07-02,2024-07-02 16:10:00,2024-07-02 19:10:00,a0f06e4a3cf30f262bac59953e688b8c,On-site,1,Abdulrahman AlJohani 
+42045,2A,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Noura AlMoqbil 
+42046,2A,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Noura AlMoqbil 
+42047,2A,2024-07-04,2024-07-04 15:30:00,2024-07-04 16:30:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Abdulelah AlNasser 
+42049,2B,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Sultan bin Suliman 
+42050,2B,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Sultan bin Suliman 
+42051,2B,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Sultan bin Suliman 
+42054,2B,2024-07-01,2024-07-01 17:10:00,2024-07-01 19:10:00,9ae3c3f263ec8677d71729018878b090,In-person,1,Nesreen Ali 
+42055,2B,2024-07-02,2024-07-02 17:10:00,2024-07-02 19:10:00,9ae3c3f263ec8677d71729018878b090,In-person,1,Nesreen Ali 
+42058,2A,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Khalid AlAteeq 
+42059,2A,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Khalid AlAteeq 
+42060,2A,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Khalid AlAteeq 
+42063,2A,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,4dfa529b6d7c17a004ecc8d4c3d8731a,In-person,1,Nesreen Ali 
+42065,2B,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,c899014dca3aaa6cb0ef69655aec62e7,In-person,1,Ali AlMadhi 
+42067,2B,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,0b4ae4ce5b8a5f19f32de2e8d5dd992b,Online,1,Faisal AlQahtani 
+42070,2B,2024-07-06,2024-07-06 14:25:00,2024-07-06 16:25:00,ca2869fb002b6552545521265494d6d6,Online,1,Nesreen Ali 
+42072,2B,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,fc32ccf45e06916845d606b1ffd50986,In-person,1,Amal AlHazzani 
+42073,2B,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,fc32ccf45e06916845d606b1ffd50986,In-person,1,Reem AlTamimi 
+42074,2B,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,fc32ccf45e06916845d606b1ffd50986,In-person,1,Amal AlHazzani 
+42075,2B,2024-07-04,2024-07-04 08:30:00,2024-07-04 10:30:00,fc32ccf45e06916845d606b1ffd50986,In-person,1,Amal AlHazzani 
+42082,2B,2024-07-01,2024-07-01 13:20:00,2024-07-01 14:20:00,57b9fa0b7505eb1806a2508bfd729e12,In-person,1,Muteb AlDossary 
+42084,2B,2024-07-03,2024-07-03 13:20:00,2024-07-03 14:20:00,57b9fa0b7505eb1806a2508bfd729e12,In-person,1,Muteb AlDossary 
+42085,2B,2024-07-04,2024-07-04 13:20:00,2024-07-04 14:20:00,57b9fa0b7505eb1806a2508bfd729e12,In-person,1,Muteb AlDossary 
+42086,3A,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,c2fc0d3338b4d18fd12cfd481176d7ec,In-person,1,Sultan bin Suliman 
+42088,2B,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,88c802d0322dcc461b83f1f66e7be72c,Online,1,Faisal AlQahtani 
+42090,2C,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42091,2C,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42092,2C,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42093,2C,2024-07-04,2024-07-04 10:40:00,2024-07-04 12:40:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42095,2C,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Sarah Bin Hudhud 
+42096,2C,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Sarah Bin Hudhud 
+42097,2C,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Sarah Bin Hudhud 
+42098,2C,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Sarah Bin Hudhud 
+42100,2B,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,876e9bb1bd4bfa315066f82d78af93aa,In-person,1,Layla AlMazmoumi 
+42101,2B,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,876e9bb1bd4bfa315066f82d78af93aa,In-person,1,Layla AlMazmoumi 
+42103,2B,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,876e9bb1bd4bfa315066f82d78af93aa,In-person,1,Layla AlMazmoumi 
+42104,2B,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,876e9bb1bd4bfa315066f82d78af93aa,In-person,1,Layla AlMazmoumi 
+42105,3A,2024-07-06,2024-07-06 14:25:00,2024-07-06 15:25:00,c2fc0d3338b4d18fd12cfd481176d7ec,In-person,1,Sultan bin Suliman 
+42107,2B,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42108,2B,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42109,2B,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42110,2B,2024-07-04,2024-07-04 08:30:00,2024-07-04 10:30:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42112,2B,2024-07-01,2024-07-01 10:40:00,2024-07-01 11:40:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42113,2B,2024-07-02,2024-07-02 10:40:00,2024-07-02 11:40:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42114,2B,2024-07-03,2024-07-03 10:40:00,2024-07-03 11:40:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42115,2B,2024-07-04,2024-07-04 10:40:00,2024-07-04 11:40:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42117,2B,2024-07-02,2024-07-02 08:00:00,2024-07-02 11:00:00,e687864be2554f983a44f5a51ce3058c,On-site,1,Abdulrahman AlJohani 
+42118,2B,2024-07-04,2024-07-04 08:00:00,2024-07-04 11:00:00,e687864be2554f983a44f5a51ce3058c,On-site,1,Abdulrahman AlJohani 
+42120,2C,2024-07-01,2024-07-01 09:35:00,2024-07-01 10:35:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42121,2C,2024-07-02,2024-07-02 09:35:00,2024-07-02 10:35:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42122,2C,2024-07-03,2024-07-03 09:35:00,2024-07-03 10:35:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42123,2C,2024-07-04,2024-07-04 09:35:00,2024-07-04 10:35:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Naif AlGhwairi 
+42125,2C,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Faisal AlQahtani 
+42126,2C,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Faisal AlQahtani 
+42127,2C,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Faisal AlQahtani 
+42128,2C,2024-07-04,2024-07-04 15:30:00,2024-07-04 16:30:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Amal AlHazzani 
+42130,2B,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Amal AlHazzani 
+42131,2B,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Muteb AlDossary 
+42132,2B,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Amal AlHazzani 
+42133,2B,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Amal AlHazzani 
+42135,2B,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Nesreen Ali 
+42136,2B,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Nesreen Ali 
+42137,2B,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Nesreen Ali 
+42138,2B,2024-07-04,2024-07-04 15:30:00,2024-07-04 16:30:00,2829d94850e1685e9c57770bfeccb573,In-person,1,Muteb AlDossary 
+42147,2C,2024-07-01,2024-07-01 17:10:00,2024-07-01 19:10:00,7ae69e4c8e042f2fee4872a36a3d2b3a,Online,1,Faisal AlQahtani 
+42148,2C,2024-07-03,2024-07-03 17:10:00,2024-07-03 19:10:00,7ae69e4c8e042f2fee4872a36a3d2b3a,Online,1,Faisal AlQahtani 
+42149,3A,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,87131dc15574a3d071db05f8334597fd,Online,1,Saleh AlSanat 
+42151,3A,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,c7d311c418adb0e4d4a3de4c20347f9e,Online,1,Omar AlDkhelallh 
+42152,3C,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,c7d311c418adb0e4d4a3de4c20347f9e,In-person,1,Omar AlDkhelallh 
+42153,4A,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,c7d311c418adb0e4d4a3de4c20347f9e,In-person,1,Aydah AlJuhani 
+42161,3A,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,c7d311c418adb0e4d4a3de4c20347f9e,Online,1,Omar AlDkhelallh 
+42162,3A,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,c7d311c418adb0e4d4a3de4c20347f9e,In-person,1,Omar AlDkhelallh 
+42163,4A,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,c7d311c418adb0e4d4a3de4c20347f9e,In-person,1,Muteb AlDossary 
+42167,3A,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,Omar AlDkhelallh 
+42168,3A,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,Omar AlDkhelallh 
+42169,3A,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,Omar AlDkhelallh 
+42170,3A,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,Omar AlDkhelallh 
+42174,3A,2024-07-02,2024-07-02 13:20:00,2024-07-02 14:20:00,dec577764ef9e027d8265b03aa5a5641,Online,1,Atheer AlQarni 
+42175,3A,2024-07-03,2024-07-03 13:20:00,2024-07-03 14:20:00,dec577764ef9e027d8265b03aa5a5641,Online,1,Atheer AlQarni 
+42178,3A,2024-07-02,2024-07-02 14:25:00,2024-07-02 15:25:00,f64aa60ee2859d5c72644c880b7dc1d8,Online,1,Atheer AlQarni 
+42179,3A,2024-07-03,2024-07-03 14:25:00,2024-07-03 15:25:00,f64aa60ee2859d5c72644c880b7dc1d8,Online,1,Atheer AlQarni 
+42181,3A,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,RawanD Aldawsari 
+42182,3A,2024-07-02,2024-07-02 15:30:00,2024-07-02 16:30:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,RawanD Aldawsari 
+42183,3A,2024-07-03,2024-07-03 15:30:00,2024-07-03 16:30:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,RawanD Aldawsari 
+42184,3A,2024-07-04,2024-07-04 15:30:00,2024-07-04 16:30:00,ceeedf4f5eedb57732dc03d5adf1f140,In-person,1,Ghadeer AlSaedi 
+42187,3B,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,1c52146889c9f5769330cf8044760849,In-person,1,RawanD Aldawsari 
+42207,3B,2024-07-04,2024-07-04 13:20:00,2024-07-04 15:20:00,b09f6f0e3798dcf6efdf3ede748fff41,In-person,1,Ghadeer AlSaedi 
+42208,3B,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,b09f6f0e3798dcf6efdf3ede748fff41,Online,1,Khalid AlRashidi 
+42209,3B,2024-07-03,2024-07-03 13:20:00,2024-07-03 15:20:00,b09f6f0e3798dcf6efdf3ede748fff41,Online,1,Reem AlTamimi 
+42211,3C,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,50ebf7844a0109707733fa3a28751b4f,In-person,1,Muteb AlDossary 
+42212,3C,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,50ebf7844a0109707733fa3a28751b4f,In-person,1,Muteb AlDossary 
+42215,3C,2024-07-01,2024-07-01 13:20:00,2024-07-01 15:20:00,50ebf7844a0109707733fa3a28751b4f,In-person,1,Ashwag AlMahboob 
+42216,3C,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,50ebf7844a0109707733fa3a28751b4f,In-person,1,Ashwag AlMahboob 
+42219,3C,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,977d75cc3efd34aa55c5c0c43dfc437e,Online,1,Khalid AlRashidi 
+42220,3C,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,977d75cc3efd34aa55c5c0c43dfc437e,Online,1,Khalid AlRashidi 
+42221,3C,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,977d75cc3efd34aa55c5c0c43dfc437e,Online,1,Khalid AlRashidi 
+42222,3C,2024-07-04,2024-07-04 10:40:00,2024-07-04 12:40:00,977d75cc3efd34aa55c5c0c43dfc437e,Online,1,Khalid AlRashidi 
+42223,3C,2024-07-01,2024-07-01 13:20:00,2024-07-01 14:20:00,977d75cc3efd34aa55c5c0c43dfc437e,In-person,1,Atheer AlQarni 
+42224,3C,2024-07-03,2024-07-03 13:20:00,2024-07-03 14:20:00,977d75cc3efd34aa55c5c0c43dfc437e,In-person,1,RawanM AlMoqbil 
+42226,"Kid's Level 1",2024-07-01,2024-07-01 13:20:00,2024-07-01 14:20:00,32fbc47cb67999e11868426862552ec7,In-person,1,Naif AlGhwairi 
+42227,"Kid's Level 1",2024-07-02,2024-07-02 13:20:00,2024-07-02 14:20:00,32fbc47cb67999e11868426862552ec7,In-person,1,Khalid AlRashidi 
+42228,"Kid's Level 1",2024-07-03,2024-07-03 13:20:00,2024-07-03 14:20:00,32fbc47cb67999e11868426862552ec7,In-person,1,Younis AlSulami 
+42240,4A,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Abdulelah AlNasser 
+42241,4A,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Abdulelah AlNasser 
+42242,4A,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Abdulelah AlNasser 
+42243,4A,2024-07-04,2024-07-04 10:40:00,2024-07-04 12:40:00,9fe75f52cd6550829a996a264ce9925a,In-person,1,Abdulelah AlNasser 
+42244,1,2024-07-03,2024-07-03 20:25:00,2024-07-03 21:25:00,43d918a1f08fc2756ebb4dbb58099e68,Online,1,Renad Mohammed 
+42267,2A,2024-07-01,2024-07-01 08:30:00,2024-07-01 10:30:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42268,2A,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42269,2A,2024-07-03,2024-07-03 08:30:00,2024-07-03 10:30:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42270,2A,2024-07-04,2024-07-04 08:30:00,2024-07-04 10:30:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42272,2A,2024-07-01,2024-07-01 10:40:00,2024-07-01 11:40:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42273,2A,2024-07-02,2024-07-02 10:40:00,2024-07-02 11:40:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42274,2A,2024-07-03,2024-07-03 10:40:00,2024-07-03 11:40:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Amal AlHazzani 
+42275,2A,2024-07-04,2024-07-04 10:40:00,2024-07-04 11:40:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42294,Admin Meeting,2024-07-01,2024-07-01 13:20:00,2024-07-01 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Mubarak Al Hussein 
+42295,Admin Meeting,2024-07-01,2024-07-01 13:20:00,2024-07-01 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ali AlMadhi 
+42296,Admin Meeting,2024-07-01,2024-07-01 13:20:00,2024-07-01 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Eman AlGhamdi 
+42297,Admin Meeting,2024-07-01,2024-07-01 13:20:00,2024-07-01 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Fawaz bin Saeed 
+42298,Admin Meeting,2024-07-01,2024-07-01 13:20:00,2024-07-01 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,RawanM AlMoqbil 
+42300,Admin Meeting,2024-07-02,2024-07-02 13:20:00,2024-07-02 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Mubarak Al Hussein 
+42301,Admin Meeting,2024-07-02,2024-07-02 13:20:00,2024-07-02 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Eman AlGhamdi 
+42302,Admin Meeting,2024-07-02,2024-07-02 13:20:00,2024-07-02 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ali AlMadhi 
+42303,Admin Meeting,2024-07-02,2024-07-02 13:20:00,2024-07-02 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Saleh AlSanat 
+42304,Admin Meeting,2024-07-02,2024-07-02 13:20:00,2024-07-02 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,RawanM AlMoqbil 
+42305,Admin Meeting,2024-07-02,2024-07-02 13:20:00,2024-07-02 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Faisal AlDhafeeri 
+42310,Admin Meeting,2024-07-04,2024-07-04 13:20:00,2024-07-04 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Mubarak Al Hussein 
+42312,Admin Meeting,2024-07-04,2024-07-04 13:20:00,2024-07-04 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ameera Alqahtani 
+42313,Admin Meeting,2024-07-04,2024-07-04 13:20:00,2024-07-04 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Faisal AlDhafeeri 
+42314,Admin Meeting,2024-07-04,2024-07-04 13:20:00,2024-07-04 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,RawanM AlMoqbil 
+42325,1,2024-07-01,2024-07-01 17:10:00,2024-07-01 19:10:00,479f98b57451841b797806573d27c8eb,In-person,1,Khalid AlAteeq 
+42326,1,2024-07-03,2024-07-03 17:10:00,2024-07-03 19:10:00,479f98b57451841b797806573d27c8eb,In-person,1,Khalid AlAteeq 
+42327,1,2024-07-01,2024-07-01 17:10:00,2024-07-01 19:10:00,95876494d21bdcf719ef430348391071,Online,1,Renad Mohammed 
+42328,1,2024-07-03,2024-07-03 17:10:00,2024-07-03 19:10:00,95876494d21bdcf719ef430348391071,Online,1,Renad Mohammed 
+42335,1,2024-07-07,2024-07-07 18:15:00,2024-07-07 19:15:00,1f654722d9e733604f1a7f63308e57b2,Online,1,RawanD Aldawsari 
+42337,1,2024-07-07,2024-07-07 18:15:00,2024-07-07 19:15:00,86ddf9d10d3078a3a832daf59600f044,Online,1,Fawaz bin Saeed 
+42350,1,2024-07-07,2024-07-07 08:30:00,2024-07-07 12:30:00,c6b3aafe5c29286f043bad7687b20f73,In-person,1,Younis AlSulami 
+42355,1,2024-07-07,2024-07-07 17:10:00,2024-07-07 19:10:00,9dd1631021f956625818dfa503e90d68,Online,1,Ali AlMadhi 
+42357,1,2024-07-07,2024-07-07 19:20:00,2024-07-07 21:20:00,700b3c068192446341a2a24f79b5d40a,Online,1,Fawaz bin Saeed 
+42361,1,2024-07-07,2024-07-07 14:30:00,2024-07-07 16:30:00,d7169665b0fa7a8f3ced8ca28d89f1d1,In-person,1,Noura AlMoqbil 
+42372,1,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,63e7d88e86c102960c8ac9b7863413c9,Online,1,Fatimah_Nasser 
+42378,1,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,6d17a8ce42b488addb5c9c95fdc8e0f5,In-person,1,Eman AlGhamdi 
+42391,1,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+42398,1,2024-07-07,2024-07-07 09:30:00,2024-07-07 10:30:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+42403,1,2024-07-07,2024-07-07 13:20:00,2024-07-07 14:20:00,ece4232eea88c7a7312fcbd22c224bd8,In-person,1,Sulaiman AlAnazi 
+42408,1,2024-07-07,2024-07-07 17:10:00,2024-07-07 19:10:00,43d918a1f08fc2756ebb4dbb58099e68,Online,1,Shomokh AlZahrani 
+42417,2A,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Younis AlSulami 
+42422,2A,2024-07-07,2024-07-07 15:30:00,2024-07-07 16:30:00,9d87631f0d8de2cb1bfe7b1f3b8fd81e,In-person,1,Ali AlMadhi 
+42435,2B,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Abdulelah AlNasser 
+42452,2A,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Aydah AlJuhani 
+42457,2B,2024-07-07,2024-07-07 15:30:00,2024-07-07 16:30:00,7bd96389721b9e1f1d173ff21ca619ad,In-person,1,Nesreen Ali 
+42463,2A,2024-07-07,2024-07-07 10:40:00,2024-07-07 11:40:00,6b842d2ec27312627a32832b75e42bb4,Online,1,Amal AlHazzani 
+42468,2A,2024-07-07,2024-07-07 19:20:00,2024-07-07 21:20:00,c899014dca3aaa6cb0ef69655aec62e7,In-person,1,Ali AlMadhi 
+42472,2B,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Sarah Bin Hudhud 
+42476,2B,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,a6dc87b16392a2c91b37727a6b4d542a,In-person,1,Muteb AlDossary 
+42480,2B,2024-07-07,2024-07-07 19:20:00,2024-07-07 21:20:00,0b4ae4ce5b8a5f19f32de2e8d5dd992b,Online,1,Faisal AlQahtani 
+42485,2B,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,fc32ccf45e06916845d606b1ffd50986,In-person,1,Amal AlHazzani 
+42495,2B,2024-07-07,2024-07-07 13:20:00,2024-07-07 14:20:00,57b9fa0b7505eb1806a2508bfd729e12,In-person,1,Muteb AlDossary 
+42503,2B,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Reem AlTamimi 
+42508,2B,2024-07-07,2024-07-07 17:10:00,2024-07-07 19:10:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Nesreen Ali 
+42509,2C,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Abdulelah AlNasser 
+42514,2C,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Sarah Bin Hudhud 
+42526,2B,2024-07-07,2024-07-07 17:10:00,2024-07-07 19:10:00,9ae3c3f263ec8677d71729018878b090,In-person,1,Faisal AlQahtani 
+42529,2B,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,876e9bb1bd4bfa315066f82d78af93aa,In-person,1,Naif AlGhwairi 
+42532,2B,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,876e9bb1bd4bfa315066f82d78af93aa,In-person,1,Naif AlGhwairi 
+42535,2B,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42541,2B,2024-07-07,2024-07-07 15:30:00,2024-07-07 16:30:00,3b6060c6e29d9d426ac5317191a40b0d,In-person,1,Sultan bin Suliman 
+42546,2B,2024-07-07,2024-07-07 08:00:00,2024-07-07 11:00:00,e687864be2554f983a44f5a51ce3058c,On-site,1,Abdulrahman AlJohani 
+42549,2B,2024-07-07,2024-07-07 16:10:00,2024-07-07 19:10:00,a0f06e4a3cf30f262bac59953e688b8c,On-site,1,Abdulrahman AlJohani 
+42555,2B,2024-07-07,2024-07-07 10:40:00,2024-07-07 11:40:00,5a51c8e53f244b846706080d53197178,In-person,1,RawanM AlMoqbil 
+42560,2C,2024-07-07,2024-07-07 09:35:00,2024-07-07 10:35:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Khalid AlRashidi 
+42566,2C,2024-07-07,2024-07-07 15:30:00,2024-07-07 16:30:00,8b00a0e8939a0aec7ebf2e8f753fae6c,In-person,1,Faisal AlQahtani 
+42571,2C,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,37815ca233ee9bb0d8ffc1d0a525d5ec,In-person,1,Abdullatif AlAsmari 
+42575,2C,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,37815ca233ee9bb0d8ffc1d0a525d5ec,In-person,1,Sarah Bin Hudhud 
+42592,4A,2024-07-07,2024-07-07 08:30:00,2024-07-07 10:30:00,c7d311c418adb0e4d4a3de4c20347f9e,Online,1,Layla AlMazmoumi 
+42599,3A,2024-07-07,2024-07-07 13:20:00,2024-07-07 14:20:00,dec577764ef9e027d8265b03aa5a5641,Online,1,Atheer AlQarni 
+42603,3A,2024-07-07,2024-07-07 14:25:00,2024-07-07 15:25:00,f64aa60ee2859d5c72644c880b7dc1d8,Online,1,Atheer AlQarni 
+42607,3B,2024-07-07,2024-07-07 19:20:00,2024-07-07 21:20:00,1c52146889c9f5769330cf8044760849,In-person,1,RawanD Aldawsari 
+42627,3B,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,b09f6f0e3798dcf6efdf3ede748fff41,In-person,1,Ghadeer AlSaedi 
+42640,3C,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,977d75cc3efd34aa55c5c0c43dfc437e,Online,1,Khalid AlRashidi 
+42652,"Kid's Level 1",2024-07-07,2024-07-07 13:20:00,2024-07-07 14:20:00,32fbc47cb67999e11868426862552ec7,In-person,1,Eman AlGhamdi 
+42657,4B,2024-07-01,2024-07-01 11:45:00,2024-07-01 12:45:00,48dac3a701c668930984c098b179ec18,Online,1,Abdullatif AlAsmari 
+42659,5B,2024-07-02,2024-07-02 19:20:00,2024-07-02 20:20:00,2758fc2d1becfd7285979a7de16d5f9b,Online,1,Nesreen Ali 
+42661,1,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,14588ca606a34d8fa2f421f7da846f83,Online,1,RawanD Aldawsari 
+42662,3A,2024-07-02,2024-07-02 08:30:00,2024-07-02 10:30:00,b07d341daf07b4ca19d853ecc4a1b357,Online,1,Abdullatif AlAsmari 
+42664,1,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,14588ca606a34d8fa2f421f7da846f83,Online,1,Nesreen Ali 
+42665,1,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,b0abe94a64455240ca632ab2fbba63c5,Online,1,Fawaz bin Saeed 
+42666,Admin Meeting,2024-07-01,2024-07-01 13:20:00,2024-07-01 14:20:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Renad Mohammed 
+42669,1,2024-07-02,2024-07-02 19:20:00,2024-07-02 21:20:00,cfd092abe10b33304b160c6a8d6edb9b,In-person,1,Khalid AlAteeq 
+42673,Admin Meeting,2024-07-01,2024-07-01 17:05:00,2024-07-01 18:05:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Saleh AlSanat 
+42674,Admin Meeting,2024-07-02,2024-07-02 13:30:00,2024-07-02 14:15:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ameera Alqahtani 
+42675,1,2024-07-01,2024-07-01 17:10:00,2024-07-01 19:10:00,a536affb78678d865054952e8b2c7c06,In-person,1,Fawaz bin Saeed 
+42676,2A,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,d73efc2fc7c1cc01a2a77624d47968c7,Online,1,Abdullatif AlAsmari 
+42678,1,2024-07-01,2024-07-01 19:20:00,2024-07-01 21:20:00,1a9b4dcb088226c8887a5a47b2367e73,In-person,1,Renad Mohammed 
+42679,1,2024-07-03,2024-07-03 17:10:00,2024-07-03 19:10:00,cb4d89bf683af450bc5b76ec7c43ed11,In-person,1,Fawaz bin Saeed 
+42682,2B,2024-07-04,2024-07-04 08:30:00,2024-07-04 10:30:00,9ae3c3f263ec8677d71729018878b090,In-person,1,Abdullatif AlAsmari 
+42686,1,2024-07-01,2024-07-01 10:40:00,2024-07-01 12:40:00,5be5005c0b2592d012cf02c1101016c0,Online,1,Sarah Bin Hudhud 
+42687,Admin Meeting,2024-07-01,2024-07-01 11:45:00,2024-07-01 12:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Fatima_Shehri 
+42688,Admin Meeting,2024-07-02,2024-07-02 17:05:00,2024-07-02 17:55:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Renad Mohammed 
+42689,1,2024-07-02,2024-07-02 10:40:00,2024-07-02 12:40:00,5be5005c0b2592d012cf02c1101016c0,Online,1,Eman AlGhamdi 
+42690,1,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,5be5005c0b2592d012cf02c1101016c0,Online,1,Eman AlGhamdi 
+42691,2A,2024-07-02,2024-07-02 08:30:00,2024-07-02 09:30:00,2affe9ba23bd1182cba647b495bee32f,Online,1,Khalid AlRashidi 
+42692,Admin Meeting,2024-07-01,2024-07-01 15:30:00,2024-07-01 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Fatima_Shehri 
+42693,4B,2024-07-03,2024-07-03 17:10:00,2024-07-03 18:10:00,48dac3a701c668930984c098b179ec18,Online,1,Nesreen Ali 
+42694,4B,2024-07-04,2024-07-04 11:45:00,2024-07-04 12:45:00,48dac3a701c668930984c098b179ec18,Online,1,Abdullatif AlAsmari 
+42695,2B,2024-07-02,2024-07-02 13:20:00,2024-07-02 15:20:00,152febfc91d4c444efa5056a972f0988,Online,1,Abdullatif AlAsmari 
+42696,5A,2024-07-03,2024-07-03 10:40:00,2024-07-03 11:40:00,4822eb4c4ec9c82f72e1a63b96d0e0ac,Online,1,Ashwag AlMahboob 
+42697,5A,2024-07-04,2024-07-04 10:40:00,2024-07-04 11:40:00,4822eb4c4ec9c82f72e1a63b96d0e0ac,Online,1,Ashwag AlMahboob 
+42698,5A,2024-07-06,2024-07-06 12:15:00,2024-07-06 13:15:00,4822eb4c4ec9c82f72e1a63b96d0e0ac,Online,1,Nesreen Ali 
+42699,1,2024-07-03,2024-07-03 17:10:00,2024-07-03 19:10:00,7313b3f6688a37d5533e1ff03fe3ec67,In-person,1,RawanD Aldawsari 
+42701,1,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,aa15468b740bd56fefb86b56ad808564,In-person,1,Shomokh AlZahrani 
+42706,Admin Meeting,2024-07-03,2024-07-03 14:20:00,2024-07-03 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Mubarak Al Hussein 
+42707,Admin Meeting,2024-07-03,2024-07-03 14:10:00,2024-07-03 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ali AlMadhi 
+42708,Admin Meeting,2024-07-03,2024-07-03 14:20:00,2024-07-03 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Eman AlGhamdi 
+42709,Admin Meeting,2024-07-07,2024-07-07 13:20:00,2024-07-07 16:30:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Saleh AlSanat 
+42710,Admin Meeting,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,RawanM AlMoqbil 
+42712,4A,2024-07-03,2024-07-03 10:40:00,2024-07-03 12:40:00,776579c1b46e51736b2b68f57c2e1072,In-person,1,Sarah Bin Hudhud 
+42713,4A,2024-07-03,2024-07-03 14:25:00,2024-07-03 15:25:00,776579c1b46e51736b2b68f57c2e1072,In-person,1,Muteb AlDossary 
+42714,4A,2024-07-04,2024-07-04 08:30:00,2024-07-04 10:30:00,776579c1b46e51736b2b68f57c2e1072,In-person,1,Layla AlMazmoumi 
+42715,4A,2024-07-04,2024-07-04 14:25:00,2024-07-04 15:25:00,776579c1b46e51736b2b68f57c2e1072,In-person,1,Abdullatif AlAsmari 
+42718,1,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,14588ca606a34d8fa2f421f7da846f83,Online,1,Fawaz bin Saeed 
+42722,1,2024-07-03,2024-07-03 19:20:00,2024-07-03 21:20:00,c9af96c05921d8a3ad9d033367c0c873,In-person,1,Khalid AlAteeq 
+42723,1,2024-07-07,2024-07-07 19:20:00,2024-07-07 21:20:00,14588ca606a34d8fa2f421f7da846f83,Online,1,Shomokh AlZahrani 
+42725,2B,2024-07-03,2024-07-03 17:10:00,2024-07-03 18:10:00,88c802d0322dcc461b83f1f66e7be72c,Online,1,Ali AlMadhi 
+42726,1,2024-07-06,2024-07-06 14:25:00,2024-07-06 16:25:00,45b326f21b6d1feb3f757266c1659f13,In-person,1,Shomokh AlZahrani 
+42728,1,2024-07-03,2024-07-03 11:30:00,2024-07-03 12:00:00,94ad7880d19cdcde13f1c46fb2d7fe40,Online,1,Yousif Ibrahim 
+42729,2A,2024-07-03,2024-07-03 17:10:00,2024-07-03 18:10:00,f15612927ee90f7dd54b56224a2b05b7,Online,1,Noura AlMoqbil 
+42730,1,2024-07-06,2024-07-06 12:15:00,2024-07-06 14:15:00,5be5005c0b2592d012cf02c1101016c0,Online,1,RawanD Aldawsari 
+42731,1,2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,5be5005c0b2592d012cf02c1101016c0,Online,1,Ashwag AlMahboob 
+42734,Admin Meeting,2024-07-03,2024-07-03 15:35:00,2024-07-03 16:10:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,In-person,1,Ameera Alqahtani 
+42738,Admin Meeting,2024-07-06,2024-07-06 14:30:00,2024-07-06 15:00:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,RawanD Aldawsari 
+42742,Admin Meeting,2024-07-04,2024-07-04 10:40:00,2024-07-04 12:40:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Fatima_Shehri 
+42760,2A,2024-07-07,2024-07-07 13:20:00,2024-07-07 14:20:00,ad497049474809973163e7f0cf23f9a0,Online,1,Ali AlMadhi 
+42815,1,2024-07-07,2024-07-07 19:20:00,2024-07-07 21:20:00,827deeb649f4674a3bb7762a5b052fef,Online,1,Abdulaziz bin Majid 
+43063,5A,2024-07-07,2024-07-07 09:35:00,2024-07-07 10:35:00,4822eb4c4ec9c82f72e1a63b96d0e0ac,Online,1,Abdulelah AlNasser 
+43065,2A,2024-07-04,2024-07-04 15:10:00,2024-07-04 16:10:00,ad497049474809973163e7f0cf23f9a0,Online,1,Eman AlGhamdi 
+43066,2A,2024-07-06,2024-07-06 13:20:00,2024-07-06 14:20:00,2b76b89536fd0c4adfaf3402109943e4,Online,1,Nesreen Ali 
+43067,3C,2024-07-06,2024-07-06 17:10:00,2024-07-06 19:10:00,0de69bac23735fcbc600760a2d21b86f,In-person,1,RawanD Aldawsari 
+43068,3C,2024-07-06,2024-07-06 19:20:00,2024-07-06 20:20:00,0de69bac23735fcbc600760a2d21b86f,In-person,1,Noura AlMoqbil 
+43069,4A,2024-07-06,2024-07-06 15:30:00,2024-07-06 16:30:00,8424626f789a05b02a256dba36b0324e,In-person,1,RawanD Aldawsari 
+43077,Admin Meeting,2024-07-07,2024-07-07 17:10:00,2024-07-07 18:10:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Noura AlMoqbil 
+43082,2A,2024-07-07,2024-07-07 09:35:00,2024-07-07 10:35:00,2b76b89536fd0c4adfaf3402109943e4,Online,1,Muteb AlDossary 
+43083,4B,2024-07-07,2024-07-07 11:45:00,2024-07-07 12:45:00,48dac3a701c668930984c098b179ec18,Online,1,Abdullatif AlAsmari 
+43084,4B,2024-07-07,2024-07-07 17:10:00,2024-07-07 18:10:00,48dac3a701c668930984c098b179ec18,Online,1,RawanD Aldawsari 
+43086,Admin Meeting,2024-07-07,2024-07-07 14:25:00,2024-07-07 15:25:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ameera Alqahtani 
+43087,Admin Meeting,2024-07-07,2024-07-07 13:20:00,2024-07-07 14:20:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Ashwag AlMahboob 
+43089,4A,2024-07-07,2024-07-07 13:20:00,2024-07-07 15:20:00,776579c1b46e51736b2b68f57c2e1072,In-person,1,Aydah AlJuhani 
+43090,"Kid's Level 1",2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,00b95cdca36d8647274ab04fd0360899,In-person,1,Eman AlGhamdi 
+43092,2A,2024-07-07,2024-07-07 15:30:00,2024-07-07 16:30:00,ad497049474809973163e7f0cf23f9a0,Online,1,RawanM AlMoqbil 
+43094,Admin Meeting,2024-07-07,2024-07-07 17:10:00,2024-07-07 18:10:00,a545c4dc2d1fc3668d1e5c4ef4ba0ed0,Admin Hold,1,Abdulaziz bin Majid 
+43153,"Kid's Level 1",2024-07-07,2024-07-07 10:40:00,2024-07-07 12:40:00,00b95cdca36d8647274ab04fd0360899,In-person,1,Reem AlTamimi 

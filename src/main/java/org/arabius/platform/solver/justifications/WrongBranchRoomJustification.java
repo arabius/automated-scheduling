@@ -11,6 +11,6 @@ public record WrongBranchRoomJustification(Lesson lesson1, String description)
     public WrongBranchRoomJustification(Lesson lesson1) {
         this(lesson1,
                 "Lesson on '%s' at '%s' for student group '%s' is assigned to a room in the wrong branch"
-                        .formatted(lesson1.getDate(), lesson1.getStart(), lesson1.getStudentGroupHash()));
+                        .formatted(lesson1.getDate(), lesson1.getBufferStart(), lesson1.getStudentGroupHash()));
     }
 }
