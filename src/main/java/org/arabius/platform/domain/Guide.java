@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @JsonIdentityInfo(scope = Guide.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Guide {
+public class Guide extends ArabiusEntity {
     
     @PlanningId
     private int id;
@@ -39,10 +39,6 @@ public class Guide {
         this.name = name;
         this.guideSlots = guideSlots != null ? guideSlots : new ArrayList<>();
         this.levels = levels;
-    }
-
-    private List<String> parseStringToStringList(String stringToParse) {
-        return Arrays.asList(stringToParse.split("\\|"));
     }
 
     public int getId() {

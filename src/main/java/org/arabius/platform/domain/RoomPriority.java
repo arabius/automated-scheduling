@@ -1,6 +1,6 @@
 package org.arabius.platform.domain;
 
-public class RoomPriority {
+public class RoomPriority extends ArabiusEntity {
     private int roomId;
     private int priority;
     private String lessonType;

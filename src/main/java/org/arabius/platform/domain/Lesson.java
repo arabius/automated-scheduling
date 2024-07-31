@@ -3,6 +3,7 @@ package org.arabius.platform.domain;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.ArrayList;
 
 import org.arabius.platform.solver.LessonPinningFilter;
 
@@ -12,7 +13,7 @@ import ai.timefold.solver.core.api.domain.variable.PlanningVariable;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 
 @PlanningEntity(pinningFilter = LessonPinningFilter.class)
-public class Lesson {
+public class Lesson extends ArabiusEntity {
 
     @PlanningId
     private int id;
@@ -27,6 +28,7 @@ public class Lesson {
     private String lessonType;
     private Integer slotId;
     private int branchId;
+    private ArrayList<Integer> allowedGuideIds = new ArrayList<>(); 
 
     private Integer initialGuideId;
     private Integer initialRoomId;
@@ -42,7 +44,7 @@ public class Lesson {
     public Lesson() {
     }
 
-    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String studentGroupHash, Integer slotId, int branchId) {
+    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String studentGroupHash, Integer slotId, int branchId, String allowedGuideIds) {
         this.id = id;
         this.date = date;
         this.start = start;
@@ -54,18 +56,19 @@ public class Lesson {
         this.studentGroupHash = studentGroupHash;
         this.slotId = slotId;
         this.branchId = branchId;
+        this.allowedGuideIds = this.parseStringToIntList(allowedGuideIds);
     }
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String studentGroupHash, Integer slotId, Integer branchId, Integer initialGuideId, Integer initialRoomId) {
-        this(id, level, date, start, end, bufferStart, bufferEnd, lessonType, studentGroupHash, slotId, branchId);
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String studentGroupHash, Integer slotId, Integer branchId, String allowedGuideIds, Integer initialGuideId, Integer initialRoomId) {
+        this(id, level, date, start, end, bufferStart, bufferEnd, lessonType, studentGroupHash, slotId, branchId, allowedGuideIds);
         this.initialGuideId = initialGuideId;
         this.initialRoomId = initialRoomId;
     }
 
 
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String studentGroupHash, Integer slotId, Integer branchId, Guide guide, Room room) {
-        this(id, level, date, start, end, bufferStart, bufferEnd, lessonType, studentGroupHash, slotId, branchId);
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String lessonType, String studentGroupHash, Integer slotId, Integer branchId, String allowedGuideIds, Guide guide, Room room) {
+        this(id, level, date, start, end, bufferStart, bufferEnd, lessonType, studentGroupHash, slotId, branchId, allowedGuideIds);
         this.room = room;
         this.guide = guide;
     }
@@ -205,5 +208,17 @@ public class Lesson {
 
     public LocalDateTime getStartDateTime() {
         return LocalDateTime.of(date, start);
+    }
+
+    public ArrayList<Integer> getAllowedGuideIds() {
+        return allowedGuideIds;
+    }
+
+    public void setAllowedGuideIds(ArrayList<Integer> allowedGuideIds) {
+        this.allowedGuideIds = allowedGuideIds;
+    }
+
+    public void setAllowedGuideIds(String allowedGuideIds) {
+        this.allowedGuideIds = this.parseStringToIntList(allowedGuideIds);
     }
 }

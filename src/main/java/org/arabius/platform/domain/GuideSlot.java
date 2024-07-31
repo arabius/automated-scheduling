@@ -2,13 +2,14 @@ package org.arabius.platform.domain;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class GuideSlot {
+import ai.timefold.solver.core.api.domain.lookup.PlanningId;
+
+public class GuideSlot extends ArabiusEntity {
     private LocalDate date;
     private int guideId;
     private List<Integer> slotIds;
@@ -34,10 +35,9 @@ public class GuideSlot {
         this.endTime = endTime;
     }
 
-    private List<Integer> parseStringToIntList(String stringToParse) {
-        return Arrays.stream(stringToParse.split("\\|"))
-                                     .map(Integer::parseInt)
-                                     .collect(Collectors.toList());
+    @PlanningId
+    public String getGuideSlotId() {
+        return this.date + "-" + this.guideId;
     }
 
     @JsonProperty("date")
