@@ -11,6 +11,6 @@ public record GuideOnLevelJustification(Lesson lesson1, String description)
     public GuideOnLevelJustification(Lesson lesson1) {
         this(lesson1,
                 "Lesson on %s %s has '%s' level but guide '%s' can't do that level '%s'."
-                        .formatted(lesson1.getDate(), lesson1.getBufferStart(),  lesson1.getLevel(), lesson1.getGuideName(), lesson1.getGuide().getLevels()));
+                        .formatted(lesson1.getDate(), lesson1.getBufferStart(),  lesson1.getLevel(), lesson1.getGuide().getName(), lesson1.getGuide().getLevels()));
     }
 }

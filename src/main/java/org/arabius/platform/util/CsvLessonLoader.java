@@ -28,16 +28,27 @@ public class CsvLessonLoader {
                 lesson.setId(Integer.parseInt(csvRecord.get("id")));
                 lesson.setLevel(csvRecord.get("level"));
                 lesson.setDate(LocalDate.parse(csvRecord.get("date")));
+                lesson.setStart(LocalTime.parse(csvRecord.get("start")));
+                lesson.setEnd(LocalTime.parse(csvRecord.get("end")));
                 lesson.setBufferStart(LocalDateTime.parse(csvRecord.get("buffer_start"), formatter));
                 lesson.setBufferEnd(LocalDateTime.parse(csvRecord.get("buffer_end"), formatter));
                 lesson.setStudentGroupHash(csvRecord.get("student_group_hash"));
                 lesson.setLessonType(csvRecord.get("lesson_type"));
-                lesson.setBranch(Integer.parseInt(csvRecord.get("branch_id")));
-                lesson.setGuideName(csvRecord.get("guide_name"));
+                lesson.setBranchId(Integer.parseInt(csvRecord.get("branch_id")));
+                lesson.setSlotId(parseInteger(csvRecord.get("slot_id")));
+                lesson.setInitialGuideId(parseInteger(csvRecord.get("guide_id")));
+                lesson.setInitialRoomId(parseInteger(csvRecord.get("room_id")));
                 lessonList.add(lesson);
             }
         }
 
         return lessonList;
+    }
+
+    private static Integer parseInteger(String value) {
+        if (value == null || value.isEmpty()) {
+            return null; // or you can return a default value like 0
+        }
+        return Integer.parseInt(value);
     }
 }

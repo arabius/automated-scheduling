@@ -16,8 +16,6 @@ public class Timetable {
 
     private String name;
 
-    @ProblemFactCollectionProperty
-    @ValueRangeProvider
     private List<Timeslot> timeslots;
 
     @ProblemFactCollectionProperty
@@ -47,13 +45,22 @@ public class Timetable {
         this.solverStatus = solverStatus;
     }
 
-    public Timetable(String name, List<Timeslot> timeslots, List<Room> rooms, List<Lesson> lessons, List<Guide> guides) {
+    public Timetable(String name, List<Room> rooms, List<Lesson> lessons, List<Guide> guides) {
         this.name = name;
-        this.timeslots = timeslots;
         this.rooms = rooms;
         this.lessons = lessons;
         this.guides = guides;
     }
+
+    public Timetable(String name, List<Room> rooms, List<Lesson> lessons, List<Guide> guides, List<Timeslot> timeslots) {
+        this.name = name;
+        this.rooms = rooms;
+        this.lessons = lessons;
+        this.guides = guides;
+        this.timeslots = timeslots;
+    }
+
+
 
     // ************************************************************************
     // Getters and setters
@@ -61,10 +68,6 @@ public class Timetable {
 
     public String getName() {
         return name;
-    }
-
-    public List<Timeslot> getTimeslots() {
-        return timeslots;
     }
 
     public List<Room> getRooms() {
@@ -89,6 +92,14 @@ public class Timetable {
 
     public void setSolverStatus(SolverStatus solverStatus) {
         this.solverStatus = solverStatus;
+    }
+
+    public List<Timeslot> getTimeslots() {
+        return timeslots;
+    }
+
+    public void setTimeslots(List<Timeslot> timeslots) {
+        this.timeslots = timeslots;
     }
 
 }

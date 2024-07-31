@@ -43,7 +43,7 @@ public class RoomHardConstraints implements ConstraintProviderInterface {
     private Constraint inpersonRoomInCorrectBranch(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lesson.getRoom().getBranch() != lesson.getBranch() && lesson.getLessonType().equals("In-person"))
+                .filter((lesson) -> lesson.getRoom().getBranch() != lesson.getBranchId() && lesson.getLessonType().equals("In-person"))
                 .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
                 .justifyWith((lesson1, score) -> new WrongBranchRoomJustification(lesson1))
                 .asConstraint("No in-person lessons assigned to rooms in wrong branch");

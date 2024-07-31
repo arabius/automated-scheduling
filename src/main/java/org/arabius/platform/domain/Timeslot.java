@@ -2,13 +2,14 @@ package org.arabius.platform.domain;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Objects;
 
 import ai.timefold.solver.core.api.domain.lookup.PlanningId;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-@JsonIdentityInfo(scope = Timeslot.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+//@JsonIdentityInfo(scope = Timeslot.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Timeslot {
 
     @PlanningId
@@ -72,5 +73,21 @@ public class Timeslot {
     public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Timeslot timeslot = (Timeslot) o;
+        return Objects.equals(getIdAndDate(), timeslot.getIdAndDate());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getIdAndDate());
+    }
     
+    private String getIdAndDate() {
+        return id + "-" + dayOfWeek.toString();
+    }
 }

@@ -23,7 +23,6 @@ public class CsvGuideLoader {
 				guide.setId(Integer.parseInt(csvRecord.get("id")));
 				guide.setName(csvRecord.get("guide_name"));
 				guide.setLevels(csvRecord.get("levels"));
-                guide.setTimeSlotIds(csvRecord.get("slots"));
 				guideList.add(guide);
 			}
 		}

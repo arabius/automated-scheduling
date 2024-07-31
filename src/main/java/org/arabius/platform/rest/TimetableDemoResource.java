@@ -1,6 +1,8 @@
 package org.arabius.platform.rest;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,16 +13,17 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 import org.arabius.platform.domain.Guide;
+import org.arabius.platform.domain.GuideSlot;
 import org.arabius.platform.domain.Lesson;
 import org.arabius.platform.domain.Room;
 import org.arabius.platform.domain.RoomPriority;
 import org.arabius.platform.domain.Timeslot;
 import org.arabius.platform.domain.Timetable;
 import org.arabius.platform.util.CsvGuideLoader;
+import org.arabius.platform.util.CsvGuideSlotsLoader;
 import org.arabius.platform.util.CsvLessonLoader;
 import org.arabius.platform.util.CsvRoomLoader;
 import org.arabius.platform.util.CsvRoomPriorityLoader;
-import org.arabius.platform.util.CsvTimeslotLoader;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.enums.SchemaType;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
@@ -89,12 +92,12 @@ public class TimetableDemoResource {
                     .build();
         }      
         
-        List<Timeslot> timeslots = new ArrayList<>();
+        List<GuideSlot> guideSlots = new ArrayList<>();
         try {
-            timeslots = CsvTimeslotLoader.loadTimeslots("data/timeslots.csv");
+            guideSlots = CsvGuideSlotsLoader.loadGuideSlots("data/guideslots.csv");
         } catch (IOException e) {
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
-                    .entity("Error loading timeslots from CSV file: " + e.getMessage())
+                    .entity("Error loading guide slots from CSV file: " + e.getMessage())
                     .build();
         }
 
@@ -117,21 +120,31 @@ public class TimetableDemoResource {
             }
         }
         
+        for (Guide guide : guides) {
+            guide.addMatchingGuideslots(guideSlots);
+        }
+
+        List<Timeslot> timeSlots = new ArrayList<>();
+
         for (Lesson lesson : lessons) {
-            for (Timeslot timeslot : timeslots) {
-                if (lesson.getDate().equals(timeslot.getDayOfWeek()) &&
-                    lesson.getBufferStart().toLocalTime().equals(timeslot.getStartTime()) &&
-                    lesson.getBufferEnd().toLocalTime().equals(timeslot.getEndTime())) 
-                {
-                    lesson.setTimeslot(timeslot);
-                    break; // No need to check the remaining timeslots for this lesson
+            LocalDate date = lesson.getDate();
+            LocalTime startTime = lesson.getStart();
+            LocalTime endTime = lesson.getEnd();
+            Integer slotId = lesson.getSlotId();
+
+            if (slotId != null) {
+                Timeslot timeSlot = new Timeslot(slotId, date, startTime, endTime);
+                if (!timeSlots.contains(timeSlot)) {
+                    timeSlots.add(timeSlot);
                 }
             }
         }
+        
+        // Now you can use the timeSlots list for further processing or manipulation
 
         lessons.removeIf(lesson -> "Admin Meeting".equals(lesson.getLevel()));
         
-        return Response.ok(new Timetable(demoData.name(), timeslots, rooms, lessons, guides)).build();
+        return Response.ok(new Timetable(demoData.name(), rooms, lessons, guides, timeSlots)).build();
     }
 
 }

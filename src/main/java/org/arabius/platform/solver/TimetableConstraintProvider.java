@@ -7,7 +7,6 @@ import ai.timefold.solver.core.api.score.stream.ConstraintProvider;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 import org.arabius.platform.solver.constraints.GuideHardConstraints;
 import org.arabius.platform.solver.constraints.GuideSoftConstraints;

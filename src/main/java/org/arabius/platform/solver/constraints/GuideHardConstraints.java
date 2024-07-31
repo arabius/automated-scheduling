@@ -14,7 +14,6 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
     private Constraint guideConflict(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachUniquePair(Lesson.class,
-                        Joiners.equal(Lesson::getDate),
                         Joiners.overlapping(Lesson::getBufferStart, Lesson::getBufferEnd),
                         Joiners.equal(Lesson::getGuide))
                 .penalize(HardSoftScore.ONE_HARD, (lesson1, lesson2) -> 100)
@@ -41,10 +40,12 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
     //if no exact match the penalty should be based minutes differece betten the two timeslots
     private Constraint guideOnSlot(ConstraintFactory constraintFactory) {
         return constraintFactory
-                .forEach(Lesson.class)
-                .filter((lesson) -> ! lesson.getGuide().getTimeSlotIds().contains(lesson.getTimeslotId()))
-                .penalize(HardSoftScore.ONE_HARD)
-                .asConstraint("Guide on slot");
+            .forEach(Lesson.class)
+            .filter((lesson) -> lesson.getSlotId() != null  
+                && lesson.getGuide() != null  
+                && lesson.getGuide().guideHasSlotOnDay(lesson.getDate(), lesson.getSlotId()))
+            .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
+            .asConstraint("Guide on slot");
     }
 
     @Override
@@ -53,7 +54,7 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
                 guideConflict(constraintFactory),
                 guideCanDoLevel(constraintFactory),
                 unAssignedGuide(constraintFactory),
-                //guideOnSlot(constraintFactory)
+                guideOnSlot(constraintFactory)
         };
     }
 }

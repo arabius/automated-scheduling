@@ -17,7 +17,7 @@ public class RoomSoftConstraints implements ConstraintProviderInterface {
     private Constraint onlineRoomInCorrectBranch(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lesson.getRoom().getBranch() != lesson.getBranch() && lesson.getLessonType().equals("Online"))
+                .filter((lesson) -> lesson.getRoom().getBranch() != lesson.getBranchId() && lesson.getLessonType().equals("Online"))
                 .penalize(HardSoftScore.ONE_SOFT, lesson -> 1000)
                 .justifyWith((lesson1, score) -> new WrongBranchRoomJustification(lesson1))
                 .asConstraint("No online lessons assigned to rooms in wrong branch");

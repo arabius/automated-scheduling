@@ -1,0 +1,27 @@
+package org.arabius.platform.solver;
+
+import ai.timefold.solver.core.api.solver.Solver;
+import ai.timefold.solver.core.api.solver.SolverFactory;
+import org.arabius.platform.domain.Timetable;
+
+public class TimetableSolver {
+
+    public static void main(String[] args) {
+        // Load the solver configuration from solverConfig.xml
+        SolverFactory<Timetable> solverFactory = SolverFactory.createFromXmlResource("solverConfig.xml");
+
+        // Create the solver
+        Solver<Timetable> solver = solverFactory.buildSolver();
+
+        // Create a problem instance
+        Timetable unsolvedTimetable = new Timetable();
+        // Initialize the unsolvedTimetable with your data
+        
+
+        // Solve the problem
+        Timetable solvedTimetable = solver.solve(unsolvedTimetable);
+
+        // Display the result
+        System.out.println("Solved timetable: " + solvedTimetable);
+    }
+}
