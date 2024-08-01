@@ -3,16 +3,16 @@ package org.arabius.platform.domain;
 public class RoomPriority extends ArabiusEntity {
     private int roomId;
     private int priority;
-    private String lessonType;
+    private int lessonTypeId;
 
     // No-argument constructor
     public RoomPriority() {
     }
 
-    public RoomPriority(int roomId, int priority, String lessonType) {
+    public RoomPriority(int roomId, int priority, int lessonTypeId) {
         this.roomId = roomId;
         this.priority = priority;
-        this.lessonType = lessonType;
+        this.lessonTypeId = lessonTypeId;
     }
 
     public int getRoomId() {
@@ -23,8 +23,8 @@ public class RoomPriority extends ArabiusEntity {
         return priority;
     }
 
-    public String getLessonType() {
-        return lessonType;
+    public int getLessonTypeId() {
+        return lessonTypeId;
     }
 
     public void setRoomId(int roomId) {
@@ -35,8 +35,8 @@ public class RoomPriority extends ArabiusEntity {
         this.priority = priority;
     }
 
-    public void setLessonType(String lessonType) {
-        this.lessonType = lessonType;
+    public void setLessonTypeId(int lessonTypeId) {
+        this.lessonTypeId = lessonTypeId;
     }
 
     @Override

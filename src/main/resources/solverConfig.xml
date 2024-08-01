@@ -8,11 +8,14 @@
         <constraintProviderClass>org.arabius.platform.solver.TimetableConstraintProvider</constraintProviderClass>
     </scoreDirectorFactory>
     <termination>
-        <secondsSpentLimit>600</secondsSpentLimit>
+        <secondsSpentLimit>120</secondsSpentLimit>
     </termination>
     <constructionHeuristic>
         <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
     </constructionHeuristic>
+        <!-- <localSearch>
+            <localSearchType>TABU_SEARCH</localSearchType>
+        </localSearch> -->
     <localSearch>
         <acceptor>
         <entityTabuSize>5</entityTabuSize>

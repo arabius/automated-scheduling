@@ -33,7 +33,7 @@ public class CsvLessonLoader {
                 lesson.setBufferStart(LocalDateTime.parse(csvRecord.get("buffer_start"), formatter));
                 lesson.setBufferEnd(LocalDateTime.parse(csvRecord.get("buffer_end"), formatter));
                 lesson.setStudentGroupHash(csvRecord.get("student_group_hash"));
-                lesson.setLessonType(csvRecord.get("lesson_type"));
+                lesson.setInitialLessonTypeId(Integer.parseInt(csvRecord.get("lesson_type_id")));
                 lesson.setBranchId(Integer.parseInt(csvRecord.get("branch_id")));
                 lesson.setSlotId(parseInteger(csvRecord.get("slot_id")));
                 lesson.setInitialGuideId(parseInteger(csvRecord.get("guide_id")));

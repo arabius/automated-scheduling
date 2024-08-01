@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @JsonIdentityInfo(scope = Room.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
@@ -52,6 +53,7 @@ public class Room extends ArabiusEntity {
         return id;
     }
 
+    @JsonProperty("name")
     public String getName() {
         return name;
     }
@@ -72,9 +74,9 @@ public class Room extends ArabiusEntity {
         return roomPriorityList;
     }
 
-    public int getRoomPriorityForLessonType(String lessonType) {
+    public int getRoomPriorityForLessonType(int lessonTypeId) {
         for (RoomPriority roomPriority : roomPriorityList) {
-            if (roomPriority.getLessonType().equals(lessonType)) {
+            if (roomPriority.getLessonTypeId() == lessonTypeId) {
                 return roomPriority.getPriority();
             }
         }

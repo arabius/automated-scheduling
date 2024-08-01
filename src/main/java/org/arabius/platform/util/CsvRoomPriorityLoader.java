@@ -22,7 +22,7 @@ public class CsvRoomPriorityLoader {
 				RoomPriority roomPriority = new RoomPriority();
 				roomPriority.setRoomId(Integer.parseInt(csvRecord.get("room_id")));
 				roomPriority.setPriority(Integer.parseInt(csvRecord.get("priority")));
-				roomPriority.setLessonType(csvRecord.get("name_en"));
+				roomPriority.setLessonTypeId(Integer.parseInt(csvRecord.get("lesson_type_id")));
 				roomPriorityList.add(roomPriority);
 			}
 		}

@@ -15,16 +15,18 @@ public abstract class ArabiusEntity {
         this.separator = separator;
     }
 
-    protected ArrayList<Integer> parseStringToIntList(String input) {
-        String[] parts = input.split(separator);
-        ArrayList<Integer> result = new ArrayList<>();
-        for (String part : parts) {
-            result.add(Integer.parseInt(part.trim()));
+    protected ArrayList<Integer> parseStringToIntList(String stringToParse) {
+        ArrayList<Integer> integerList = new ArrayList<>();
+        String[] stringArray = stringToParse.split(separator);
+        for (String str : stringArray) {
+            if (str.matches("\\d+")) {
+                integerList.add(Integer.parseInt(str));
+            }
         }
-        return result;
+        return integerList;
     }
 
-    protected List<String> parseStringToStringList(String stringToParse) {
-        return Arrays.asList(stringToParse.split(separator));
+    protected ArrayList<String> parseStringToStringList(String stringToParse) {
+        return new ArrayList<>(Arrays.asList(stringToParse.split(separator)));
     }
 }

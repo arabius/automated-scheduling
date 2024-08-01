@@ -192,15 +192,19 @@ function renderSchedule(timetable) {
   });
 
   $.each(timetable.lessons, (index, lesson) => {
-    const color = pickColor(lesson.lessonType);
+    const color = pickColor(lesson.lessonType.name);
     const lessonElement = $(`<div class="card" style="background-color: ${color}"/>`)
       .append($(`<div class="card-body p-2"/>`)
-        .append($(`<h5 class="card-title mb-1"/>`).text(lesson.level + ' - ' + lesson.lessonType))
+        .append($(`<h5 class="card-title mb-1"/>`).text(lesson.level + ' - ' + lesson.lessonType.name))
         .append($(`<p class="card-text ms-2 mb-1"/>`)
           .append($(`<em/>`).text(`Guide: ${lesson.guide}`)))
+        .append($(`<p class="card-text ms-2 mb-1"/>`)
+          .append($(`<em/>`).text(`Room: ${lesson.room}`)))
+          .append($(`<p class="card-text ms-2 mb-1"/>`)
+          .append($(`<em/>`).text(`Start: ${lesson.startDateTime}`)))
         .append($(`<small class="ms-2 mt-1 card-text text-muted align-bottom float-end"/>`).text(lesson.id))
         .append($(`<p class="card-text ms-2"/>`).text(lesson.studentGroupHash)));
-    if (lesson.room == null) {
+    if (1 === 1) {
       unassignedLessons.append($(`<div class="col"/>`).append(lessonElement));
     } else {
       // In the JSON, the lesson.timeslot and lesson.room are only IDs of these objects.

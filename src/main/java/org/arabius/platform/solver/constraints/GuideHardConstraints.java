@@ -8,7 +8,7 @@ import ai.timefold.solver.core.api.score.stream.Constraint;
 import ai.timefold.solver.core.api.score.stream.ConstraintFactory;
 import ai.timefold.solver.core.api.score.stream.Joiners;
 
-public class GuideHardConstraints implements ConstraintProviderInterface {
+public class GuideHardConstraints extends ArabiusConstraints {
     
     //guide constraints
     private Constraint guideConflict(ConstraintFactory constraintFactory) {
@@ -16,6 +16,7 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
                 .forEachUniquePair(Lesson.class,
                         Joiners.overlapping(Lesson::getBufferStart, Lesson::getBufferEnd),
                         Joiners.equal(Lesson::getGuide))
+                .filter((lesson1, lesson2) -> lessonsAreInFuture(lesson1, lesson2))
                 .penalize(HardSoftScore.ONE_HARD, (lesson1, lesson2) -> 100)
                 .asConstraint("Guide conflict");
     }
@@ -23,7 +24,7 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
     private Constraint guideCanDoLevel(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> ! lesson.getGuide().getLevels().contains(lesson.getLevel()))
+                .filter((lesson) -> lessonIsInFuture(lesson) && ! lesson.getGuide().getLevels().contains(lesson.getLevel()))
                 .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
                 .justifyWith((lesson1, score) -> new GuideOnLevelJustification(lesson1))
                 .asConstraint("Guide can do level");
@@ -32,7 +33,7 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
     private Constraint unAssignedGuide(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
-                .filter((lesson) -> lesson.getGuide() == null && ! lesson.getLessonType().equals("Admin Hold"))
+                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getGuide() == null && ! lesson.getLessonType().equals("Admin Hold"))
                 .penalize(HardSoftScore.ONE_HARD, lesson -> lesson.getStudentCount())
                 .asConstraint("No Unassigned Guide for client session");
     }
@@ -41,7 +42,8 @@ public class GuideHardConstraints implements ConstraintProviderInterface {
     private Constraint guideOnSlot(ConstraintFactory constraintFactory) {
         return constraintFactory
             .forEach(Lesson.class)
-            .filter((lesson) -> lesson.getSlotId() != null  
+            .filter((lesson) -> lessonIsInFuture(lesson)
+                && lesson.getSlotId() != null  
                 && lesson.getGuide() != null  
                 && lesson.getGuide().guideHasSlotOnDay(lesson.getDate(), lesson.getSlotId()))
             .penalize(HardSoftScore.ONE_HARD, lesson -> 100)

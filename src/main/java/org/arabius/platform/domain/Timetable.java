@@ -61,7 +61,6 @@ public class Timetable {
     }
 
 
-
     // ************************************************************************
     // Getters and setters
     // ************************************************************************
@@ -94,12 +93,6 @@ public class Timetable {
         this.solverStatus = solverStatus;
     }
 
-    public List<Timeslot> getTimeslots() {
-        return timeslots;
-    }
-
-    public void setTimeslots(List<Timeslot> timeslots) {
-        this.timeslots = timeslots;
-    }
+    // 
 
 }

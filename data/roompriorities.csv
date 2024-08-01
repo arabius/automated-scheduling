@@ -1,67 +1,67 @@
-room_id,priority,name_en
-2,1,In-person
-5,2,In-person
-6,3,In-person
-3,4,In-person
-7,8,In-person
-8,5,In-person
-9,6,In-person
-10,7,In-person
-12,13,In-person
-14,9,In-person
-16,10,In-person
-1,21,In-person
-7,5,Online
-8,2,Online
-9,3,Online
-10,4,Online
-13,17,Online
-14,6,Online
-16,7,Online
-2,10,Online
-5,11,Online
-6,12,Online
-3,9,Online
-1,14,Online
-4,13,Online
-17,8,Online
-18,15,Online
-4,12,In-person
-19,11,In-person
-19,1,Online
-12,16,Online
-1,1,All rooms
-2,2,All rooms
-3,3,All rooms
-4,4,All rooms
-5,5,All rooms
-6,6,All rooms
-7,7,All rooms
-8,8,All rooms
-9,9,All rooms
-10,10,All rooms
-12,11,All rooms
-13,16,All rooms
-14,12,All rooms
-16,13,All rooms
-18,14,All rooms
-19,15,All rooms
-18,14,In-person
-17,15,In-person
-11,17,All rooms
-17,18,All rooms
-23,19,All rooms
-24,20,All rooms
-25,21,All rooms
-26,22,All rooms
-13,16,In-person
-23,17,In-person
-24,18,In-person
-25,19,In-person
-26,20,In-person
-11,22,In-person
-23,18,Online
-24,19,Online
-25,20,Online
-26,21,Online
-11,22,Online
+room_id,priority,lesson_type_id
+2,1,1
+5,2,1
+6,3,1
+3,4,1
+7,8,1
+8,5,1
+9,6,1
+10,7,1
+12,13,1
+14,9,1
+16,10,1
+1,21,1
+4,12,1
+19,11,1
+18,14,1
+17,15,1
+13,16,1
+23,17,1
+24,18,1
+25,19,1
+26,20,1
+11,22,1
+7,5,2
+8,2,2
+9,3,2
+10,4,2
+13,17,2
+14,6,2
+16,7,2
+2,10,2
+5,11,2
+6,12,2
+3,9,2
+1,14,2
+4,13,2
+17,8,2
+18,15,2
+19,1,2
+12,16,2
+23,18,2
+24,19,2
+25,20,2
+26,21,2
+11,22,2
+1,1,4
+2,2,4
+3,3,4
+4,4,4
+5,5,4
+6,6,4
+7,7,4
+8,8,4
+9,9,4
+10,10,4
+12,11,4
+13,16,4
+14,12,4
+16,13,4
+18,14,4
+19,15,4
+11,17,4
+17,18,4
+23,19,4
+24,20,4
+25,21,4
+26,22,4
