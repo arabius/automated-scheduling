@@ -192,10 +192,10 @@ function renderSchedule(timetable) {
   });
 
   $.each(timetable.lessons, (index, lesson) => {
-    const color = pickColor(lesson.lessonType.name);
+    const color = pickColor(lesson.lessonTypeId);
     const lessonElement = $(`<div class="card" style="background-color: ${color}"/>`)
       .append($(`<div class="card-body p-2"/>`)
-        .append($(`<h5 class="card-title mb-1"/>`).text(lesson.level + ' - ' + lesson.lessonType.name))
+        .append($(`<h5 class="card-title mb-1"/>`).text(lesson.level + ' - ' + lesson.lessonTypeId))
         .append($(`<p class="card-text ms-2 mb-1"/>`)
           .append($(`<em/>`).text(`Guide: ${lesson.guide}`)))
         .append($(`<p class="card-text ms-2 mb-1"/>`)

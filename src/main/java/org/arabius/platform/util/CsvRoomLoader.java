@@ -23,7 +23,7 @@ public class CsvRoomLoader {
                 room.setId(Integer.parseInt(csvRecord.get("id")));
                 room.setName(csvRecord.get("name"));
                 room.setCapacity(Integer.parseInt(csvRecord.get("capacity")));
-                room.setBranch(Integer.parseInt(csvRecord.get("branch_id")));
+                room.setBranchId(Integer.parseInt(csvRecord.get("branch_id")));
                 roomList.add(room);
             }
         } 

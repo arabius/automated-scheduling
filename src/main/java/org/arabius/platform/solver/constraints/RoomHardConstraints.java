@@ -36,7 +36,7 @@ public class RoomHardConstraints extends ArabiusConstraints {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
                 .filter((lesson) -> lessonIsInFuture(lesson) 
-                    && lesson.getLessonType().getRoomRequirment().isRequired()
+                    && lesson.isRequireRoom()
                     && lesson.getRoom() == null)
                 .penalize(HardSoftScore.ONE_HARD, lesson -> lesson.getStudentCount())
                 .justifyWith((lesson1, score) -> new UnassignedRoomJustification(lesson1))
@@ -47,7 +47,7 @@ public class RoomHardConstraints extends ArabiusConstraints {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
                 .filter((lesson) -> lessonIsInFuture(lesson) 
-                    && ! lesson.getLessonType().getRoomRequirment().isCanAssign()
+                    && ! lesson.isAllowRoom()
                     && lesson.getRoom() != null)
                 .penalize(HardSoftScore.ONE_HARD, lesson -> 1000)
                 .justifyWith((lesson1, score) -> new UnassignedRoomJustification(lesson1))
@@ -57,7 +57,7 @@ public class RoomHardConstraints extends ArabiusConstraints {
     private Constraint inpersonRoomInCorrectBranch(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getRoom().getBranch() != lesson.getBranchId() && ! lesson.getLessonType().isAllowVideoCall())
+                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getRoom().getBranchId() != lesson.getBranchId() && ! lesson.isAllowVideoCall())
                 .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
                 .justifyWith((lesson1, score) -> new WrongBranchRoomJustification(lesson1))
                 .asConstraint("No in-person lessons assigned to rooms in wrong branch");
@@ -68,7 +68,7 @@ public class RoomHardConstraints extends ArabiusConstraints {
                 .forEach(Lesson.class)
                 .filter(lesson -> lessonIsInFuture(lesson) 
                     && lesson.getRoom().getCapacity() < lesson.getStudentCount() 
-                    && lesson.getLessonType().isEnforceRoomCapacity())
+                    && lesson.isEnforceRoomCapacity())
                 .penalize(HardSoftScore.ONE_HARD, lesson-> (lesson.getRoom().getCapacity() - lesson.getStudentCount()) * 100)
                 .justifyWith((lesson1, score) -> new SmallRoomJustification(lesson1))
                 .asConstraint("Room capacity less than student count");

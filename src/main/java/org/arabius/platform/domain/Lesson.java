@@ -21,6 +21,7 @@ public class Lesson extends ArabiusEntity {
     private int id;
 
     private String level;
+    private String status;
     private LocalDate date;
     private LocalTime start;
     private LocalTime end;
@@ -37,12 +38,15 @@ public class Lesson extends ArabiusEntity {
     private boolean enforceRoomCapacity;
     private boolean requireGuide;
     private boolean requireRoom;
+    private boolean levelIsDifficult;
+    private int guideStickiness;
 
     @JsonIgnore
     private ArrayList<Integer> allowedGuideIds = new ArrayList<>(); 
 
     private Integer initialGuideId;
     private Integer initialRoomId;
+    private int lessonTypeId;
     
     // @JsonIdentityReference
     // @PlanningVariable (allowsUnassigned = true)
@@ -55,7 +59,7 @@ public class Lesson extends ArabiusEntity {
     public Lesson() {
     }
 
-    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, int initialLessonTypeId, String studentGroupHash, Integer slotId, int branchId, String allowedGuideIds) {
+    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, String status) {
         this.id = id;
         this.date = date;
         this.start = start;
@@ -63,23 +67,22 @@ public class Lesson extends ArabiusEntity {
         this.level = level;
         this.bufferStart = bufferStart;
         this.bufferEnd = bufferEnd;
-        this.initialLessonTypeId = initialLessonTypeId;
         this.studentGroupHash = studentGroupHash;
         this.slotId = slotId;
         this.branchId = branchId;
+        this.lessonTypeId = lessonTypeId;
         this.allowedGuideIds = this.parseStringToIntList(allowedGuideIds);
+        this.status = status;
     }
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, int initialLessonTypeId, String studentGroupHash, Integer slotId, Integer branchId, String allowedGuideIds, Integer initialGuideId, Integer initialRoomId) {
-        this(id, level, date, start, end, bufferStart, bufferEnd, initialLessonTypeId, studentGroupHash, slotId, branchId, allowedGuideIds);
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Integer initialGuideId, Integer initialRoomId, String status) {
+        this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId, allowedGuideIds, status);
         this.initialGuideId = initialGuideId;
         this.initialRoomId = initialRoomId;
     }
 
-
-
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, int initialLessonTypeId, String studentGroupHash, Integer slotId, Integer branchId, String allowedGuideIds, Guide guide, Room room) {
-        this(id, level, date, start, end, bufferStart, bufferEnd, initialLessonTypeId, studentGroupHash, slotId, branchId, allowedGuideIds);
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Guide guide, Room room, String status) {
+        this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId, allowedGuideIds, status);
         this.room = room;
         this.guide = guide;
     }
@@ -145,18 +148,6 @@ public class Lesson extends ArabiusEntity {
         return this.studentGroupHash.split(",").length;
     }
 
-    public LessonType getLessonType() {
-        return this.lessonType;
-    }
-
-    public int getInitialLessonTypeId() {
-        return initialLessonTypeId;
-    }
-
-    public void setInitialLessonTypeId(int initialLessonTypeId) {
-        this.initialLessonTypeId = initialLessonTypeId;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
@@ -179,10 +170,6 @@ public class Lesson extends ArabiusEntity {
 
     public void setStudentGroupHash(String studentGroupHash) {
         this.studentGroupHash = studentGroupHash;
-    }
-
-    public void setLessonType(LessonType lessonType) {
-        this.lessonType = lessonType;
     }
 
     public void setBranchId(int branch) {
@@ -240,5 +227,85 @@ public class Lesson extends ArabiusEntity {
 
     public void setAllowedGuideIds(String allowedGuideIds) {
         this.allowedGuideIds = this.parseStringToIntList(allowedGuideIds);
+    }
+
+    public boolean isAllowGuide() {
+        return allowGuide;
+    }
+
+    public void setAllowGuide(boolean allowGuide) {
+        this.allowGuide = allowGuide;
+    }
+
+    public boolean isAllowRoom() {
+        return allowRoom;
+    }
+
+    public void setAllowRoom(boolean allowRoom) {
+        this.allowRoom = allowRoom;
+    }
+
+    public boolean isAllowVideoCall() {
+        return allowVideoCall;
+    }
+
+    public void setAllowVideoCall(boolean allowVideoCall) {
+        this.allowVideoCall = allowVideoCall;
+    }
+
+    public boolean isEnforceRoomCapacity() {
+        return enforceRoomCapacity;
+    }
+
+    public void setEnforceRoomCapacity(boolean enforceRoomCapacity) {
+        this.enforceRoomCapacity = enforceRoomCapacity;
+    }
+
+    public boolean isRequireGuide() {
+        return requireGuide;
+    }
+
+    public void setRequireGuide(boolean requireGuide) {
+        this.requireGuide = requireGuide;
+    }
+
+    public boolean isRequireRoom() {
+        return requireRoom;
+    }
+
+    public void setRequireRoom(boolean requireRoom) {
+        this.requireRoom = requireRoom;
+    }
+
+    public boolean isLevelIsDifficult() {
+        return levelIsDifficult;
+    }
+
+    public void setLevelIsDifficult(boolean levelIsDifficult) {
+        this.levelIsDifficult = levelIsDifficult;
+    }
+
+    public int getGuideStickiness() {
+        return guideStickiness;
+    }
+
+    public void setGuideStickiness(int guideStickiness) {
+        this.guideStickiness = guideStickiness;
+    }
+
+    public int getLessonTypeId() {
+        return lessonTypeId;
+    }
+
+    public void setLessonTypeId(int lessonTypeId) {
+        this.lessonTypeId = lessonTypeId;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

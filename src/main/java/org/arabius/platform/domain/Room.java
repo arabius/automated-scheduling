@@ -16,10 +16,8 @@ public class Room extends ArabiusEntity {
     private int id;
 
     private String name;
-
     private int capacity;
-
-    private int branch;
+    private int branchId;
 
     private List<RoomPriority> roomPriorityList;
 
@@ -27,11 +25,11 @@ public class Room extends ArabiusEntity {
         this.roomPriorityList = new ArrayList<>();
     }
 
-    public Room(int id, String name, int capacity, int branch) {
+    public Room(int id, String name, int capacity, int branchId) {
         this.id = id;
         this.name = name;
         this.capacity = capacity;
-        this.branch = branch;
+        this.branchId = branchId;
         this.roomPriorityList = new ArrayList<>();
     }
 
@@ -41,7 +39,7 @@ public class Room extends ArabiusEntity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", capacity=" + capacity +
-                ", floor=" + branch +
+                ", floor=" + branchId +
                 '}';
     }
 
@@ -62,8 +60,8 @@ public class Room extends ArabiusEntity {
         return capacity;
     }
 
-    public int getBranch() {
-        return branch;
+    public int getBranchId() {
+        return branchId;
     }
 
     public void addRoomPriority(RoomPriority roomPriority) {
@@ -95,7 +93,7 @@ public class Room extends ArabiusEntity {
         this.capacity = capacity;
     }   
 
-    public void setBranch(int branch) {
-        this.branch = branch;
+    public void setBranchId(int branch) {
+        this.branchId = branch;
     }
 }

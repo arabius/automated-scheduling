@@ -23,7 +23,7 @@ public class TimetableConstraintProvider implements ConstraintProvider {
         public Constraint[] defineConstraints(ConstraintFactory constraintFactory) {
                 List<Constraint> constraints = new ArrayList<>();
                 constraints.addAll(Arrays.asList(new RoomHardConstraints().getConstraints(constraintFactory)));
-                //constraints.addAll(Arrays.asList(new RoomSoftConstraints().getConstraints(constraintFactory)));
+                constraints.addAll(Arrays.asList(new RoomSoftConstraints().getConstraints(constraintFactory)));
                 //constraints.addAll(Arrays.asList(new GuideHardConstraints().getConstraints(constraintFactory)));
                 //constraints.addAll(Arrays.asList(new GuideSoftConstraints().getConstraints(constraintFactory)));
 

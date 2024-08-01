@@ -7,7 +7,7 @@ import org.arabius.platform.domain.Lesson;
 public abstract class ArabiusConstraints implements ConstraintProviderInterface {
 
     protected boolean lessonIsInFuture(Lesson lesson) {
-        return lesson.getStartDateTime().isAfter(LocalDateTime.now());
+        return lesson.getStatus().equals("scheduled");
     }
 
     protected boolean lessonsAreInFuture(Lesson lesson1, Lesson lesson2) {
