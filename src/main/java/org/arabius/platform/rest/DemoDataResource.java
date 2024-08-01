@@ -51,7 +51,7 @@ public class DemoDataResource {
 
             // Load lessons from database
             try (Statement stmt = connection.createStatement();
-                    ResultSet rs = stmt.executeQuery("SELECT * FROM automated_scheduling_lessons_view where date between '2021-07-20' and '2021-08-31'")) {
+                    ResultSet rs = stmt.executeQuery("SELECT * FROM automated_scheduling_lessons_view where date between '2024-07-20' and '2024-08-31'")) {
                 while (rs.next()) {
                     Lesson lesson = new Lesson();
                     lesson.setId(rs.getInt("id"));
@@ -98,7 +98,7 @@ public class DemoDataResource {
 
             // Load guide slots from database
             try (Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * from automated_scheduling_guide_shifts_by_day where date between '2021-07-15' and '2021-08-31'")) {
+            ResultSet rs = stmt.executeQuery("SELECT * from automated_scheduling_guide_shifts_by_day where date between '2024-07-15' and '2024-08-31'")) {
                 while (rs.next()) {
                     GuideSlot guideSlot = new GuideSlot();
                     guideSlot.setDate(rs.getDate("date").toLocalDate());
