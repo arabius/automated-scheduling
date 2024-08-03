@@ -20,21 +20,22 @@ public class Guide extends ArabiusEntity {
     private int id;
     private String name;
 
-    private List<GuideSlot> guideSlots = new ArrayList<>();
-    private List<String> levels;
+    private ArrayList<GuideSlot> guideSlots = new ArrayList<>();
+    private ArrayList<Integer> levels = new ArrayList<>();
 
     public Guide() {
         this.guideSlots = new ArrayList<>(); // Initialize guideSlots
+        this.levels = new ArrayList<>(); // Initialize levels
     }
 
     public Guide(int id, String name, String levels) {
         this.id = id;
         this.name = name;
-        this.levels = this.parseStringToStringList(levels);
+        this.levels = this.parseStringToIntList(levels);
         this.guideSlots = new ArrayList<>(); // Initialize guideSlots
     }
 
-    public Guide(int id, String name, List<String> levels, List<GuideSlot> guideSlots) {
+    public Guide(int id, String name, ArrayList<Integer> levels, ArrayList<GuideSlot> guideSlots) {
         this.id = id;
         this.name = name;
         this.guideSlots = guideSlots != null ? guideSlots : new ArrayList<>();
@@ -56,7 +57,10 @@ public class Guide extends ArabiusEntity {
 
     @JsonProperty("levels")
     public String getLevelsAsString() {
-        return levels.stream().collect(Collectors.joining("|"));
+        String levelsString = levels.stream()
+                                    .map(Object::toString)
+                                    .collect(Collectors.joining("|"));
+        return levelsString;
     }
 
     public String getGuideSlotsAsString() {
@@ -64,11 +68,11 @@ public class Guide extends ArabiusEntity {
         return guideString;
     }
 
-    public List<String> getLevels() {
+    public ArrayList<Integer> getLevels() {
         return levels;
     }
 
-    public void setGuideSlots(List<GuideSlot> guideSlots) {
+    public void setGuideSlots(ArrayList<GuideSlot> guideSlots) {
         this.guideSlots = guideSlots;
     }
 
@@ -82,6 +86,10 @@ public class Guide extends ArabiusEntity {
                 this.addGuideSlot(guideSlot);
             }
         }
+    }
+
+    public boolean canGuideDoLevel(int level) {
+        return this.levels.contains(level);
     }
 
     public boolean guideHasSlotOnDay(LocalDate date, int slotId) {
@@ -102,7 +110,7 @@ public class Guide extends ArabiusEntity {
     }
 
     public void setLevels(String levels) {
-        this.levels = this.parseStringToStringList(levels);
+        this.levels = this.parseStringToIntList(levels);
     }
 
  

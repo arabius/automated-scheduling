@@ -18,25 +18,16 @@ public class RoomSoftConstraints extends ArabiusConstraints {
     private Constraint onlineRoomInCorrectBranch(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getRoom().getBranchId() != lesson.getBranchId() && lesson.isAllowVideoCall())
+                .filter((lesson) -> isLessonScheduled(lesson) && lesson.getRoom().getBranchId() != lesson.getBranchId() && lesson.isAllowVideoCall())
                 .penalize(HardSoftScore.ONE_SOFT, lesson -> 1000)
                 .justifyWith((lesson1, score) -> new WrongBranchRoomJustification(lesson1))
                 .asConstraint("No online lessons assigned to rooms in wrong branch");
     }
 
-//     private Constraint UnAssignedRoomAdmin(ConstraintFactory constraintFactory) {
-//         return constraintFactory
-//                 .forEachIncludingUnassigned(Lesson.class)
-//                 .filter((lesson) -> lesson.getRoom() == null && lesson.getLessonTypeId().equals("Admin Hold"))
-//                 .penalize(HardSoftScore.ONE_SOFT)
-//                 .justifyWith((lesson1, score) -> new UnassignedRoomJustification(lesson1))
-//                 .asConstraint("Unassigned room for admin hold session");
-//     }
-
     private Constraint roomCapacityGreaterThanStudentCount(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getRoom().getCapacity() > lesson.getStudentCount() && lesson.isEnforceRoomCapacity())
+                .filter((lesson) -> isLessonScheduled(lesson) && lesson.getRoom().getCapacity() > lesson.getStudentCount() && lesson.isEnforceRoomCapacity())
                 .penalize(HardSoftScore.ONE_SOFT, lesson -> lesson.getRoom().getCapacity() - lesson.getStudentCount())
                 .justifyWith((lesson1, score) -> new BigRoomJustification(lesson1))
                 .asConstraint("Room capacity greater than student count");
@@ -45,7 +36,7 @@ public class RoomSoftConstraints extends ArabiusConstraints {
     private Constraint roomCapacityGreaterThanOne(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) 
+                .filter((lesson) -> isLessonScheduled(lesson) 
                     && lesson.getRoom().getCapacity() > 1
                     && ! lesson.isEnforceRoomCapacity())
                 .penalize(HardSoftScore.ONE_SOFT, lesson -> lesson.getRoom().getCapacity()*2)
@@ -56,7 +47,7 @@ public class RoomSoftConstraints extends ArabiusConstraints {
     private Constraint useRoomPriorityByLessonType(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson))
+                .filter((lesson) -> isLessonScheduled(lesson))
                 .penalize(HardSoftScore.ONE_SOFT, lesson -> (int) lesson.getRoom().getRoomPriorityForLessonType(lesson.getLessonTypeId()))
                 .asConstraint("Use room priority by lesson type");
     }
@@ -64,7 +55,7 @@ public class RoomSoftConstraints extends ArabiusConstraints {
     private Constraint unAssignedOptionalRoom(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) &&  lesson.isAllowRoom() && ! lesson.isRequireRoom() && lesson.getRoom() == null)
+                .filter((lesson) -> isLessonScheduled(lesson) &&  lesson.isAllowRoom() && ! lesson.isRequireRoom() && lesson.getRoom() == null)
                 .penalize(HardSoftScore.ONE_SOFT)
                 .justifyWith((lesson1, score) -> new UnassignedRoomJustification(lesson1))
                 .asConstraint("No Unassigned optional room for client session");
@@ -75,7 +66,12 @@ public class RoomSoftConstraints extends ArabiusConstraints {
                 .forEachUniquePair(Lesson.class,
                         Joiners.equal(Lesson::getStudentGroupHash), // same student group
                         Joiners.lessThan(Lesson::getBufferStart))
-                .filter((lesson1, lesson2) -> lessonsAreInFuture(lesson1, lesson2) && !lesson1.getRoom().equals(lesson2.getRoom()) && ! lesson1.isAllowVideoCall() && ! lesson2.isAllowVideoCall())
+                .filter((lesson1, lesson2) -> areBothLessonsScheduled(lesson1, lesson2) 
+                    && !lesson1.getRoom().equals(lesson2.getRoom()) 
+                    && ! lesson1.isAllowVideoCall() 
+                    && ! lesson2.isAllowVideoCall() 
+                    && lesson1.isRequireRoom() 
+                    && lesson2.isRequireRoom())
                 .penalize(HardSoftScore.ONE_SOFT, (lesson1, lesson2) -> lesson1.getStudentCount())
                 .justifyWith((lesson1, lesson2, score) -> new SameRoomJustification(lesson1, lesson2))
                 .asConstraint("Consecutive in-person lessons for the same clients should be in the same room");
@@ -87,7 +83,7 @@ public class RoomSoftConstraints extends ArabiusConstraints {
                         Joiners.equal(Lesson::getStudentGroupHash), // same student group
                         Joiners.lessThan(Lesson::getBufferStart),
                         Joiners.equal(Lesson::getDate)) 
-                .filter((lesson1, lesson2) -> lessonsAreInFuture(lesson1, lesson2) 
+                .filter((lesson1, lesson2) -> areBothLessonsScheduled(lesson1, lesson2) 
                     && !lesson1.getRoom().equals(lesson2.getRoom()) 
                     && ! lesson1.isAllowVideoCall() 
                     && ! lesson2.isAllowVideoCall() 
@@ -100,14 +96,14 @@ public class RoomSoftConstraints extends ArabiusConstraints {
 
     @Override
     public Constraint[] getConstraints(ConstraintFactory constraintFactory) {
-        return new Constraint[]{
-                onlineRoomInCorrectBranch(constraintFactory),
-                roomCapacityGreaterThanStudentCount(constraintFactory),
-                roomCapacityGreaterThanOne(constraintFactory),
-                useRoomPriorityByLessonType(constraintFactory),
-                consecutiveLessonsInSameRoom(constraintFactory),
-                consecutiveSameDayLessonsInSameRoom(constraintFactory),
-                unAssignedOptionalRoom(constraintFactory)
+        return new Constraint[]{ // 6180
+                onlineRoomInCorrectBranch(constraintFactory), //5906
+                roomCapacityGreaterThanStudentCount(constraintFactory), //6248
+                roomCapacityGreaterThanOne(constraintFactory), //6109
+                useRoomPriorityByLessonType(constraintFactory), //6116
+                consecutiveLessonsInSameRoom(constraintFactory), //6457
+                consecutiveSameDayLessonsInSameRoom(constraintFactory), //6266
+                unAssignedOptionalRoom(constraintFactory) // 6247
         };
     }
 }

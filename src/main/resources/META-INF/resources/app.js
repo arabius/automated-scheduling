@@ -200,8 +200,10 @@ function renderSchedule(timetable) {
           .append($(`<em/>`).text(`Guide: ${lesson.guide}`)))
         .append($(`<p class="card-text ms-2 mb-1"/>`)
           .append($(`<em/>`).text(`Room: ${lesson.room}`)))
-          .append($(`<p class="card-text ms-2 mb-1"/>`)
+        .append($(`<p class="card-text ms-2 mb-1"/>`)
           .append($(`<em/>`).text(`Start: ${lesson.startDateTime}`)))
+        .append($(`<p class="card-text ms-2 mb-1"/>`)
+          .append($(`<em/>`).text(`Start: ${lesson.status}`)))
         .append($(`<small class="ms-2 mt-1 card-text text-muted align-bottom float-end"/>`).text(lesson.id))
         .append($(`<p class="card-text ms-2"/>`).text(lesson.studentGroupHash)));
     if (1 === 1) {

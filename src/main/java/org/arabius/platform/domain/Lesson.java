@@ -14,13 +14,13 @@ import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@PlanningEntity(pinningFilter = LessonPinningFilter.class)
+@PlanningEntity //(pinningFilter = LessonPinningFilter.class)
 public class Lesson extends ArabiusEntity {
 
     @PlanningId
     private int id;
 
-    private String level;
+    private Integer level;
     private String status;
     private LocalDate date;
     private LocalTime start;
@@ -48,8 +48,8 @@ public class Lesson extends ArabiusEntity {
     private Integer initialRoomId;
     private int lessonTypeId;
     
-    // @JsonIdentityReference
-    // @PlanningVariable (allowsUnassigned = true)
+    @JsonIdentityReference
+    @PlanningVariable (allowsUnassigned = true)
     private Guide guide;
 
     @JsonIdentityReference
@@ -59,7 +59,7 @@ public class Lesson extends ArabiusEntity {
     public Lesson() {
     }
 
-    public Lesson(int id, String level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, String status) {
+    public Lesson(int id, Integer level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, String status) {
         this.id = id;
         this.date = date;
         this.start = start;
@@ -75,13 +75,13 @@ public class Lesson extends ArabiusEntity {
         this.status = status;
     }
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Integer initialGuideId, Integer initialRoomId, String status) {
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, Integer level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Integer initialGuideId, Integer initialRoomId, String status) {
         this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId, allowedGuideIds, status);
         this.initialGuideId = initialGuideId;
         this.initialRoomId = initialRoomId;
     }
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, String level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Guide guide, Room room, String status) {
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, Integer level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Guide guide, Room room, String status) {
         this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId, allowedGuideIds, status);
         this.room = room;
         this.guide = guide;
@@ -100,7 +100,7 @@ public class Lesson extends ArabiusEntity {
         return id;
     }
 
-    public String getLevel() {
+    public Integer getLevel() {
         return level;
     }
 
@@ -152,7 +152,7 @@ public class Lesson extends ArabiusEntity {
         this.id = id;
     }
 
-    public void setLevel(String level) {
+    public void setLevel(Integer level) {
         this.level = level;
     }
 

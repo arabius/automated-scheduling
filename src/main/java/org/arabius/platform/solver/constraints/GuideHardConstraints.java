@@ -14,26 +14,28 @@ public class GuideHardConstraints extends ArabiusConstraints {
     private Constraint guideConflict(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachUniquePair(Lesson.class,
-                        Joiners.overlapping(Lesson::getBufferStart, Lesson::getBufferEnd),
-                        Joiners.equal(Lesson::getGuide))
-                .filter((lesson1, lesson2) -> lessonsAreInFuture(lesson1, lesson2))
+                        Joiners.equal(Lesson::getGuide),
+                        Joiners.equal(Lesson::getDate),
+                        Joiners.overlapping(Lesson::getBufferStart, Lesson::getBufferEnd)
+                        )
+                .filter((lesson1, lesson2) -> areBothLessonsScheduled(lesson1, lesson2) && lesson1.getGuide() != null)
                 .penalize(HardSoftScore.ONE_HARD, (lesson1, lesson2) -> 100)
                 .asConstraint("Guide conflict");
     }
 
     private Constraint guideCanDoLevel(ConstraintFactory constraintFactory) {
         return constraintFactory
-                .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) && ! lesson.getGuide().getLevels().contains(lesson.getLevel()))
-                .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
-                .justifyWith((lesson1, score) -> new GuideOnLevelJustification(lesson1))
-                .asConstraint("Guide can do level");
+            .forEach(Lesson.class)
+            .filter((lesson) -> isLessonScheduled(lesson) && lesson.getGuide() != null && !lesson.getGuide().getLevels().contains(lesson.getLevel()))
+            .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
+            .justifyWith((lesson1, score) -> new GuideOnLevelJustification(lesson1))
+            .asConstraint("Guide can do level");
     }
 
     private Constraint unAssignedGuide(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getGuide() == null && ! lesson.getLessonType().equals("Admin Hold"))
+                .filter((lesson) -> isLessonScheduled(lesson) && lesson.getGuide() == null && lesson.isRequireGuide())
                 .penalize(HardSoftScore.ONE_HARD, lesson -> lesson.getStudentCount())
                 .asConstraint("No Unassigned Guide for client session");
     }
@@ -42,7 +44,7 @@ public class GuideHardConstraints extends ArabiusConstraints {
     private Constraint guideOnSlot(ConstraintFactory constraintFactory) {
         return constraintFactory
             .forEach(Lesson.class)
-            .filter((lesson) -> lessonIsInFuture(lesson)
+            .filter((lesson) -> isLessonScheduled(lesson)
                 && lesson.getSlotId() != null  
                 && lesson.getGuide() != null  
                 && lesson.getGuide().guideHasSlotOnDay(lesson.getDate(), lesson.getSlotId()))

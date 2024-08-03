@@ -17,7 +17,7 @@ public abstract class ArabiusEntity {
 
     protected ArrayList<Integer> parseStringToIntList(String stringToParse) {
         ArrayList<Integer> integerList = new ArrayList<>();
-        String[] stringArray = stringToParse.split(separator);
+        String[] stringArray = stringToParse.split("\\"+separator);
         for (String str : stringArray) {
             if (str.matches("\\d+")) {
                 integerList.add(Integer.parseInt(str));

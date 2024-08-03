@@ -32,6 +32,9 @@ public class DemoDataResource {
         List<GuideSlot> guideSlots = new ArrayList<>();
         List<RoomPriority> roomPriorities = new ArrayList<>();
 
+        String startDateString = "2024-07-20";
+        String endDateString = "2024-08-31";
+
         try (Connection connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD)) {
             
             // Load rooms from database
@@ -51,11 +54,11 @@ public class DemoDataResource {
 
             // Load lessons from database
             try (Statement stmt = connection.createStatement();
-                    ResultSet rs = stmt.executeQuery("SELECT * FROM automated_scheduling_lessons_view where date between '2024-07-20' and '2024-08-31'")) {
+                    ResultSet rs = stmt.executeQuery("SELECT * FROM automated_scheduling_lessons_view where date between '" + startDateString + "' and '"+ endDateString +"' and status != 'cancelled'")) {
                 while (rs.next()) {
                     Lesson lesson = new Lesson();
                     lesson.setId(rs.getInt("id"));
-                    lesson.setLevel(rs.getString("level"));
+                    lesson.setLevel(rs.getInt("level"));
                     lesson.setStatus(rs.getString("status"));
                     lesson.setDate(rs.getDate("date").toLocalDate());
                     lesson.setStart(rs.getTime("start").toLocalTime());
@@ -64,8 +67,6 @@ public class DemoDataResource {
                     lesson.setSlotId(rs.getInt("slot_id"));
                     lesson.setBranchId(rs.getInt("branch_id"));
                     lesson.setLessonTypeId(rs.getInt("lesson_type_id"));
-                    lesson.setInitialRoomId(rs.getInt("room_id"));
-                    lesson.setInitialGuideId(rs.getInt("guide_id"));
                     lesson.setBufferStart(rs.getTimestamp("buffer_start").toLocalDateTime());
                     lesson.setBufferEnd(rs.getTimestamp("buffer_end").toLocalDateTime());
                     lesson.setAllowGuide(rs.getBoolean("allow_guide"));
@@ -76,6 +77,10 @@ public class DemoDataResource {
                     lesson.setRequireRoom(rs.getBoolean("require_room"));
                     lesson.setLevelIsDifficult(rs.getBoolean("is_difficult"));
                     lesson.setGuideStickiness(rs.getInt("guide_stickiness"));
+                    if(lesson.getStatus().equals("ended")){
+                        lesson.setInitialRoomId(rs.getInt("room_id"));
+                        lesson.setInitialGuideId(rs.getInt("guide_id"));
+                    }
                     lessons.add(lesson);
                 }
             } catch (SQLException ex) {
@@ -84,7 +89,7 @@ public class DemoDataResource {
 
             // Load guides from database
             try (Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT users.id,SUBSTRING_INDEX(users.name,'|',1)AS name,GROUP_CONCAT(DISTINCT levels.name_en SEPARATOR'|')AS levels FROM users,guide_level,levels WHERE users.id=guide_level.user_id AND levels.id=guide_level.level_id AND guide_level.admin_rating<>0 and users.active=1 Group by users.id")) {
+            ResultSet rs = stmt.executeQuery("SELECT users.id,SUBSTRING_INDEX(users.name,'|',1)AS name,GROUP_CONCAT(DISTINCT levels.id SEPARATOR'|')AS levels FROM users,guide_level,levels WHERE users.id=guide_level.user_id AND levels.id=guide_level.level_id AND guide_level.admin_rating<>0 and users.active=1 Group by users.id")) {
                 while (rs.next()) {
                     Guide guide = new Guide();
                     guide.setId(rs.getInt("id"));
@@ -98,7 +103,7 @@ public class DemoDataResource {
 
             // Load guide slots from database
             try (Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * from automated_scheduling_guide_shifts_by_day where date between '2024-07-15' and '2024-08-31'")) {
+            ResultSet rs = stmt.executeQuery("SELECT * from automated_scheduling_guide_shifts_by_day where date between '" + startDateString + "' and '"+ endDateString +"'")) {
                 while (rs.next()) {
                     GuideSlot guideSlot = new GuideSlot();
                     guideSlot.setDate(rs.getDate("date").toLocalDate());
@@ -137,10 +142,6 @@ public class DemoDataResource {
                 }
             }
         }
-        
-        for (Guide guide : guides) {
-            guide.addMatchingGuideslots(guideSlots);
-        }
 
         List<Timeslot> timeSlots = new ArrayList<>();
 
@@ -178,7 +179,7 @@ public class DemoDataResource {
         
         // Now you can use the timeSlots list for further processing or manipulation
 
-        //lessons.removeIf(lesson -> "Admin Meeting".equals(lesson.getLevel()));
+        lessons.removeIf(lesson -> "ended".equals(lesson.getStatus()));
 
         return new Timetable("Demo_data", rooms, lessons, guides, timeSlots);
     }

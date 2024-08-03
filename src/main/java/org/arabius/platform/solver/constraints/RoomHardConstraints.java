@@ -1,8 +1,5 @@
 package org.arabius.platform.solver.constraints;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.arabius.platform.domain.Lesson;
 import org.arabius.platform.solver.justifications.RoomConflictJustification;
 import org.arabius.platform.solver.justifications.SmallRoomJustification;
@@ -21,13 +18,16 @@ public class RoomHardConstraints extends ArabiusConstraints {
         return constraintFactory
                 // Select each pair of 2 different lessons ...
                 .forEachUniquePair(Lesson.class,
-                        // ... overlapping in time ...
-                        Joiners.overlapping(Lesson::getBufferStart, Lesson::getBufferEnd),
                         // ... in the same room ...
-                        Joiners.equal(Lesson::getRoom))
+                        Joiners.equal(Lesson::getRoom),
+                        // ... on the same day ...
+                        Joiners.equal(Lesson::getDate),
+                        // ... that overlap each other ...
+                        Joiners.overlapping(Lesson::getBufferStart, Lesson::getBufferEnd)
+                        )
                 // ... and penalize each pair with a hard weight.
-                .filter((lesson1, lesson2) -> lessonsAreInFuture(lesson1, lesson2))
-                .penalize(HardSoftScore.ONE_HARD, (lesson1, lesson2) -> 100)
+                .filter((lesson1, lesson2) -> areBothLessonsScheduled(lesson1, lesson2))
+                .penalize(HardSoftScore.ONE_HARD, (lesson1, lesson2) -> 1000)
                 .justifyWith((lesson1, lesson2, score) -> new RoomConflictJustification(lesson1.getRoom(), lesson1, lesson2))
                 .asConstraint("Room conflict");
     }
@@ -35,7 +35,7 @@ public class RoomHardConstraints extends ArabiusConstraints {
     private Constraint unAssignedRoom(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) 
+                .filter((lesson) -> isLessonScheduled(lesson) 
                     && lesson.isRequireRoom()
                     && lesson.getRoom() == null)
                 .penalize(HardSoftScore.ONE_HARD, lesson -> lesson.getStudentCount())
@@ -46,7 +46,7 @@ public class RoomHardConstraints extends ArabiusConstraints {
     private Constraint assignedRoom(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachIncludingUnassigned(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) 
+                .filter((lesson) -> isLessonScheduled(lesson) 
                     && ! lesson.isAllowRoom()
                     && lesson.getRoom() != null)
                 .penalize(HardSoftScore.ONE_HARD, lesson -> 1000)
@@ -57,8 +57,8 @@ public class RoomHardConstraints extends ArabiusConstraints {
     private Constraint inpersonRoomInCorrectBranch(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter((lesson) -> lessonIsInFuture(lesson) && lesson.getRoom().getBranchId() != lesson.getBranchId() && ! lesson.isAllowVideoCall())
-                .penalize(HardSoftScore.ONE_HARD, lesson -> 100)
+                .filter((lesson) -> isLessonScheduled(lesson) && lesson.getRoom().getBranchId() != lesson.getBranchId() && ! lesson.isAllowVideoCall())
+                .penalize(HardSoftScore.ONE_HARD, lesson -> 50)
                 .justifyWith((lesson1, score) -> new WrongBranchRoomJustification(lesson1))
                 .asConstraint("No in-person lessons assigned to rooms in wrong branch");
     }
@@ -66,10 +66,10 @@ public class RoomHardConstraints extends ArabiusConstraints {
     private Constraint roomCapacityLessThanStudentCount(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEach(Lesson.class)
-                .filter(lesson -> lessonIsInFuture(lesson) 
+                .filter(lesson -> isLessonScheduled(lesson) 
                     && lesson.getRoom().getCapacity() < lesson.getStudentCount() 
                     && lesson.isEnforceRoomCapacity())
-                .penalize(HardSoftScore.ONE_HARD, lesson-> (lesson.getRoom().getCapacity() - lesson.getStudentCount()) * 100)
+                .penalize(HardSoftScore.ONE_HARD, lesson-> (lesson.getRoom().getCapacity() - lesson.getStudentCount()) * 10)
                 .justifyWith((lesson1, score) -> new SmallRoomJustification(lesson1))
                 .asConstraint("Room capacity less than student count");
     }
@@ -77,11 +77,11 @@ public class RoomHardConstraints extends ArabiusConstraints {
     @Override
     public Constraint[] getConstraints(ConstraintFactory constraintFactory) {
         return new Constraint[]{
-                roomConflict(constraintFactory),
-                unAssignedRoom(constraintFactory),
-                assignedRoom(constraintFactory),
-                inpersonRoomInCorrectBranch(constraintFactory),
-                roomCapacityLessThanStudentCount(constraintFactory),
+                roomConflict(constraintFactory), //301550
+                unAssignedRoom(constraintFactory), //7221
+                assignedRoom(constraintFactory), //7041
+                inpersonRoomInCorrectBranch(constraintFactory), //7023
+                roomCapacityLessThanStudentCount(constraintFactory), //7082
                 
         };
     }
