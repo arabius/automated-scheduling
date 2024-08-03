@@ -14,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@PlanningEntity //(pinningFilter = LessonPinningFilter.class)
+@PlanningEntity (pinningFilter = LessonPinningFilter.class)
 public class Lesson extends ArabiusEntity {
 
     @PlanningId

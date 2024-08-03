@@ -179,7 +179,7 @@ public class DemoDataResource {
         
         // Now you can use the timeSlots list for further processing or manipulation
 
-        lessons.removeIf(lesson -> "ended".equals(lesson.getStatus()));
+        //lessons.removeIf(lesson -> "ended".equals(lesson.getStatus()));
 
         return new Timetable("Demo_data", rooms, lessons, guides, timeSlots);
     }
