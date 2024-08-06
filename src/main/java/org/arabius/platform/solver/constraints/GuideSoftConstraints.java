@@ -22,37 +22,50 @@ public class GuideSoftConstraints extends ArabiusConstraints {
                 .forEachUniquePair(Lesson.class,
                         Joiners.equal(Lesson::getStudentGroupHash), // same student group
                         Joiners.equal(Lesson::getLevel), // same level
-                        Joiners.lessThan(Lesson::getBufferStart)) 
-                .filter((lesson1, lesson2) -> !areNeitherLessonsScheduled(lesson1, lesson2) && areLessonsWithinXDays(lesson1, lesson2, 14) && !Objects.equals(lesson1.getGuide(), lesson2.getGuide()))
-                .penalize(HardSoftBigDecimalScore.ONE_SOFT, (lesson1, lesson2) -> { return Math.max(0, 14 - (int) getLessonDaysApart(lesson1, lesson2)) * lesson1.getGuideStickiness(); })
+                        Joiners.lessThan(Lesson::getBufferStart))
+                .filter((lesson1, lesson2) -> !areNeitherLessonsScheduled(lesson1, lesson2)
+                        && areLessonsWithinXDays(lesson1, lesson2, 14)
+                        && !Objects.equals(lesson1.getGuide(), lesson2.getGuide()))
+                .penalize(HardSoftBigDecimalScore.ONE_SOFT, (lesson1, lesson2) -> {
+                    return Math.max(0, 14 - (int) getLessonDaysApart(lesson1, lesson2)) * lesson1.getGuideStickiness();
+                })
                 .asConstraint("Consecutive sessions without same guide");
+    }
+
+    private Constraint useGuideSchedulingCosts(ConstraintFactory constraintFactory) {
+        return constraintFactory
+                .forEach(Lesson.class)
+                .filter((lesson) -> isLessonScheduled(lesson))
+                .penalize(HardSoftBigDecimalScore.ONE_SOFT, lesson -> lesson.getGuide().getSchedulingCost())
+                .asConstraint("Guide scheduling costs");
     }
 
     private Constraint guideInSameRoomForSameDayLessons(ConstraintFactory constraintFactory) {
         return constraintFactory
                 .forEachUniquePair(Lesson.class,
-                        Joiners.equal(Lesson::getDate),        
-                        Joiners.equal(Lesson::getGuide)                        
-                        )
-                .filter((lesson1, lesson2) -> areBothLessonsScheduled(lesson1, lesson2) && !Objects.equals(lesson1.getRoom(), lesson2.getRoom()))
+                        Joiners.equal(Lesson::getDate),
+                        Joiners.equal(Lesson::getGuide))
+                .filter((lesson1, lesson2) -> areBothLessonsScheduled(lesson1, lesson2)
+                        && !Objects.equals(lesson1.getRoom(), lesson2.getRoom()))
                 .penalize(HardSoftBigDecimalScore.ONE_SOFT, (lesson1, lesson2) -> 5)
                 .asConstraint("Guide in same room for same day lessons");
     }
 
     Constraint fairAssignments(ConstraintFactory constraintFactory) {
         return constraintFactory.forEach(Lesson.class)
-            .filter((lesson) -> isLessonScheduled(lesson))
-            .groupBy(ConstraintCollectors.loadBalance(Lesson::getGuide, Lesson::getDurationInMinutes))
-            .penalizeBigDecimal(HardSoftBigDecimalScore.ONE_SOFT, LoadBalance::unfairness)
-            .asConstraint("fairAssignments");
-   }
+                .filter((lesson) -> isLessonScheduled(lesson))
+                .groupBy(ConstraintCollectors.loadBalance(Lesson::getGuide, Lesson::getDurationInMinutes))
+                .penalizeBigDecimal(HardSoftBigDecimalScore.ONE_SOFT, LoadBalance::unfairness)
+                .asConstraint("fairAssignments");
+    }
 
     @Override
     public Constraint[] getConstraints(ConstraintFactory constraintFactory) {
         return new Constraint[] {
                 consecutiveLessonsWithSameGuide(constraintFactory),
                 fairAssignments(constraintFactory),
-               // guideInSameRoomForSameDayLessons(constraintFactory)
+                guideInSameRoomForSameDayLessons(constraintFactory),
+                useGuideSchedulingCosts(constraintFactory)
         };
     }
 

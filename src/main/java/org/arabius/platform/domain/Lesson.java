@@ -1,6 +1,5 @@
 package org.arabius.platform.domain;
 
-import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -53,11 +52,11 @@ public class Lesson extends ArabiusEntity {
     private int lessonTypeId;
 
     @JsonIdentityReference
-    @PlanningVariable // (allowsUnassigned = true)
+    @PlanningVariable(allowsUnassigned = true)
     private Guide guide;
 
     @JsonIdentityReference
-    @PlanningVariable // (allowsUnassigned = true)
+    @PlanningVariable(allowsUnassigned = true)
     private Room room;
 
     public Lesson() {

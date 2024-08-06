@@ -57,7 +57,8 @@ public class DemoDataResource {
             try (Statement stmt = connection.createStatement();
                     ResultSet rs = stmt.executeQuery(
                             "SELECT * FROM automated_scheduling_lessons_view where date between '" + startDateString
-                                    + "' and '" + endDateString + "' and status != 'cancelled' order by date, start")) {
+                                    + "' and '" + endDateString
+                                    + "' and status not in ('cancelled', 'in-progress') order by date, start")) {
                 while (rs.next()) {
                     Lesson lesson = new Lesson();
                     lesson.setId(rs.getInt("id"));
@@ -81,10 +82,10 @@ public class DemoDataResource {
                     lesson.setRequireRoom(rs.getBoolean("require_room"));
                     lesson.setLevelIsDifficult(rs.getBoolean("is_difficult"));
                     lesson.setGuideStickiness(rs.getInt("guide_stickiness"));
-                    // if(lesson.getStatus().equals("ended")){
-                    lesson.setInitialRoomId(rs.getInt("room_id"));
-                    lesson.setInitialGuideId(rs.getInt("guide_id"));
-                    // }
+                    if (!lesson.getStatus().equals("scheduled")) {
+                        lesson.setInitialRoomId(rs.getInt("room_id"));
+                        lesson.setInitialGuideId(rs.getInt("guide_id"));
+                    }
                     lessons.add(lesson);
                 }
             } catch (SQLException ex) {
@@ -94,12 +95,13 @@ public class DemoDataResource {
             // Load guides from database
             try (Statement stmt = connection.createStatement();
                     ResultSet rs = stmt.executeQuery(
-                            "SELECT users.id,SUBSTRING_INDEX(users.name,'|',1)AS name,GROUP_CONCAT(DISTINCT levels.id SEPARATOR'|')AS levels FROM users,guide_level,levels WHERE users.id=guide_level.user_id AND levels.id=guide_level.level_id AND guide_level.admin_rating<>0 and users.active=1 Group by users.id")) {
+                            "SELECT users.id,users.guide_scheduling_cost,SUBSTRING_INDEX(users.name,'|',1)AS name,GROUP_CONCAT(DISTINCT levels.id SEPARATOR'|')AS levels FROM users,guide_level,levels,model_has_roles,roles WHERE 1=1 AND users.id=guide_level.user_id AND levels.id=guide_level.level_id AND guide_level.admin_rating<>0 AND users.active=1 AND users.id=model_has_roles.model_id AND model_has_roles.model_type=\"App\\\\Models\\\\User\" AND model_has_roles.role_id=roles.id AND roles.type='guide' GROUP BY users.id")) {
                 while (rs.next()) {
                     Guide guide = new Guide();
                     guide.setId(rs.getInt("id"));
                     guide.setName(rs.getString("name"));
                     guide.setLevels(rs.getString("levels"));
+                    guide.setSchedulingCost(rs.getInt("guide_scheduling_cost"));
                     guides.add(guide);
                 }
             } catch (SQLException ex) {
@@ -213,6 +215,8 @@ public class DemoDataResource {
             // guide.getGuideSlots().size() + " guide slots");
             // System.out.println("Guide: " + guide.getName() + " has " +
             // guide.getGuideAbsences().size() + " guide absences");
+            // System.out.println("Guide: " + guide.getName() + " has " +
+            // guide.getSchedulingCost() + " scheduling cost");
         }
 
         // Now you can use the timeSlots list for further processing or manipulation
@@ -220,7 +224,7 @@ public class DemoDataResource {
         lessons.removeIf(lesson -> "ended".equals(lesson.getStatus()));
 
         // remove all b X number of lessons
-        lessons = lessons.subList(0, 10);
+        lessons = lessons.subList(0, 100);
 
         return new Timetable("Demo_data", rooms, lessons, guides, timeSlots);
     }

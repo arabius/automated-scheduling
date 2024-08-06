@@ -57,7 +57,7 @@ public class GuideSlot extends ArabiusEntity {
     public void setGuideId(int guideId) {
         this.guideId = guideId;
     }
-    
+
     public List<Integer> getSlotIds() {
         return slotIds;
     }
@@ -93,9 +93,9 @@ public class GuideSlot extends ArabiusEntity {
         this.endTime = endTime;
     }
 
-        // Override toString if necessary
-        @Override
-        public String toString() {
-            return date + " " + guideId;
-        }
+    // Override toString if necessary
+    @Override
+    public String toString() {
+        return date + " " + slotIds.stream().map(Object::toString).collect(Collectors.joining("|")) + "\n";
+    }
 }

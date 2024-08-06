@@ -1,10 +1,8 @@
 package org.arabius.platform.domain;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -21,6 +19,7 @@ public class Guide extends ArabiusEntity {
     @PlanningId
     private int id;
     private String name;
+    private int schedulingCost;
 
     private ArrayList<GuideSlot> guideSlots = new ArrayList<>();
     private ArrayList<GuideAbsence> guideAbsences = new ArrayList<>();
@@ -31,20 +30,22 @@ public class Guide extends ArabiusEntity {
         this.levels = new ArrayList<>(); // Initialize levels
     }
 
-    public Guide(int id, String name, String levels) {
+    public Guide(int id, String name, String levels, int schedulingCost) {
         this.id = id;
         this.name = name;
         this.levels = this.parseStringToIntList(levels);
+        this.schedulingCost = schedulingCost;
         this.guideSlots = new ArrayList<>(); // Initialize guideSlots
     }
 
     public Guide(int id, String name, ArrayList<Integer> levels, ArrayList<GuideSlot> guideSlots,
-            ArrayList<GuideAbsence> guideAbsences) {
+            ArrayList<GuideAbsence> guideAbsences, int schedulingCost) {
         this.id = id;
         this.name = name;
+        this.levels = levels;
         this.guideSlots = guideSlots != null ? guideSlots : new ArrayList<>();
         this.guideAbsences = guideAbsences != null ? guideAbsences : new ArrayList<>();
-        this.levels = levels;
+        this.schedulingCost = schedulingCost;
     }
 
     public int getId() {
@@ -99,7 +100,7 @@ public class Guide extends ArabiusEntity {
 
     public boolean guideHasSlotOnDay(LocalDate date, int slotId) {
         for (GuideSlot guideSlot : this.guideSlots) {
-            if (guideSlot.getDate().equals(date) && guideSlot.getSlotIds().contains(slotId)) {
+            if (guideSlot.getDate().equals(date) && guideSlot.getSlotIds().contains(Integer.valueOf(slotId))) {
                 return true;
             }
         }
@@ -145,6 +146,20 @@ public class Guide extends ArabiusEntity {
 
     public ArrayList<GuideAbsence> getGuideAbsences() {
         return guideAbsences;
+    }
+
+    public int getSchedulingCost() {
+        return schedulingCost;
+    }
+
+    public void setSchedulingCost(int schedulingCost) {
+        this.schedulingCost = schedulingCost;
+    }
+
+    public boolean presentForLesson(Lesson lesson) {
+        return this.guideHasSlotOnDay(lesson.getDate(), lesson.getSlotId());
+        // || this.guideHasOverlappingAbsence(lesson.getBufferStart(),
+        // lesson.getBufferEnd());
     }
 
 }
