@@ -26,14 +26,14 @@ public class CsvLessonLoader {
             for (CSVRecord csvRecord : csvParser) {
                 Lesson lesson = new Lesson();
                 lesson.setId(Integer.parseInt(csvRecord.get("id")));
-                lesson.setLevel(csvRecord.get("level"));
+                lesson.setLevel(Integer.parseInt(csvRecord.get("level")));
                 lesson.setDate(LocalDate.parse(csvRecord.get("date")));
                 lesson.setStart(LocalTime.parse(csvRecord.get("start")));
                 lesson.setEnd(LocalTime.parse(csvRecord.get("end")));
                 lesson.setBufferStart(LocalDateTime.parse(csvRecord.get("buffer_start"), formatter));
                 lesson.setBufferEnd(LocalDateTime.parse(csvRecord.get("buffer_end"), formatter));
                 lesson.setStudentGroupHash(csvRecord.get("student_group_hash"));
-                lesson.setInitialLessonTypeId(Integer.parseInt(csvRecord.get("lesson_type_id")));
+                //lesson.setInitialLessonTypeId(Integer.parseInt(csvRecord.get("lesson_type_id")));
                 lesson.setBranchId(Integer.parseInt(csvRecord.get("branch_id")));
                 lesson.setSlotId(parseInteger(csvRecord.get("slot_id")));
                 lesson.setInitialGuideId(parseInteger(csvRecord.get("guide_id")));

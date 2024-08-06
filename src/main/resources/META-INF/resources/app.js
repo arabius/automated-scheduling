@@ -203,7 +203,9 @@ function renderSchedule(timetable) {
         .append($(`<p class="card-text ms-2 mb-1"/>`)
           .append($(`<em/>`).text(`Start: ${lesson.startDateTime}`)))
         .append($(`<p class="card-text ms-2 mb-1"/>`)
-          .append($(`<em/>`).text(`Start: ${lesson.status}`)))
+          .append($(`<em/>`).text(`Status: ${lesson.status}`)))
+        .append($(`<p class="card-text ms-2 mb-1"/>`)
+          .append($(`<em/>`).text(`ClientCount: ${lesson.studentCount}`)))
         .append($(`<small class="ms-2 mt-1 card-text text-muted align-bottom float-end"/>`).text(lesson.id))
         .append($(`<p class="card-text ms-2"/>`).text(lesson.studentGroupHash)));
     if (1 === 1) {
@@ -211,8 +213,8 @@ function renderSchedule(timetable) {
     } else {
       // In the JSON, the lesson.timeslot and lesson.room are only IDs of these objects.
       $(`#timeslot${lesson.timeslot}room${lesson.room}`).append(lessonElement.clone());
-     // $(`#timeslot${lesson.timeslot}teacher${convertToId(lesson.guide?.name)}`).append(lessonElement.clone());
-     // $(`#timeslot${lesson.timeslot}studentGroup${convertToId(lesson.studentGroupHash)}`).append(lessonElement.clone());
+      // $(`#timeslot${lesson.timeslot}teacher${convertToId(lesson.guide?.name)}`).append(lessonElement.clone());
+      // $(`#timeslot${lesson.timeslot}studentGroup${convertToId(lesson.studentGroupHash)}`).append(lessonElement.clone());
     }
   });
 }
@@ -222,9 +224,9 @@ function solve() {
     scheduleId = data;
     refreshSolvingButtons(true);
   }).fail(function (xhr, ajaxOptions, thrownError) {
-      showError("Start solving failed.", xhr);
-      refreshSolvingButtons(false);
-    },
+    showError("Start solving failed.", xhr);
+    refreshSolvingButtons(false);
+  },
     "text");
 }
 
@@ -269,10 +271,10 @@ function analyze() {
       scoreAnalysisModalContent.children().remove();
       scoreAnalysisModalContent.text("");
 
-      const analysisTable = $(`<table class="table"/>`).css({textAlign: 'center'});
+      const analysisTable = $(`<table class="table"/>`).css({ textAlign: 'center' });
       const analysisTHead = $(`<thead/>`).append($(`<tr/>`)
         .append($(`<th></th>`))
-        .append($(`<th>Constraint</th>`).css({textAlign: 'left'}))
+        .append($(`<th>Constraint</th>`).css({ textAlign: 'left' }))
         .append($(`<th>Type</th>`))
         .append($(`<th># Matches</th>`))
         .append($(`<th>Weight</th>`))
@@ -286,7 +288,7 @@ function analyze() {
 
         let row = $(`<tr/>`);
         row.append($(`<td/>`).html(icon))
-          .append($(`<td/>`).text(constraintAnalysis.name).css({textAlign: 'left'}))
+          .append($(`<td/>`).text(constraintAnalysis.name).css({ textAlign: 'left' }))
           .append($(`<td/>`).text(constraintAnalysis.type))
           .append($(`<td/>`).html(`<b>${constraintAnalysis.matches.length}</b>`))
           .append($(`<td/>`).text(constraintAnalysis.weight))
@@ -296,7 +298,7 @@ function analyze() {
 
         if (constraintAnalysis.matches.length > 0) {
           let matchesRow = $(`<tr/>`).addClass("collapse").attr("id", "row" + index + "Collapse");
-          let matchesListGroup = $(`<ul/>`).addClass('list-group').addClass('list-group-flush').css({textAlign: 'left'});
+          let matchesListGroup = $(`<ul/>`).addClass('list-group').addClass('list-group-flush').css({ textAlign: 'left' });
 
           $.each(constraintAnalysis.matches, (index2, match) => {
             matchesListGroup.append($(`<li/>`).addClass('list-group-item').addClass('list-group-item-light').text(match.justification.description));
@@ -323,14 +325,14 @@ function analyze() {
       analysisTable.append(analysisTBody);
       scoreAnalysisModalContent.append(analysisTable);
     }).fail(function (xhr, ajaxOptions, thrownError) {
-        showError("Analyze failed.", xhr);
-      },
+      showError("Analyze failed.", xhr);
+    },
       "text");
   }
 }
 
 function getScoreComponents(score) {
-  let components = {hard: 0, medium: 0, soft: 0};
+  let components = { hard: 0, medium: 0, soft: 0 };
 
   $.each([...score.matchAll(/(-?[0-9]+)(hard|medium|soft)/g)], (i, parts) => {
     components[parts[2]] = parseInt(parts[1], 10);

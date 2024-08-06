@@ -1,6 +1,8 @@
 package org.arabius.platform.domain;
 
+import java.lang.reflect.Array;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,12 +17,13 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @JsonIdentityInfo(scope = Guide.class, generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 public class Guide extends ArabiusEntity {
-    
+
     @PlanningId
     private int id;
     private String name;
 
     private ArrayList<GuideSlot> guideSlots = new ArrayList<>();
+    private ArrayList<GuideAbsence> guideAbsences = new ArrayList<>();
     private ArrayList<Integer> levels = new ArrayList<>();
 
     public Guide() {
@@ -35,10 +38,12 @@ public class Guide extends ArabiusEntity {
         this.guideSlots = new ArrayList<>(); // Initialize guideSlots
     }
 
-    public Guide(int id, String name, ArrayList<Integer> levels, ArrayList<GuideSlot> guideSlots) {
+    public Guide(int id, String name, ArrayList<Integer> levels, ArrayList<GuideSlot> guideSlots,
+            ArrayList<GuideAbsence> guideAbsences) {
         this.id = id;
         this.name = name;
         this.guideSlots = guideSlots != null ? guideSlots : new ArrayList<>();
+        this.guideAbsences = guideAbsences != null ? guideAbsences : new ArrayList<>();
         this.levels = levels;
     }
 
@@ -58,8 +63,8 @@ public class Guide extends ArabiusEntity {
     @JsonProperty("levels")
     public String getLevelsAsString() {
         String levelsString = levels.stream()
-                                    .map(Object::toString)
-                                    .collect(Collectors.joining("|"));
+                .map(Object::toString)
+                .collect(Collectors.joining("|"));
         return levelsString;
     }
 
@@ -113,5 +118,33 @@ public class Guide extends ArabiusEntity {
         this.levels = this.parseStringToIntList(levels);
     }
 
- 
+    public void setGuideAbsences(ArrayList<GuideAbsence> guideAbsences) {
+        this.guideAbsences = guideAbsences;
+    }
+
+    public void addGuideAbsence(GuideAbsence guideAbsence) {
+        this.guideAbsences.add(guideAbsence);
+    }
+
+    public void addMatchingGuideAbsences(List<GuideAbsence> guideAbsences) {
+        for (GuideAbsence guideAbsence : guideAbsences) {
+            if (guideAbsence.getGuideId() == this.id) {
+                this.addGuideAbsence(guideAbsence);
+            }
+        }
+    }
+
+    public boolean guideHasOverlappingAbsence(LocalDateTime startDateTime, LocalDateTime endDateTime) {
+        for (GuideAbsence guideAbsence : this.guideAbsences) {
+            if (guideAbsence.isOverlappingTimes(startDateTime, endDateTime)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public ArrayList<GuideAbsence> getGuideAbsences() {
+        return guideAbsences;
+    }
+
 }

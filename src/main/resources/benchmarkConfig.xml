@@ -12,7 +12,7 @@
             <constraintProviderClass>org.arabius.platform.solver.TimetableConstraintProvider</constraintProviderClass>
         </scoreDirectorFactory>
         <termination>
-            <minutesSpentLimit>6</minutesSpentLimit>
+            <minutesSpentLimit>720</minutesSpentLimit>
         </termination>
         <constructionHeuristic>
             <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
@@ -37,7 +37,7 @@
             <constraintProviderClass>org.arabius.platform.solver.TimetableConstraintProvider</constraintProviderClass>
         </scoreDirectorFactory>
         <termination>
-            <minutesSpentLimit>6</minutesSpentLimit>
+            <minutesSpentLimit>720</minutesSpentLimit>
         </termination>
         <constructionHeuristic>
             <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
@@ -50,6 +50,25 @@
             <forager>
             <acceptedCountLimit>4</acceptedCountLimit>
             </forager>
+        </localSearch>
+    </solver>
+</solverBenchmark>
+<solverBenchmark>
+    <name>Tabu</name>
+    <solver>
+        <solutionClass>org.arabius.platform.domain.Timetable</solutionClass>
+        <entityClass>org.arabius.platform.domain.Lesson</entityClass>
+        <scoreDirectorFactory>
+            <constraintProviderClass>org.arabius.platform.solver.TimetableConstraintProvider</constraintProviderClass>
+        </scoreDirectorFactory>
+        <termination>
+            <minutesSpentLimit>720</minutesSpentLimit>
+        </termination>
+        <constructionHeuristic>
+            <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+        </constructionHeuristic>
+        <localSearch>
+            <localSearchType>TABU_SEARCH</localSearchType>
         </localSearch>
     </solver>
 </solverBenchmark>

@@ -8,7 +8,8 @@
         <constraintProviderClass>org.arabius.platform.solver.TimetableConstraintProvider</constraintProviderClass>
     </scoreDirectorFactory>
     <termination>
-        <secondsSpentLimit>300</secondsSpentLimit>
+        <secondsSpentLimit>180</secondsSpentLimit>
+        <unimprovedSecondsSpentLimit>5</unimprovedSecondsSpentLimit>
     </termination>
     <constructionHeuristic>
         <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
@@ -19,7 +20,7 @@
         <localSearch>
             <acceptor>
             <entityTabuSize>5</entityTabuSize>
-            <simulatedAnnealingStartingTemperature>50hard/3000soft</simulatedAnnealingStartingTemperature>
+            <simulatedAnnealingStartingTemperature>10hard/2000soft</simulatedAnnealingStartingTemperature>
             </acceptor>
             <forager>
             <acceptedCountLimit>4</acceptedCountLimit>

@@ -1,10 +1,13 @@
 package org.arabius.platform.domain;
 
+import java.math.BigDecimal;
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
+import org.arabius.platform.solver.LessonDifficultyComparator;
 import org.arabius.platform.solver.LessonPinningFilter;
 
 import ai.timefold.solver.core.api.domain.entity.PlanningEntity;
@@ -14,7 +17,7 @@ import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-@PlanningEntity (pinningFilter = LessonPinningFilter.class)
+@PlanningEntity(pinningFilter = LessonPinningFilter.class, difficultyComparatorClass = LessonDifficultyComparator.class)
 public class Lesson extends ArabiusEntity {
 
     @PlanningId
@@ -30,8 +33,9 @@ public class Lesson extends ArabiusEntity {
     private String studentGroupHash;
     private Integer slotId;
     private int branchId;
+    private int studentCount;
 
-    //lesson type config
+    // lesson type config
     private boolean allowGuide;
     private boolean allowRoom;
     private boolean allowVideoCall;
@@ -42,24 +46,26 @@ public class Lesson extends ArabiusEntity {
     private int guideStickiness;
 
     @JsonIgnore
-    private ArrayList<Integer> allowedGuideIds = new ArrayList<>(); 
+    private ArrayList<Integer> allowedGuideIds = new ArrayList<>();
 
     private Integer initialGuideId;
     private Integer initialRoomId;
     private int lessonTypeId;
-    
+
     @JsonIdentityReference
-    @PlanningVariable (allowsUnassigned = true)
+    @PlanningVariable // (allowsUnassigned = true)
     private Guide guide;
 
     @JsonIdentityReference
-    @PlanningVariable (allowsUnassigned = true)
+    @PlanningVariable // (allowsUnassigned = true)
     private Room room;
-    
+
     public Lesson() {
     }
 
-    public Lesson(int id, Integer level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, String status) {
+    public Lesson(int id, Integer level, LocalDate date, LocalTime start, LocalTime end, LocalDateTime bufferStart,
+            LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId,
+            String allowedGuideIds, String status, int studentCount) {
         this.id = id;
         this.date = date;
         this.start = start;
@@ -73,23 +79,32 @@ public class Lesson extends ArabiusEntity {
         this.lessonTypeId = lessonTypeId;
         this.allowedGuideIds = this.parseStringToIntList(allowedGuideIds);
         this.status = status;
+        this.studentCount = studentCount;
     }
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, Integer level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Integer initialGuideId, Integer initialRoomId, String status) {
-        this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId, allowedGuideIds, status);
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, Integer level, LocalDateTime bufferStart,
+            LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId,
+            String allowedGuideIds, Integer initialGuideId, Integer initialRoomId, String status, int studentCount) {
+        this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId,
+                allowedGuideIds, status, studentCount);
         this.initialGuideId = initialGuideId;
         this.initialRoomId = initialRoomId;
+        this.studentCount = this.studentGroupHash.split(",").length;
     }
 
-    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, Integer level, LocalDateTime bufferStart, LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId, String allowedGuideIds, Guide guide, Room room, String status) {
-        this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId, allowedGuideIds, status);
+    public Lesson(int id, LocalDate date, LocalTime start, LocalTime end, Integer level, LocalDateTime bufferStart,
+            LocalDateTime bufferEnd, String studentGroupHash, Integer slotId, int branchId, int lessonTypeId,
+            String allowedGuideIds, Guide guide, Room room, String status, int studentCount) {
+        this(id, level, date, start, end, bufferStart, bufferEnd, studentGroupHash, slotId, branchId, lessonTypeId,
+                allowedGuideIds, status, studentCount);
         this.room = room;
         this.guide = guide;
+        this.studentCount = this.studentGroupHash.split(",").length;
     }
 
     // @Override
     // public String toString() {
-    //     return subject + "(" + id + ")";
+    // return subject + "(" + id + ")";
     // }
 
     // ************************************************************************
@@ -145,7 +160,11 @@ public class Lesson extends ArabiusEntity {
     }
 
     public int getStudentCount() {
-        return this.studentGroupHash.split(",").length;
+        return this.studentCount;
+    }
+
+    public void setStudentCount(int studentCount) {
+        this.studentCount = studentCount;
     }
 
     public void setId(int id) {
@@ -183,15 +202,15 @@ public class Lesson extends ArabiusEntity {
     public LocalTime getStart() {
         return start;
     }
-    
+
     public void setStart(LocalTime start) {
         this.start = start;
     }
-    
+
     public LocalTime getEnd() {
         return end;
     }
-    
+
     public void setEnd(LocalTime end) {
         this.end = end;
     }
@@ -307,5 +326,18 @@ public class Lesson extends ArabiusEntity {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public long getDurationInMinutes() {
+        Duration duration = Duration.between(start, end);
+        return duration.toMinutes();
+    }
+
+    public int getRoomPriorityForLessonType() {
+        Room room = this.getRoom();
+        if (room == null) {
+            return 100; // Default value if room is null
+        }
+        return room.getRoomPriorityForLessonType(lessonTypeId);
     }
 }

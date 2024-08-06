@@ -7,7 +7,7 @@ import ai.timefold.solver.core.api.domain.solution.PlanningScore;
 import ai.timefold.solver.core.api.domain.solution.PlanningSolution;
 import ai.timefold.solver.core.api.domain.solution.ProblemFactCollectionProperty;
 import ai.timefold.solver.core.api.domain.valuerange.ValueRangeProvider;
-import ai.timefold.solver.core.api.score.buildin.hardsoft.HardSoftScore;
+import ai.timefold.solver.core.api.score.buildin.hardsoftbigdecimal.HardSoftBigDecimalScore;
 import ai.timefold.solver.core.api.solver.SolverStatus;
 
 @PlanningSolution
@@ -30,7 +30,7 @@ public class Timetable {
     private List<Lesson> lessons;
 
     @PlanningScore
-    private HardSoftScore score;
+    private HardSoftBigDecimalScore score;
 
     // Ignored by Timefold, used by the UI to display solve or stop solving button
     private SolverStatus solverStatus;
@@ -39,7 +39,7 @@ public class Timetable {
     public Timetable() {
     }
 
-    public Timetable(String name, HardSoftScore score, SolverStatus solverStatus) {
+    public Timetable(String name, HardSoftBigDecimalScore score, SolverStatus solverStatus) {
         this.name = name;
         this.score = score;
         this.solverStatus = solverStatus;
@@ -81,7 +81,7 @@ public class Timetable {
         return guides;
     }
 
-    public HardSoftScore getScore() {
+    public HardSoftBigDecimalScore getScore() {
         return score;
     }
 

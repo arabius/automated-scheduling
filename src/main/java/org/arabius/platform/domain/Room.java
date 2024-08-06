@@ -73,6 +73,9 @@ public class Room extends ArabiusEntity {
     }
 
     public int getRoomPriorityForLessonType(int lessonTypeId) {
+        if (roomPriorityList == null) {
+            return 100;
+        }
         for (RoomPriority roomPriority : roomPriorityList) {
             if (roomPriority.getLessonTypeId() == lessonTypeId) {
                 return roomPriority.getPriority();
@@ -91,7 +94,7 @@ public class Room extends ArabiusEntity {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
-    }   
+    }
 
     public void setBranchId(int branch) {
         this.branchId = branch;

@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.arabius.platform.domain.Guide;
+import org.arabius.platform.domain.GuideAbsence;
 import org.arabius.platform.domain.GuideSlot;
 import org.arabius.platform.domain.Lesson;
 import org.arabius.platform.domain.Room;
@@ -19,7 +20,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
 public class DemoDataResource {
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/arabius_prod";
     private static final String JDBC_USER = "root";
@@ -31,15 +31,16 @@ public class DemoDataResource {
         List<Guide> guides = new ArrayList<>();
         List<GuideSlot> guideSlots = new ArrayList<>();
         List<RoomPriority> roomPriorities = new ArrayList<>();
+        List<GuideAbsence> guideAbsences = new ArrayList<>();
 
-        String startDateString = "2024-07-20";
-        String endDateString = "2024-08-31";
+        String startDateString = "2024-08-05";
+        String endDateString = "2024-08-10";
 
         try (Connection connection = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORD)) {
-            
+
             // Load rooms from database
             try (Statement stmt = connection.createStatement();
-                ResultSet rs = stmt.executeQuery("SELECT * FROM rooms")) {
+                    ResultSet rs = stmt.executeQuery("SELECT * FROM rooms")) {
                 while (rs.next()) {
                     Room room = new Room();
                     room.setId(rs.getInt("id"));
@@ -54,12 +55,15 @@ public class DemoDataResource {
 
             // Load lessons from database
             try (Statement stmt = connection.createStatement();
-                    ResultSet rs = stmt.executeQuery("SELECT * FROM automated_scheduling_lessons_view where date between '" + startDateString + "' and '"+ endDateString +"' and status != 'cancelled'")) {
+                    ResultSet rs = stmt.executeQuery(
+                            "SELECT * FROM automated_scheduling_lessons_view where date between '" + startDateString
+                                    + "' and '" + endDateString + "' and status != 'cancelled' order by date, start")) {
                 while (rs.next()) {
                     Lesson lesson = new Lesson();
                     lesson.setId(rs.getInt("id"));
                     lesson.setLevel(rs.getInt("level"));
                     lesson.setStatus(rs.getString("status"));
+                    lesson.setStudentCount(rs.getInt("student_count"));
                     lesson.setDate(rs.getDate("date").toLocalDate());
                     lesson.setStart(rs.getTime("start").toLocalTime());
                     lesson.setEnd(rs.getTime("end").toLocalTime());
@@ -77,10 +81,10 @@ public class DemoDataResource {
                     lesson.setRequireRoom(rs.getBoolean("require_room"));
                     lesson.setLevelIsDifficult(rs.getBoolean("is_difficult"));
                     lesson.setGuideStickiness(rs.getInt("guide_stickiness"));
-                    if(lesson.getStatus().equals("ended")){
-                        lesson.setInitialRoomId(rs.getInt("room_id"));
-                        lesson.setInitialGuideId(rs.getInt("guide_id"));
-                    }
+                    // if(lesson.getStatus().equals("ended")){
+                    lesson.setInitialRoomId(rs.getInt("room_id"));
+                    lesson.setInitialGuideId(rs.getInt("guide_id"));
+                    // }
                     lessons.add(lesson);
                 }
             } catch (SQLException ex) {
@@ -89,7 +93,8 @@ public class DemoDataResource {
 
             // Load guides from database
             try (Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT users.id,SUBSTRING_INDEX(users.name,'|',1)AS name,GROUP_CONCAT(DISTINCT levels.id SEPARATOR'|')AS levels FROM users,guide_level,levels WHERE users.id=guide_level.user_id AND levels.id=guide_level.level_id AND guide_level.admin_rating<>0 and users.active=1 Group by users.id")) {
+                    ResultSet rs = stmt.executeQuery(
+                            "SELECT users.id,SUBSTRING_INDEX(users.name,'|',1)AS name,GROUP_CONCAT(DISTINCT levels.id SEPARATOR'|')AS levels FROM users,guide_level,levels WHERE users.id=guide_level.user_id AND levels.id=guide_level.level_id AND guide_level.admin_rating<>0 and users.active=1 Group by users.id")) {
                 while (rs.next()) {
                     Guide guide = new Guide();
                     guide.setId(rs.getInt("id"));
@@ -103,7 +108,9 @@ public class DemoDataResource {
 
             // Load guide slots from database
             try (Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * from automated_scheduling_guide_shifts_by_day where date between '" + startDateString + "' and '"+ endDateString +"'")) {
+                    ResultSet rs = stmt
+                            .executeQuery("SELECT * from automated_scheduling_guide_shifts_by_day where date between '"
+                                    + startDateString + "' and '" + endDateString + "'")) {
                 while (rs.next()) {
                     GuideSlot guideSlot = new GuideSlot();
                     guideSlot.setDate(rs.getDate("date").toLocalDate());
@@ -118,7 +125,8 @@ public class DemoDataResource {
             }
 
             try (Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT room_room_group.room_id,room_room_group.`order` AS priority,lesson_types.id as lesson_type_id FROM room_groups,room_room_group,lesson_types WHERE room_room_group.room_group_id=room_groups.id and lesson_types.room_group_id=room_groups.id")) {
+                    ResultSet rs = stmt.executeQuery(
+                            "SELECT room_room_group.room_id,room_room_group.`order` AS priority,lesson_types.id as lesson_type_id FROM room_groups,room_room_group,lesson_types WHERE room_room_group.room_group_id=room_groups.id and lesson_types.room_group_id=room_groups.id")) {
                 while (rs.next()) {
                     RoomPriority roomPriority = new RoomPriority();
                     roomPriority.setRoomId(rs.getInt("room_id"));
@@ -129,12 +137,27 @@ public class DemoDataResource {
             } catch (SQLException ex) {
                 System.out.println("Error loading room priorities from database: " + ex.getMessage());
             }
+            // load guide absences
+            try (Statement stmt = connection.createStatement();
+                    ResultSet rs = stmt.executeQuery("SELECT * FROM guide_absences where start < '" + endDateString
+                            + "' and end > '" + startDateString + "'")) {
+                while (rs.next()) {
+                    GuideAbsence guideAbsence = new GuideAbsence();
+                    guideAbsence.setId(rs.getInt("id"));
+                    guideAbsence.setGuideId(rs.getInt("user_id"));
+                    guideAbsence.setStartDateTime(rs.getTimestamp("start").toLocalDateTime());
+                    guideAbsence.setEndDateTime(rs.getTimestamp("end").toLocalDateTime());
+                    guideAbsences.add(guideAbsence);
+                }
+            } catch (SQLException ex) {
+                System.out.println("Error loading guide absences from database: " + ex.getMessage());
+            }
 
         } catch (SQLException ex) {
             System.out.println("Error connecting to database: " + ex.getMessage());
-        }      
+        }
 
-       for (RoomPriority roomPriority : roomPriorities) {
+        for (RoomPriority roomPriority : roomPriorities) {
             for (Room room : rooms) {
                 if (roomPriority.getRoomId() == room.getId()) {
                     room.addRoomPriority(roomPriority);
@@ -176,10 +199,28 @@ public class DemoDataResource {
                 }
             }
         }
-        
+
+        for (Guide guide : guides) {
+            guide.addMatchingGuideslots(guideSlots);
+            guide.addMatchingGuideAbsences(guideAbsences);
+            // get last lesson from lessons
+            // Lesson lesson = lessons.get(lessons.size() - 1);
+            // System.out.println("Guide: " + guide.getName() + " has " +
+            // guide.guideHasSlotOnDay(lesson.getDate(), lesson.getSlotId()) +
+            // lesson.getDate() + " " + lesson.getStart());
+
+            // System.out.println("Guide: " + guide.getName() + " has " +
+            // guide.getGuideSlots().size() + " guide slots");
+            // System.out.println("Guide: " + guide.getName() + " has " +
+            // guide.getGuideAbsences().size() + " guide absences");
+        }
+
         // Now you can use the timeSlots list for further processing or manipulation
 
-        //lessons.removeIf(lesson -> "ended".equals(lesson.getStatus()));
+        lessons.removeIf(lesson -> "ended".equals(lesson.getStatus()));
+
+        // remove all b X number of lessons
+        lessons = lessons.subList(0, 10);
 
         return new Timetable("Demo_data", rooms, lessons, guides, timeSlots);
     }

@@ -19,7 +19,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 import ai.timefold.solver.core.api.score.analysis.ScoreAnalysis;
-import ai.timefold.solver.core.api.score.buildin.hardsoft.HardSoftScore;
+import ai.timefold.solver.core.api.score.buildin.hardsoftbigdecimal.HardSoftBigDecimalScore;
 import ai.timefold.solver.core.api.solver.ScoreAnalysisFetchPolicy;
 import ai.timefold.solver.core.api.solver.SolutionManager;
 import ai.timefold.solver.core.api.solver.SolverManager;
@@ -46,7 +46,7 @@ public class TimetableResource {
     private static final Logger LOGGER = LoggerFactory.getLogger(TimetableResource.class);
 
     private final SolverManager<Timetable, String> solverManager;
-    private final SolutionManager<Timetable, HardSoftScore> solutionManager;
+    private final SolutionManager<Timetable, HardSoftBigDecimalScore> solutionManager;
 
     // TODO: Without any "time to live", the map may eventually grow out of memory.
     private final ConcurrentMap<String, Job> jobIdToJob = new ConcurrentHashMap<>();
@@ -59,7 +59,7 @@ public class TimetableResource {
 
     @Inject
     public TimetableResource(SolverManager<Timetable, String> solverManager,
-            SolutionManager<Timetable, HardSoftScore> solutionManager) {
+            SolutionManager<Timetable, HardSoftBigDecimalScore> solutionManager) {
         this.solverManager = solverManager;
         this.solutionManager = solutionManager;
     }
@@ -108,7 +108,7 @@ public class TimetableResource {
     @Consumes({ MediaType.APPLICATION_JSON })
     @Produces(MediaType.APPLICATION_JSON)
     @Path("analyze")
-    public ScoreAnalysis<HardSoftScore> analyze(Timetable problem,
+    public ScoreAnalysis<HardSoftBigDecimalScore> analyze(Timetable problem,
             @QueryParam("fetchPolicy") ScoreAnalysisFetchPolicy fetchPolicy) {
         return fetchPolicy == null ? solutionManager.analyze(problem) : solutionManager.analyze(problem, fetchPolicy);
     }
